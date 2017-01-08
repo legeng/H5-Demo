@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收 iBox</title>
+		<link rel="stylesheet" href="../common/common.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="page" style="display: none;">
+			<img src="images/banner.png"/>
+			<p>申请iBox</p>
+			<div class="content_bor">
+				<ul>
+					<li>
+						<input type="text" placeholder="姓名" class="name"/>
+						<div class="group_btn">
+							<span data-sex="0">先生</span><span data-sex="1">女士</span>
+						</div>
+					</li>
+					<li>
+						<input type="number" placeholder="手机号" class="phone" class="phone" oninput="if(value.length>11)value=value.slice(0,11)"/>
+					</li>
+					<li>
+						<span class="big">北京市 朝阳区 望京</span>
+						<span class="small">*目前仅支持望京地区</span>
+					</li>
+					<li>
+						<textarea cols="45" rows="2" placeholder="详细地址" class="address"></textarea>
+					</li>
+				</ul>
+			</div>
+			<span class="btn">立即申请</span>
+			<p class="p_bot">*不在望京地区？<a href="open.html">申请开通我的地区</a></p>
+		</div>
+		
+		<script src="../common/jquery-1.9.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+html,body,div,section,header,h1,input,img,ul,li{margin:0;padding:0}
+body{font-size:12px;color:#4A4A4A;}
+img{border:0;display: block;}
+ul li{list-style: none;}
+input::-webkit-input-placeholder { 
+	color:#979797;
+	font-size:12px;
+ }
+ input{
+ 	font-size:14px;
+ 	color:#4A4A4A;	
+ }
+.page .header{
+	width:100%;
+	height:auto;
+	position: relative;
+}
+.page .header img{
+	width:100%;
+	height:auto;
+}
+.page .header i{
+	display: block;
+	background: url(../images/triangle.png);
+	background-size: 100% 100%;
+	width:14px;
+	height:10px;
+	position: absolute;
+	z-index:8;
+	bottom:0;
+	left:25%;
+}
+.page .header i.on{
+	left:72%;
+}
+.page .header ul{
+	width:100%;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	position: absolute;
+	bottom:15px;
+	left:0;
+	padding:0 12px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.page .header li{
+	flex:1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+}
+.page .header li.on{
+	font-size:14px;
+	color:#000;
+}
+.page .login_bor{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding:12px 38px;
+}
+.page .login_bor p{
+	width:100%;
+	text-align: center;
+	margin-top:20px;
+}
+.page .login_bor ul.code_login{
+	display: none;
+}
+.page .login_bor ul li{
+	border-bottom: 1px solid #979797;
+	height:40px;
+	line-height: 45px;
+	margin-top:7px;
+	padding-bottom: 2px;
+	position: relative;
+}
+.page .login_bor ul li span.on{
+	background:#F6E627;
+	color:#000;
+}
+.page .login_bor ul li span.gray{
+	background:#979797;
+	color:#fff;
+}
+.page .login_bor ul li .getCode{
+	position: absolute;
+	right:0;
+	bottom:3px;
+	width:90px;
+	height:34px;
+	line-height: 34px;
+	text-align: center;
+	background:#979797;
+	color:#fff;
+	font-size:14px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.page .login_bor ul li.active{
+	border-bottom: 1px solid #F6E627;
+}
+.page .login_bor ul li i.phone_icon{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/phone.png) no-repeat center;
+	background-size: 60% 100%;
+	margin-right:12px;
+	vertical-align: middle;
+}
+.page .login_bor ul li i.code_icon{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/key.png) no-repeat center;
+	background-size: 80% 100%;
+	margin-right:12px;
+	vertical-align: middle;
+}
+.page .login_bor ul.phone_login li i.code_icon{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/message.png);
+	background-size: 100% 100%;
+	margin-right:12px;
+	vertical-align: middle;
+}
+.page .code_login li i.close{
+	position: absolute;
+	right:0;
+	top:40%;
+	width:14px;
+	height:14px;
+	background:url(../images/Clear.png) no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+.page .login_bor ul li input{
+	height:40px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border:none;
+	outline-color: transparent;
+	outline: none;
+	line-height: 40px;
+}
+span.btn{
+	display: inline-block;
+	width:100%;
+	height:44px;
+	line-height: 44px;
+	text-align: center;
+	background:#979797;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	font-size: 14px;
+	color:#fff;
+	margin-top:20px;
+}
+span.on{
+	background:#F6E627;
+	color:#000;
+}
+.pop{
+	width:300px;
+	height:120px;
+	background:#fff;
+	z-index:800;
+	position: absolute;
+	display: none;
+	top:26%;
+	left:50%;
+	margin-left:-150px;
+}
+.pop .img_code{
+	position: relative;
+	margin-top:15px;
+	border-bottom:1px solid #eee;
+	overflow: hidden;
+}
+.pop .img_code input{
+	display: block;
+	margin:0 auto;
+	width:250px;
+	height:44px;
+	line-height: 44px;
+	border:1px solid #eee;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding-left:10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom:20px;
+	outline: none;
+}
+.pop .img_code img{
+	position: absolute;
+	right:26px;
+	top:4px;
+	z-index:50;
+	height:35px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pop .btns{
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+.pop .btns span:nth-child(1){
+	border-right:1px solid #eee;
+	color:#979797;
+	font-size:14px;
+}
+.pop .btns span:nth-child(2){
+	color:#ED6700;
+	font-size:14px;
+}
+.pop .btns span{
+	flex: 1;
+	-webkit-flex: 1;
+	-webkit-box-flex: 1;
+	text-align: center;
+}

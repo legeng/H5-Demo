@@ -1,0 +1,220 @@
+@charset "utf-8";
+/*reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*我添加*/
+	-webkit-overflow-scrolling: touch;
+	/*box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+	
+}
+a{
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,textarea{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+body {
+    font-family: "microsoft yahei",Verdana,Arial,Helvetica,sans-serif;
+    background: #F5F5F5;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*max-width: 750px;
+    min-width: 320px;*/
+   font-size: 100px;
+    position: relative;
+   /* overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+/**/
+.header{
+	width: 100%;
+	
+}
+.header img{
+	display: block;
+	width: 100%;
+}
+.goods_content{
+	background: #FFFFFF;
+	padding-bottom: 0.1rem;
+}
+.goods_content .goodsname{
+	font-size:0.14rem;
+	color: #000000;
+	line-height: 0.2rem;
+	padding-left: 0.1rem;
+	padding-top: 0.1rem;
+}
+.goods_content .goodstitle{
+	margin-top: 0.02rem;
+	padding-left: 0.1rem;
+	font-size:0.12rem;
+	color: #979797;
+	line-height: 0.17rem;
+}
+.goods_content .goodstime{
+	color: #000000;
+	font-size: 0.12rem;
+	line-height: 0.17rem;
+	padding-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+#goods_msg{
+	background: #FFFFFF;
+	margin-top: 0.06rem;
+}
+#goods_msg .goodsdetail_title{
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	padding: 0.12rem 0 0.12rem 0.1rem;
+}
+#goods_msg .thiscontent{
+	padding: 0.1rem 0.1rem 0.55rem 0.1rem;
+	border-top: 1px solid #F5F5F5;
+}
+#goods_msg .thiscontent li{
+	margin-top: 0.1rem;
+	font-size: 0.14rem;
+	line-height: 0.24rem;
+	color: #000000;
+}
+#goods_msg .thiscontent h4{
+
+}
+#goods_msg .thiscontent p{
+	
+}
+#footercon{
+	width: 100%;
+	height: 0.45rem;
+	background-color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	left: 0;	
+	line-height: 0.45rem;
+}
+#footercon .nowprice{
+	color: #ED6700;
+	font-size: 0.14rem;
+	float: left;
+	/*display: inline-block;*/
+	/*padding-left: 0.2rem;	*/
+	margin-left: 0.2rem;
+}
+#footercon .oldprice{
+	font-size:0.1rem ;
+	color: #979797;
+	/*display: inline-block;*/
+	float: left;
+	text-decoration: line-through;
+	margin-left: 2px;
+}  
+#footercon #exchange{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 1.5rem;
+	height: 0.45rem;
+	text-align: center;	
+	font-size: 0.14rem;
+	float: right;
+	background-color: #979797;
+	color: #FFFFFF;
+}
+#footercon #exchange.active{
+	background-color: #F6E627;
+	color: #000000;
+}
+
+/*成功提示弹窗  是否要进行兑换*/
+#success_message{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+#success_message .success_con{
+	position: absolute;
+	left: 50%;
+	margin-left: -1.5rem;
+	top: 25%;
+	width: 3rem;
+	/*height: 1.2rem;*/
+	background: #FFFFFF;
+	font-size: 0;
+}
+#success_message .success_con p{
+	font-size: 0.14rem;
+	text-align: center;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	padding: 0.25rem 0 0.3rem 0;
+	border-bottom: 1px solid #F5F5F5;
+}
+#success_message .success_con span{
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+	font-size: 0.14rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	/*padding-top:0.12rem ;*/
+	text-align: center;
+}
+#success_message .success_con span.makesure{
+	border-left: 1px solid #F5F5F5;
+	color: #ED6700;
+}

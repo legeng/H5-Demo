@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>在线商城</title>
+		<link rel="stylesheet" type="text/css" href="css/dropload.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mall.css"/>
+		<!--移动端适配js文件-->
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.offsetWidth;
+						if (!clientWidth) return;
+						docEl.style.fontSize = 200 * (clientWidth / 750) + 'px';
+					};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);			
+		</script>
+		<!---->
+	</head>
+	<body>
+		<!--未登录状态时候  提示如何赚回收币-->
+		<div class="get_coin"><img src="images/howt0get.png"/></div>
+		<!---->
+		<div class="mall_header">
+			<div class="no-login">
+				<a href="../login/index.html">登录/注册</a>
+			</div>
+			<div class="logined">
+				<img src="images/header_logo.png"/>
+				<span class="user_name"></span>
+				<div	 class="user_message">
+					<p>100回收币</p>
+					<a href="../exchangelist/">兑换记录</a>
+				</span>
+			</div>
+			<!---->
+		</div>
+		<div class="mall-banner" goodsId=''>
+			<img class="bannerlazy" data-original=""/>
+			<ul class="banner_details">
+				<li>
+					<span class="banner_title"></span>
+					<span class="banner_right">
+						<em class="banner_pointsPrice"></em>
+						<i class="banner_marketPrice"></i>
+					</span>
+				</li>
+				<li class="banner_description"></li>
+			</ul>
+		</div>
+		<!--商品列表-->
+		<div id="goods">
+			<p class="goods-title">更多商品</p>
+			<ul class="goods-list">
+				<!--商品1-->
+				<!--<li class="list-item">
+					<img class="goodslazy" data-original="images/success.png" src="images/init.png"/>
+					<p class="list-item-msg">
+						<span class="ware-name">商品商品名称商品商品商品名称商1231231231232</span>
+						<span class="ware-msg">描述信息描描述信息描描述信息描描述信息描描述信息描qweqweqweqwe</span>
+						<span class="ware-price">
+							<i>200回收币</i>
+							<i>原价￥309</i>
+						</span>
+					</p>
+				</li>-->
+			</ul>
+		</div>
+		<div class="content">
+    			<div class="lists"></div>
+		</div>	
+		<!---->
+		<script src="js/lib/require.min.js" data-main='js/main'></script>
+	</body>
+</html>

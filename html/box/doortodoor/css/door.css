@@ -1,0 +1,233 @@
+@charset "utf-8";
+/*reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*我添加*/
+	-webkit-overflow-scrolling: touch;
+	/*box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+	
+}
+a{
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,textarea{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+body {
+    font-family: "microsoft yahei",Verdana,Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 320px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+/**/
+#header{
+	width: 100%;
+	height: auto;
+}
+#header img{
+	display: block;
+}
+.message{
+	width: 100%;
+}
+.message .title{
+	height: 32px;
+	line-height: 32px;
+	background-color: #F5F5F5;
+	font-size: 12px;
+	color: #9B9B9B;
+	padding-left: 10px;
+	letter-spacing: 0px;
+	
+}
+.message .list-content{
+	width: 100% ;
+}
+.message .list-content li{
+	position: relative;
+	padding-left: 11px;
+	border-bottom: 1px solid #EEEEEE;
+}
+/**/
+input::-webkit-input-placeholder { color:#979797; font-size: 12px;}
+textarea::-webkit-input-placeholder { color:#979797; font-size: 12px;}
+input{
+	display: block;
+	background: none;
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	color: #000000;
+	font-size: 14px;
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.message .list-content .name input{
+	
+}
+.message .list-content .name p{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 0;
+}
+.message .list-content .name p i{
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	border-radius: 2px;
+	background-color: #979797;
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.message .list-content .name p i.active{
+	background-color:#F6E627 ;
+	color: #000000;
+}
+.message .list-content .address{
+	height: 43px;
+	line-height: 43px;
+	font-size: 0;
+
+}
+.message .list-content .address span:nth-child(1){
+	font-size: 14px;
+	color: #979797;
+	float: left;
+}
+.message .list-content .address span:nth-child(2){
+	font-size: 12px;
+	color: #979797;
+	float: right;
+	margin-right: 9px;
+}
+
+.message .list-content .time{
+	height: 43px;
+	line-height: 43px;
+	font-size: 0;
+}
+.message .list-content .time span{
+	font-size: 12px;
+	color: #979797;
+}
+.message .list-content .detail_address{
+	padding-bottom: 10px;
+}
+.message .list-content .detail_address textarea{
+	display: block;
+	border: none;
+	appearance: none;
+	-webkit-appearance:none;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	resize: none;
+	margin-top: 15px;
+	line-height: 17px;
+	font-size: 14px;
+	color: #000000;
+}
+/**/
+.bottom_btn{
+	width: 300px;
+	height: 44px;
+	background-color: #979797;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	margin: 20px auto 0 ;
+	border-radius: 2px;
+}
+.bottom_btn.active{
+	background-color: #F6E627;
+	color: #000000;
+}
+.message .list-content .name p i:nth-child(1){
+	margin-right: 10px;
+}
+.goto{
+	width: 100%;
+	height: 17px;
+	text-align: center;
+	font-size: 0px;
+	margin-top: 10px;
+}
+.goto span{
+	height: 17px;
+	line-height: 17px;
+	display: inline-block;
+	font-size: 12px;
+	color: #979797;
+}
+.goto a{
+	height: 17px;
+	line-height: 17px;
+	display: inline-block;
+	font-size: 12px;
+	color: #F37C00;
+}
+
+
+
+
+
+
+
+

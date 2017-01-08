@@ -1,0 +1,224 @@
+@charset "utf-8";
+/*reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*我添加*/
+	-webkit-overflow-scrolling: touch;
+	/*box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+	
+}
+a{
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,textarea{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+body {
+    font-family: "microsoft yahei",Verdana,Arial,Helvetica,sans-serif;
+    background: #F5F5F5;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 320px;
+    position: relative;
+   /* overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+   font-size: 100px;
+}
+/**/
+.header{
+	width: 100%;
+	
+}
+.header img{
+	display: block;
+	width: 100%;
+}
+.goods_content{
+	background: #FFFFFF;
+	padding-bottom: 0.1rem;
+}
+.goods_content .goodsname{
+	font-size:0.14rem;
+	color: #000000;
+	line-height: 0.2rem;
+	padding-left: 0.1rem;
+	padding-top: 0.1rem;
+}
+.goods_content .goodstitle{
+	margin-top: 0.02rem;
+	padding-left: 0.1rem;
+	font-size:0.12rem;
+	color: #979797;
+	line-height: 0.17rem;
+}
+.goods_content .goodstime{
+	color: #000000;
+	font-size: 0.12rem;
+	line-height: 0.17rem;
+	padding-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+#goods_msg{
+	background: #FFFFFF;
+	margin-top: 0.06rem;
+}
+#goods_msg .goodsdetail_title{
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	padding: 0.12rem 0 0.12rem 0.1rem;
+}
+#goods_msg .thiscontent{
+	padding: 0rem 0.1rem 0.55rem 0.1rem;
+	border-top: 1px solid #F5F5F5;
+}
+#goods_msg .thiscontent li{
+	margin-top: 0.1rem;
+	font-size: 0.14rem;
+	line-height: 0.24rem;
+	color: #000000;
+}
+#goods_msg .thiscontent h4{
+
+}
+#goods_msg .thiscontent p{
+	
+}
+#mycodemsg{
+	background: #FFFFFF;
+	margin-top: 5px;
+}
+#mycodemsg p{
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	padding: 0.12rem 0 0.12rem 0.11rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+#mycodemsg #true_code{
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	padding-top: 0.12rem;
+	padding-bottom: 0.12rem;
+	text-align: center;
+}
+/*兑换成功弹窗*/
+.exchange_success {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+}
+.exchange_success .content_{
+	position: absolute;
+	width:2rem ;
+	height: 2.4rem;
+	left: 50%;
+	margin-left: -1rem;
+	top: 25%;
+	background:url(../images/exchangesuccess.png) no-repeat;
+	background-size: 100% 100%;
+}
+.exchange_success .content_ p{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 0.14rem;
+	height:44px ;
+	line-height: 44px;
+	background-color: #F6E627;
+	color:#000000 ;
+	/*padding: 0.12rem 0;*/
+	text-align: center;
+}
+.exchange_success .content_ span{
+	display: block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../images/close.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	/*right: -0.25rem;*/
+	right: 5px;
+	top: 5px;
+	/*	top: 0;*/
+}
+/*分享页面*/
+.go_share{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 999;
+}
+.go_share .share_icon{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 0;
+}
+.go_share .share_icon span{
+	font-size: 18px;
+	color: #F6E627;
+	display: inline-block;
+	margin-right: 5px;
+}
+.go_share .share_icon i{
+	display: inline-block;
+}
+.go_share .share_icon i img{
+	display: block;
+	width: 42px;
+}

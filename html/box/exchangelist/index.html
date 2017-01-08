@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>我的兑换记录</title>
+		<link rel="stylesheet" type="text/css" href="css/exchangelist.css"/>
+	</head>
+	<body>
+		<!--首先接口判断是否兑换过-->
+		<!--1有兑换记录-->
+		<div class="exchange_empty">
+			<div class="norecode"><img src="images/empty.png"/></div>
+			<a href="../mall/index.html" class="go_exchange">立即兑换</a>
+		</div>
+		<ul class="exchange_list">
+			<!--<li class="exchange_item">
+				<div><img src="images/avatar.png"/></div>
+				<div class="detail_msg">
+					<p>商品商品商商品商品商商品商品商</p>
+					<span>有效期：剩余22天 (截止至2017-1-1)</span>
+					<i>200回收币</i>
+				</div>
+			</li>-->
+		</ul>
+		<script src="js/lib/require.min.js" data-main='js/main'></script>
+	</body>
+</html>

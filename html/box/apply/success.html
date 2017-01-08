@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收 iBox</title>
+		<link rel="stylesheet" href="../common/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			html,body{
+				height:100%;
+				width:100%;
+				background:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="success_page">
+			<img src="images/success.png">
+			<h1>恭喜您，已成功申请iBox!</h1>
+			<p>我们正在火速为您送达中</p>
+			<span>分享给好友</span>
+		</div>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+		<script src="../common/jquery-1.9.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script>
+			commonObj.wxInit();
+			$('.success_page span').click(function(){
+				commonObj.master();
+				$('.master').append($('<div style=position:absolute;right:8px;top:8px;><span style=color:#F6E627;font-size:18px;margin-right:5px;>点击分享</span><img src="images/icon.png" style=height:60px;width:42px;/></div>'));
+			});
+			var title = "旧手机卖出好价钱，就找爱回收";
+			 var desc = "爱回收完成D轮融资，超高额现金券，限量疯抢!";
+			 var pyq = "http://www.angellg.com/apply/index.html";
+			 var py = "http://www.angellg.com/apply/index.html";
+			 var elseUrl = "http://www.angellg.com/apply/index.html";
+			 var imgUrl = "http://www.angellg.com/apply/images/box.png";
+			commonObj.wxShare(title,elseUrl,imgUrl,desc,pyq,py);
+		</script>
+	</body>
+</html>

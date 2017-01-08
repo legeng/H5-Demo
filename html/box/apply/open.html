@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收 iBox</title>
+		<link rel="stylesheet" href="../common/common.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="open_page" style="display: none">
+			<img src="images/top.png">
+			<p>申请开通我的地区</p>
+			<div class="open_info">
+				<ul>
+					<li>
+						<input type="text" placeholder="姓名" maxlength="12" class="name"/>
+						<div class="group_btn">
+							<span data-sex="0">先生</span><span data-sex="1">女士</span>
+						</div>
+					</li>
+					<li>
+						<input type="number" class="phone" placeholder="手机号" oninput="if(value.length>11)value=value.slice(0,11)"/>
+					</li>
+					<li>
+						<textarea cols="30" rows="2" placeholder="详细地址" class="address"></textarea>
+					</li>
+				</ul>
+			</div>
+			<span class="submit">提交</span>
+		</div>
+		
+		<script src="../common/jquery-1.9.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/open.js?v=20161212"></script>
+	</body>
+</html>

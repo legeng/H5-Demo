@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>用户登录</title>
+		<link rel="stylesheet" href="../common/common.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="page">
+			<header class="header">
+				<h1>
+					<img src="images/pic.png" class="banner01">
+					<img src="images/pic1.png" style="display: none;" class="banner02"/>
+				</h1>
+				<i class=""></i>
+				<ul>
+					<li class="on">手机号快捷登录</li>
+					<li>账号密码登录</li>
+				</ul>
+			</header>
+			<div class="login_bor">
+					<ul class="phone_login">
+						<li>
+							<i class="phone_icon"></i>
+							<input type="number" placeholder="请输入手机号" class="phone" oninput="if(value.length>11)value=value.slice(0,11)"/>
+							<span class="getCode">获取验证码</span>
+						</li>
+						<li>
+							<i class="code_icon"></i>
+							<input type="number" placeholder="请输入短信验证码" class="code" oninput="if(value.length>6)value=value.slice(0,6)"/>
+						</li>
+						<span class="btn">登录</span>
+					</ul>
+					<ul class="code_login">
+						<li>
+							<i class="phone_icon"></i>
+							<i class="close"></i>
+							<input type="number" placeholder="请输入手机号" class="phone" oninput="if(value.length>11)value=value.slice(0,11)"/>
+						</li>
+						<li>
+							<i class="code_icon"></i>
+							<input type="password" placeholder="请输入密码" class="code" maxlength="6"/>
+						</li>
+						<span class="btn">登录</span>
+					</ul>
+					<!--<span class="btn">登录</span>-->
+					<p>*未注册过的手机号将自动创建爱回收账号</p>
+				</div>
+		</section>
+		<div class="pop">
+			<div class="img_code">
+				<input type="number" placeholder="请输入图片验证码" class="verfiy" autofocus oninput="if(value.length>4)value=value.slice(0,4)"/>
+				<img src="#" class="imgCode"/>
+			</div>
+			<div class="btns">
+				<span class="resize">取消</span>
+				<span class="confirm">确定</span>
+			</div>
+		</div>
+		<script src="../common/jquery-1.9.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

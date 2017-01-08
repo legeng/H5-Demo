@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收 iBox</title>
+		<link rel="stylesheet" href="../common/common.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="detail">
+			<div class="main">
+				<div class="top">
+					<div class="content">
+						<img src/>
+						<div class="info">
+							<p class="status"></p>
+							<div class="statusIfo"></div>
+						</div>
+					</div>
+				</div>
+				<p class="wenzi">订单详情</p>
+				<div class="detail_info">
+				<li>订单编号：<span class="orderId"></span></li>
+				<li class="item-center">
+					<p class="time">预约时间：<span class="expectDate"></span></p>
+					<div class="info-bor">
+						<img src="images/box.png"/>
+						<div class="xq">
+								<div class="con-bor">
+									<div class="left">联系人:</div>
+									<div class="rt" id="linkPeople">
+										<span class="pInfo"></span>
+										<span style="float:right;margin-right:3px;" class="shouji"></span>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="con-bor add">
+									<div class="left">地&nbsp;&nbsp;&nbsp;址:</div>
+									<div class="rt" id="address"></div>
+								</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</li>
+				<li>下单时间：<span class="creatTime"></span></li>
+			</div>
+			</div>
+		</div>
+		<div class="bot">
+			<!--<a href="#" class="cancel">取消订单</a>
+			<a href="tel:15726672655" class="tel"><i></i>联系客服</a>-->
+		</div> 
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+		<script src="../common/jquery-1.9.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/detail.js"></script>
+		<script>
+			commonObj.wxInit();
+			var title = "旧手机卖出好价钱，就找爱回收";
+			 var desc = "爱回收完成D轮融资，超高额现金券，限量疯抢!";
+			 var pyq = "http://www.angellg.com/apply/index.html";
+			 var py = "http://www.angellg.com/apply/index.html";
+			 var elseUrl = "http://www.angellg.com/apply/index.html";
+			 var imgUrl = "http://www.angellg.com/apply/images/box.png";
+			commonObj.wxShare(title,elseUrl,imgUrl,desc,pyq,py);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>上门回收页面</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/door.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/group.png" style="width: 100%;"/>
+		</div>
+		<div class="message">
+			<p class="title">上门取货</p>
+			<ul class="list-content">
+				<li class="name">
+					<input type="text" placeholder="姓名" maxlength="10"/>
+					<p>
+						<i>先生</i><i>女士</i>
+					</p>
+				</li>
+				<li class="tel">
+					<input type="number" placeholder="手机号" oninput="if(value.length>11)value=value.slice(0,11)"/>
+				</li>
+				<li class="address">
+					<span>北京市 朝阳区 望京</span>
+					<span>*目前仅支持望京地区</span>
+					<!---->
+				</li>
+				<li class="detail_address">
+					<textarea id="myarea" rows=1 cols=48 onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},200);" onblur="clearInterval(this.clock);" placeholder="详细地址"></textarea>
+					<script>
+						document.getElementById('myarea').style.width=document.body.clientWidth-24+'px';
+						var u = navigator.userAgent, app = navigator.appVersion;
+						var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+						//
+					     if (isiOS&&(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+					        document.getElementById('myarea').style.marginLeft='-2px'
+					     }	
+					</script>
+				</li>
+				<li class="time">
+					<input type="text" placeholder="取货时间" readonly="readonly" id='showTimerPicker'/>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom_btn" stateId='0'>立即预约</div>
+		<div class="goto">
+			<span>*没有回收箱？</span>
+			<a href="../apply/index.html">申请 iBox</a>
+		</div>
+		<script src="js/lib/require.min.js" data-main='js/main'></script>
+		<script>
+//			  var HEIGHT = $('body').height();
+//		      $(window).resize(function() {
+//		            $('body,html').css('height','100%');
+//		       });
+		</script>
+	</body>
+</html>
