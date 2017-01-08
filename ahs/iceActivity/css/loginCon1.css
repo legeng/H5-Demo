@@ -1,0 +1,137 @@
+
+input{
+	border: none;
+	outline: none;
+}
+.phone-yzm{
+	display: inline-block;
+	width:3.5rem;
+	height:1.4rem;
+	line-height:1.4rem;
+	background:#FBD544;
+	text-align: center;
+	font-size:12px;
+	margin-top:-0.3rem;
+}
+.phone-yzm-gray{
+	background:#999;
+}
+
+.login_pop{
+	width:11.2rem;
+	height: 10.2rem;
+	display:none;
+	position: fixed;
+	top:50%;
+	margin-top:-5.1rem;
+	left:50%;
+	margin-left:-5.6rem;
+	z-index: 200;
+	background:url(../images/denglu2.png) no-repeat;
+	background-size: 100% 100%;
+	list-style: none;
+}
+.login_pop_img{
+	width:11.2rem;
+	height: 12.46rem;
+	display:none;
+	position: fixed;
+	top:50%;
+	margin-top:-6.23rem;
+	left:50%;
+	margin-left:-5.6rem;
+	z-index: 200;
+	background:url(../images/denglu1.png) no-repeat;
+	background-size: 100% 100%;
+	list-style: none;
+}
+.login_pop .phone{
+	position: absolute;
+	top:30%;
+	left:21%;
+}
+.login_pop_img .phone{
+	position: absolute;
+	top:23%;
+	left:21%;
+}
+.login_pop .phone input,.login_pop_img .phone input{
+	display: block;
+	height:1rem;
+	line-height:1rem;
+	width:6.5rem;
+}
+.login_pop .yzm_li input{
+	display: inline-block;
+	height:1rem;
+	line-height:1rem;
+	width:3.8rem;
+}
+#verifyCode{
+	height:1.4rem;
+	line-height:1.4rem;
+}
+.login_pop .yzm_li{
+	position:absolute;
+	top:50%;
+	left:21%
+}
+.login_pop_img .yzm_li{
+	position:absolute;
+	top:41%;
+	left:21%
+}
+.img_li{
+	position:absolute;
+	top:60%;
+	left:21%;
+}
+.img_li input{
+	display: inline-block;
+	height:1rem;
+	line-height:1rem;
+	width:3.8rem;
+}
+.yzm_li img{
+	display: inline-block;
+	width:3.6rem;
+	height:1.4rem;
+	line-height:1.4rem;
+	vertical-align: -0.5rem;
+	margin-left:3px;
+}
+.login_pop_img .yzm_li input{
+	display: inline-block;
+	height:1rem;
+	line-height:1rem;
+	width:3.6rem;
+}
+.login_pop  .deng_btn,.login_pop_img  .deng_btn{
+	position: absolute;
+	bottom:12%;
+	left:50%;
+	margin-left:-3.3rem;
+}
+.login_pop_img  .deng_btn{
+	bottom:8%;
+}
+.deng_btn input{
+	display: block;
+	width:6.6rem;
+	height:1.5rem;
+	background:#FBD544;
+	border: none;
+	text-align: center;
+}
+.close{
+	display: block;
+	position:absolute;
+	right:0;
+	top:2%;
+	width:1.3rem;
+	height:1rem;
+	background:url(../images/111_01.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+

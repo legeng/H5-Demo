@@ -1,0 +1,454 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling:touch ;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	height: 100%;
+	position: relative;
+}/*返回*/
+.move_back{
+		position: absolute;
+		top: 4px;
+   		left: 4px;
+		z-index: 20;
+		width: 30px;
+   		height: 30px;
+   		background: url(../images/back.png) no-repeat;
+   		background-size: 100% 100%;
+}
+/*内容区*/
+.iceHeader{
+	width: 100%;
+	height: 13.077rem;
+	background: url(../images/m1.png) no-repeat;
+	background-size: 100% 100% ;
+}
+.iceContent{
+	position: relative;
+	width: 100%;
+	height: 14.805rem;
+	background: url(../images/m2.png) no-repeat;
+	background-size: 100% 100% ;	
+}
+.getNow{
+	position: absolute;
+	width:5.248rem ;
+	height: 4.544rem;
+	background: url(../images/getTicket.png) no-repeat;
+	background-size: 100% 100%;
+	left: 8rem;
+	top: 0.1rem;
+}
+.iceFooter{
+	width: 100%;
+	height: 13.611rem;
+	background: url(../images/m3.png) no-repeat;
+	background-size: 100% 100% ;
+	position: relative;
+}
+.upBtn{
+	position: absolute;
+	width: 14.037rem;
+	height: 2.261rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	left: 50%;
+	margin-left: -7.0185rem;
+	top: -0.6rem;
+}
+.upBtn .process{
+	width: 6.293rem;
+	height:2.261rem ;
+	background: url(../images/process.png) no-repeat;
+	background-size: 100% 100%;
+}
+.upBtn .rules{
+	width: 6.293rem;
+	height:2.261rem ;
+	background: url(../images/act.png) no-repeat;
+	background-size: 100% 100%;
+}
+.downBtn{
+	position: absolute;
+	width: 14.037rem;
+	height: 2.261rem;
+	background: url(../images/in.png) no-repeat;
+	background-size:100% 100% ;
+	left: 50%;
+	margin-left: -7.0185rem;
+	top: 3rem;
+}
+.mengceng{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0.7;	
+}
+/*login*/
+.login_pop{
+	display: none;
+	position: fixed;
+	z-index: 1001;
+	width: 12.630rem;
+	height: 11.221rem;
+	background: url(../images/dengluNew.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left:-6.315rem ;
+	top: 50%;
+	margin-top: -5.61rem;
+}
+.fir{
+	position: absolute;
+	left: 2.4rem;
+	top: 3.75rem;
+	display: block;
+	width: 4.3rem;
+	height: 0.8rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.5rem;
+}
+.secd{
+	position: absolute;
+	left: 2.4rem;
+	top: 6.1rem;
+	display: block;
+	width: 4.3rem;
+	height: 0.8rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.5rem;
+}
+.yzm_li .phone-yzm{
+	width: 4.245rem;
+	height: 1.322rem;
+	background: url(../images/getCode.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 7.2rem;
+	top: 3.5rem;
+	color: white;
+	font-size: 0.6rem;
+	line-height:1.322rem;
+	text-align: center;
+}
+.yzm_li .phone-yzm-gray{
+	color: black;
+	background: url(../images/getCode2.png) no-repeat;
+	background-size:100% 100% ;
+}
+.thir{
+	width: 4.245rem;
+	height: 1.322rem;
+	background:url(../images/lingqu.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 7.2rem;
+	top: 5.88rem;
+	border: none;
+	outline: none;
+
+}
+/*imglogin*/
+.login_pop_img .img_li .phone-yzm-gray{
+	color: black;
+	background: url(../images/getCode2.png) no-repeat;
+	background-size:100% 100% ;
+	}
+.login_pop_img{
+	display: none;
+	position: fixed;
+	z-index: 2000;
+	width: 12.630rem;
+	height:12.864rem ;
+	background: url(../images/imgLogin.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left:-6.315rem ;
+	top: 50%;
+	margin-top: -6.432rem;
+	
+}
+.fir1{
+	position: absolute;
+	left: 2.4rem;
+	top: 3.75rem;
+	display: block;
+	width: 4.3rem;
+	height: 0.8rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.5rem;
+}
+.secd1{
+	position: absolute;
+	left: 2.4rem;
+	top: 7.85rem;
+	display: block;
+	width: 4.3rem;
+	height: 0.8rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.5rem;
+}
+.img_li .phone-yzm{
+	width: 4.245rem;
+	height: 1.322rem;
+	background: url(../images/getCode.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 7.2rem;
+	top: 3.5rem;
+	color: white;
+	font-size: 0.6rem;
+	line-height:1.322rem;
+	text-align: center;
+}
+.thir1{
+	width: 4.245rem;
+	height: 1.322rem;
+	background:url(../images/lingqu.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 7.2rem;
+	top: 7.6rem;
+	border: none;
+	outline: none;
+
+}
+.fou{
+	position: absolute;
+	left: 2.4rem;
+	top: 5.8rem;
+	display: block;
+	width: 4.3rem;
+	height: 0.8rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.5rem;
+}
+.ImgPic{
+	display: inline-block;
+	width:3.6rem;
+	height:1.3rem;
+	line-height:1.4rem;
+	vertical-align: -0.5rem;
+	margin-left:3px;
+	position: absolute;
+	left: 7rem;
+	top: 5.65rem;
+}
+/*window-alert*/
+.activityRules{
+	width: 12.630rem;
+	height: 15.168rem;
+	background: url(../images/gg.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 2000;
+	left: 50%;
+	margin-left: -6.315rem;
+	top:50% ;
+	margin-top: -7.584rem;
+	display: none;
+}
+.activityProcessFather{
+	width: 13.482rem;
+	height: 100%;
+	position: fixed;
+	z-index: 2000;
+	left: 50%;
+	margin-left: -6.741rem;
+	top: 0;	
+	overflow: scroll;
+	display: none;
+}
+.activityProcess{
+	width: 13.482rem;
+	height: 30.10rem;
+	background: url(../images/liucheng.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.successTicket{
+	width: 12.63rem;
+	height: 11.22rem;
+	background: url(../images/quan.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 2000;
+	left: 50%;
+	margin-left: -6.315rem;
+	top: 50%;
+	margin-top: -5.61rem;
+	display: none;
+}
+.nowGo{
+	width: 7.68rem;
+	height: 2.07rem;
+	background: url(../images/rightNow.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.84rem;
+	top: 7.5rem;
+}
+/*-----------------门店-------------------*/
+.md{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: .35rem;
+    width: 90%;
+    background: #fff;
+    z-index: 999;
+    height: /*12.75rem;*/15rem;
+    width: 15.25rem;
+    margin-top: -6.375rem;
+    border-radius: 3px;
+}
+.md .city{
+    width:100%;
+    height:2rem;
+    border-bottom:solid 1px #e8e8e8;
+}
+.md .city li{
+    float:left;
+    height:2rem;
+    line-height:2rem;
+    text-align:center;
+    width:19.8%;
+    background:#f3f3f3;
+    font-size:16px;
+    list-style:none;
+}
+.md .city li.active{
+    background:#fff;
+}
+.md .city li:first-child{
+    border-right:solid 1px #e8e8e8;
+}
+ul.col-left li.active {
+    background: #fff;
+}
+.title{
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    background:url(../images/di.png) no-repeat;
+    background-size:100%  2rem;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: solid 1px #e8e8e8;
+    border-bottom: solid 1px #e8e8e8;
+    position: relative;
+}
+.closepopup {
+    position:absolute;
+    top:28%;
+    right:0;
+    display: inline-block;
+    width:1.2rem;
+    height:0.95rem;
+    background:url(../images/guan.png) no-repeat;
+    background-size:1.2rem 0.95rem;
+}
+.col-left {
+    width: 30%;
+    float: left;
+    height: 10.6rem;
+    margin: 0;
+    overflow-y: scroll;
+    border-right: solid 1px #e8e8e8;
+    box-sizing: border-box;
+}
+.col-left li {
+    background: #f3f3f3;
+    border-right: none;
+}
+ul.col-left  li{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border-bottom: solid 1px #e8e8e8;
+    border-right: solid 1px #e8e8e8;
+    color: #000;
+    font-size: 14px;
+}
+ul.col-right li{
+    padding:0.5rem;
+    text-align:left;
+    border-bottom:solid 1px #e8e8e8;
+}
+ul.col-right li span {
+    display: inline-block;
+    line-height: 1.25rem !important;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+li .address {
+    line-height: 1rem !important;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+.col-right {
+    width: 70%;
+    height: 10rem;
+    margin: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+
+}
+/*图形验证码*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

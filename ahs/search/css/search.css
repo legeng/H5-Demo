@@ -1,0 +1,229 @@
+@charset "utf-8";
+html,
+body,
+div,
+img{
+	margin:0;
+	padding:0;
+}
+input{
+	border:none;
+	outline: none;
+}
+img{
+	border:0;
+}
+body{
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+.top,.middle,.bot,.bottom,.bottom01{
+    width:100%;
+    height:1000px;
+    position:relative;
+    overflow: hidden;
+}
+.top{
+	height:984px;
+}
+.top img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+.middle img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+.bot img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+.bottom img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+.bottom01{
+	height:509px;
+}
+.bottom01 img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+.code{
+	position:relative;
+	top:881px;
+	width:570px;
+	left:50%;
+	margin-left:-285px;
+}
+.code .inp{
+	width:370px;
+	height:64px;
+	border-radius:20px;
+	display:inline-block;
+	position:absolute;
+	padding-left:20px;
+	font-size:28px;
+}
+.code .lingqu{
+	width:169px;
+	height:64px;
+	background:url(../images/button-1.png) no-repeat;
+	background-size:100% 100%;
+	display:inline-block;
+	margin-top:10px;
+	position:absolute;
+	top:-9px;
+	left:400px;
+}
+ul.phoneList {
+	position:absolute;
+	top:180px;
+	width:1000px;
+	left:50%;
+	margin-left:-500px;
+	z-index:1000;
+}
+ul li{
+	list-style: none;
+	width:221px;
+	height:405px;
+	float:left;
+	margin-right:26px;
+	text-align: center;
+}
+ul.phoneList li span{
+	display:block;
+	width:221px;
+	height:301px;
+	background-size: 100% 100%;
+}
+ul.phoneList li a.pic-btn{
+	position:absolute;
+	display:block;
+	width:221px;
+	height:301px;
+	background:none;
+}
+ul li .phone01{
+	background:url(../images/1.png) no-repeat;
+}
+ul li .phone02{
+	background:url(../images/2.png) no-repeat;
+}
+ul li .phone03{
+	background:url(../images/3.png) no-repeat;
+}
+ul li .phone04{
+	background:url(../images/4.png) no-repeat;
+}
+ul li .phone05{
+	background:url(../images/5.png) no-repeat;
+}
+ul li .phone06{
+	background:url(../images/6.png) no-repeat;
+}
+ul li .phone07{
+	background:url(../images/7.png) no-repeat;
+}
+ul li .phone08{
+	background:url(../images/8.png) no-repeat;
+}
+ul li a{
+	position:absolute;
+	display:block;
+	background:url(../images/button-2.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:50.5px;
+}
+ul li .btns,ul li a{
+	width:115px;
+	height:58px;
+	margin-top:20px;
+}
+.bot a{
+	position:absolute;
+	left:50%;
+	top:50px;
+	font-size:24px;
+	color:#FCDB00;
+	margin-left:-72px;
+}
+.pop-success{
+	width:356px;
+	height:460px;
+	background:url(../images/tankuang.png) no-repeat;
+	background-size:100% 100%;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-178px;
+	margin-top:-230px;
+	display:none;
+	z-index:600;
+}
+.pop a{
+	width:240px;
+	height:76px;
+	display:block;
+	position:absolute;
+	top:78%;
+	left:50%;
+	margin-left:-120px;
+}
+
+.pop-success .yzm .coupon{
+	margin-right:15px;
+}
+.pop-success .yzm .searchCopy{
+	font-size:16px;
+	position:absolute;
+	text-decoration: none;
+	cursor: pointer;
+}
+.pop{
+	width:356px;
+	height:460px;
+	background:url(../images/tankuang.png) no-repeat;
+	background-size:100% 100%;
+	z-index: 10000;
+    position:fixed;
+   top:50%;
+	left:50%;
+	margin-left:-178px;
+	margin-top:-230px;
+		display:none;
+}
+#fe_text{
+	position:absolute;
+	top:63%;
+	left:25%;
+	width: 170px;
+    font-size: 36px;
+    color:#FCDB00;
+    font-weight: bold;
+}
+#clip_container{
+	position:absolute;
+	top:67%;
+	left:260px;
+	cursor: pointer;
+	color:#FCDB00;
+	font-size:14px;
+}
+.rightNow{
+	display:block;
+	width:328px;
+	height:111px;
+	background:url(../images/button-3.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	z-index:100;
+	top:60%;
+	left:56%;
+}

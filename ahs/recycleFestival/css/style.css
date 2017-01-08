@@ -1,0 +1,43 @@
+        /* 样式重置 */
+        body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;-webkit-overflow-scrolling: touch;box-sizing:border-box ;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}	
+        body,html{height:100%;position: relative;}
+        ul,dl,ol{list-style:none;}
+        img,fieldset,input[type="submit"]{border:0 none;}
+        img{display:inline-block;overflow:hidden;vertical-align:top;}
+        em{font-style:normal;}
+        strong{font-weight:normal;}
+        table{border-collapse:collapse;border-spacing:0;}
+        button,input[type="button"]{cursor:pointer;border:0 none;}
+        textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+        menu{margin:0;padding:0;}
+        body{-webkit-user-select:none;-webkit-text-size-adjust:100%!important;font-family:Helvetica;}
+        input[type="number"]{-webkit-user-select:text;}
+        a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+        input,select,textarea{outline:none;}
+        a,button,input{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+        @media all and (-webkit-transform-3d){a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52);}}
+        a{text-decoration:none;}
+        .hide{display: none !important;}
+        .flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-moz-box-orient:horizontal;-webkit-box-orient:horizontal;-o-box-orient:horizontal;box-orient:horizontal; }
+        .flex-v{-webkit-box-orient: vertical;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+        .flex-1{-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;display:block;}
+        .flex-align-center{-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+        .flex-pack-center{-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+        .flex-pack-justify{-webkit-box-pack: justify;-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}
+        .mask{position: fixed;background-color: rgba(0, 0, 0, 0.8);left: 0;top: 0;width: 100%;height: 100%;z-index: 999;}
+        .lock{background-color:#000000;color:#FFFFFF;z-index:9999;font-size:0.28125rem;}
+        .lock-bg{width:2.09375rem;height:3.375rem;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAADZBAMAAAD4TT6+AAAAA3NCSVQICAjb4U/gAAAAMFBMVEX///////////////////////////////////////////////////////////////9Or7hAAAAAEHRSTlMAESIzRFVmd4iZqrvM3e7/dpUBFQAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAANsSURBVGiB7du9bxMxFADwl36FjyAigWBBKBILA19/AQn/AM2MhJIRsQDqCBKFATEgwdqpZWFCKkxMKMCEWFoYyxC+xNiWQqGlSczZvst92M757AcS0nvbXa4/3dnnu+d3NQDAhS5zjcFKE0RcdCZ49IWyy8tgbIsj9z0RNgsw6WuwTYB93kgfoOWNsCYs+iML0PVHlsHfYOtm5GsVUnFozQE5A5moF0d+Zw3YUxzZUhDj+PjLZ4LSJji9Yx+E/AeIcnfaxn5CCCGEEEIIIYQQQgghxIyMX3q8ylbf3FGmcvbI2OVoxjZ4VHNEpjosjp2mE3I4PXEcXHNAytnJ5+BqYWSiy7LRbxRESvOKwdh2tRhyIvrD93N3555HG68KIRNhg7w+JzYP3gubRbmgUUhLNsLt4Y7jsol+FkCmpNFO7pJKO3PkCKSl6VLZ5ZvWyIS2FWVbN2yRU3yXWskRRcpPlkhpie9Sx4qoUvbS94oR2c33fFEMgPP8hwd2yLTm2kWIu+eHHbKk6QUZvNd6VkiZ75jVIqJIlup5E3I02N7RGgCd4LePNshNtSOHcTr47ZcFUlrLnnIi+KUOkp1sQPi46RsMENXbdj6yVzdYh3El+PVJPsIv+4MR4a2+kY+MiqjEv+2DRHXQFz5IWFof1LyQI+Lo7/EOF0Q+Jdp+CJxMNasjMr6WbFbXJOdsslldkclkszqnW602AlJObRkR03NAFyZkSv98LYbUNa+cokipyz57I5VggBnTVltkPth854mI1KSnJmeFkLrYfumFBM3KQ/24UwSphA/ABR9kPkTUFKcAgvTKQHl5obxGUV7oIrXYAH3YphY4SQ5KuoWS+OGkoCjJsByEhrS8b5mWo0wQcKYqKJMmnOkbykQSZ0qLMrnGmeajFBxwSh9qEeaW7qD8ctBSwnAsBwGMXR8Wpp7V9If8oxKZRRBCCCGEEEIIIYQQQggh3kEIIb2Z2rEbnohciZKzmiUPeSpu7lLHB4mKu8b/17dB3oZIWDB2QxrRaJ12R+LqXmXUYaORuOBZdkfi70Hj7khcli25I+vxc9Ad+YZxJihtgtI7KPcJyh2LM3ZQRjF7KE9kMQfJFvbSYflk644+oDdTPZD3jF3GWXHW8keaOKvwUNYDoqxMlJ8uPEJ+3MdYrem1bpStcOMPBjyIsXDFjwMAAAAASUVORK5CYII=") 0 0 no-repeat;-webkit-background-size:2.09375rem auto;background-size:2.09375rem auto;-webkit-animation:lock 3s infinite 1.5s linear;animation:lock 3s infinite 1.5s linear;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+        @-webkit-keyframes lock{0%{-webkit-transform:rotate(90deg)}
+            20%{-webkit-transform:rotate(0);}
+            80%{-webkit-transform:rotate(0);}
+            100%{-webkit-transform:rotate(90deg)}
+        }
+        @keyframes lock{0%{transform:rotate(90deg)}
+            20%{transform:rotate(0);}
+            80%{transform:rotate(0);}
+            100%{transform:rotate(90deg)}
+        }
+        @media screen and (orientation:portrait){
+            .lock{display:none!important}
+        }
+        .lock-txt{margin-top:20px}

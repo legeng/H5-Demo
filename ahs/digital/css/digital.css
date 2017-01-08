@@ -1,0 +1,302 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	height: 100%;
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*返回*/
+.move_back{
+		position: absolute;
+		top: 4px;
+   		left: 4px;
+		z-index: 20;
+		width: 30px;
+   		height: 30px;
+   		background: url(../images/back.png) no-repeat;
+   		background-size: 100% 100%;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.slide1{
+	width: 100%;
+	height: 100%;
+	background: url(../images/1.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.slide2{
+	width: 100%;
+	height: 100%;
+	background: url(../images/2.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.slide3{
+	width: 100%;
+	height: 100%;
+	background: url(../images/4.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.slide4{
+	width: 100%;
+	height: 100%;
+	background: url(../images/3.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.slide5{
+	width: 100%;
+	height: 100%;
+	background: url(../images/5.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.digitalBtn{
+	width: 12.693rem;
+	height:2.71rem ;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.3465rem;
+	top: 34%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.btnBags{
+	
+}
+.btnBagsUp{
+	width: 6.251rem;
+	height: 2.005rem;
+	background: url(../images/111.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btnBagsDown{
+	width: 5.418rem;
+	height: 0.491rem;
+	margin-left: 0.416rem;
+	margin-top: 0.2rem;	
+	background: url(../images/b1.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.btnFriends{
+	
+}
+.btnFriendsUp{
+	width: 5.461rem;
+	height: 2.005rem;
+	background: url(../images/222.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btnFriendsDown{
+	width: 2.197rem;
+	height: 0.491rem;
+	margin-left:1.632rem ;
+	margin-top: 0.2rem;
+	background: url(../images/b2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.digitalRules{
+	position: absolute;
+	width:4.629rem;
+	height: 0.576rem;
+	background: url(../images/guize.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -2.3145rem;
+	top: 53%;
+}
+.blackDemo{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	background-color: black;
+	opacity: 0.8;
+}
+.guizeWindow{
+	display: none;
+	width: 11.264rem;
+	height: 16.917rem;
+	background: url(../images/guizeC.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 5;
+	left: 50%;
+	top: 50%;
+	margin-left: -5.632rem;
+	margin-top: -8.4585rem;
+}
+.rulesClose{
+	width: 1.045rem;
+	height: 0.816rem;
+	background: url(../images/guanbiRules.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0.4rem;
+	right: 0rem;	
+}
+.getRewards{
+	display: none;
+	width: 12.416rem;
+	height: 10.496rem;
+	background: url(../images/rewards.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 6;
+	left: 50%;
+	margin-left: -6.208rem;
+	top: 50%;
+	margin-top: -5.248rem;
+}
+.rewardKonw{
+	width: 10.24rem;
+	height: 1.92rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.12rem;
+	top: 7.7rem;
+	background-color:#8b540d ;
+	line-height: 1.92rem;
+	text-align: center;
+	color: #fffefe;
+	font-size:0.768rem ;
+	border-radius: 5px;
+}
+.rewardClose{
+	width:0.768rem ;
+	height: 0.768rem;
+	background: url(../images/guanReward.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0.7rem;
+	right: 0.6rem;
+}
+.shareGuide{
+	display: none;
+	width: 100%;
+	height: 10.475rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+}
+.loveIn{
+	width:11.968rem;
+	height: 1.685rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.984rem;
+	background: url(../images/236.png) no-repeat;
+	background-size:100% 100% ;
+	top: 22%;
+}
+.roundEyes{
+	width: 7.914rem;
+	height: 2.752rem;
+	background: url(../images/789.png) no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.957rem;
+	bottom: 15%;
+	-webkit-animation: eyes 2s ease-in infinite ;
+	animation: eyes 2s ease-in infinite ;
+}
+		@-webkit-keyframes eyes{
+			0%{transform: translate(0,0);}
+			0%{-webkit-transform: translate(0,0);}
+			25%{transform: translate(-20px,5.5px);}
+			25%{-webkit-transform: translate(-20px,5.5px);}
+			50%{transform: translate(0,0);}
+			50%{-webkit-transform: translate(0,0);}
+			75%{transform: translate(20px,5.5px);}
+			75%{-webkit-transform: translate(20px,5.5px);}
+			100%{transform: translate(0,0);}
+			100%{-webkit-transform: translate(0,0);}
+		}
+		@-moz-keyframes eyes{
+			0%{transform: translate(0,0);}
+			0%{-webkit-transform: translate(0,0);}
+			25%{transform: translate(-20px,5.5px);}
+			25%{-webkit-transform: translate(-20px,5.5px);}
+			50%{transform: translate(0,0);}
+			50%{-webkit-transform: translate(0,0);}
+			75%{transform: translate(20px,5.5px);}
+			75%{-webkit-transform: translate(20px,5.5px);}
+			100%{transform: translate(0,0);}
+			100%{-webkit-transform: translate(0,0);}
+		}
+		@-ms-keyframes eyes{
+			0%{transform: translate(0,0);}
+			0%{-webkit-transform: translate(0,0);}
+			25%{transform: translate(-20px,5.5px);}
+			25%{-webkit-transform: translate(-20px,5.5px);}
+			50%{transform: translate(0,0);}
+			50%{-webkit-transform: translate(0,0);}
+			75%{transform: translate(20px,5.5px);}
+			75%{-webkit-transform: translate(20px,5.5px);}
+			100%{transform: translate(0,0);}
+			100%{-webkit-transform: translate(0,0);}
+		}
+		@keyframes eyes{
+			0%{transform: translate(0,0);}
+			0%{-webkit-transform: translate(0,0);}
+			25%{transform: translate(-20px,5.5px);}
+			25%{-webkit-transform: translate(-20px,5.5px);}
+			50%{transform: translate(0,0);}
+			50%{-webkit-transform: translate(0,0);}
+			75%{transform: translate(20px,5.5px);}
+			75%{-webkit-transform: translate(20px,5.5px);}
+			100%{transform: translate(0,0);}
+			100%{-webkit-transform: translate(0,0);}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

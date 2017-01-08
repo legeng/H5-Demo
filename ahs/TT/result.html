@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>520环保有一套</title>
+		<link rel="stylesheet" href="css/five.css"/>
+		<script src="../../resources/js/Adaptive.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="p-top">
+				<div class="content">
+					<p>兑换券码：<span class="code"></span></p>
+					<p>兑换密码：<span class="couponPassword"></span></p>
+					<p>截止日期：<span class="dataTime"></span></p>
+				</div>
+			</div>
+			<div class="p-bottom"></div>
+			<div class="bot-color"></div>
+		</div>
+	<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+	<script src="../../resources/js/m-mk-analytics.js" ></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+	<script src="../../resources/js/url.js"></script>
+	<script src="../../resources/js/share.js"></script>
+	<script>
+	    getWX();
+	    share('520回收旧手机送TT','http://m.mk.aihuishou.com/fiveActivity/fiveActivity.html','http://m.mk.aihuishou.com/images/fiveActivity/share520.jpg','不仅是环保不尽是恋爱');
+		
+		function urlParams() {
+	        var args = new Object();
+	        var query = location.search.substring(1);
+	        console.log(location.href);
+	        var pairs = query.split("&");
+	        for (var i = 0; i < pairs.length; i++) {
+	            var params = pairs[i].split('=');
+	            if (params.length < 2)continue;
+	            args[params[0]] = params[1];
+	        }
+	        return args;
+	    }
+	    function init() {
+	        var params=urlParams();
+	        if(params['couponCode'] != undefined){
+	            var couponCode = params['couponCode'];
+	            $(".code").html(couponCode);
+	        }
+	        if(params['couponPassword'] != undefined){
+	            var couponPassword = params['couponPassword'];
+	            $(".couponPassword").html(couponPassword);
+	        }
+	        if(params['expireDate'] != undefined){
+	            var expireDate = params['expireDate'];
+	            $(".dataTime").html(expireDate);
+	        }
+	    }
+	    init();
+	</script>
+	</body>
+</html>

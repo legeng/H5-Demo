@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>七夕，回收你的老公换礼物</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	    <script src="../../resources/js/Adaptive.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+		<div class="goBack" onclick="history.go(-1)"></div>
+		<div class="bg">
+			<div class="btn" onclick="_paq.push(['trackEvent', 'husband', '回收老公', '超级评价系统']);"></div>
+		</div>
+	
+	  
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>		
+		<script src="../../resources/js/url.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>		
+		<script src="../../resources/js/share.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>	
+		<script>
+			$('.btn').on('click',function(){
+				window.location='two.html'
+			})
+			 getWX();
+			 var title = "听说我的老公能换一屋子钻石，赶紧来做验证！";
+			 var desc = "老公不给你买礼物？测测值多少，卖了他去凑呗！";
+			 var pyq = "http://m.mk.aihuishou.com/ahs/husband/index.html?utm_source=weixin_pengyouquan&utm_medium=M&utm_campaign=ACT_806_recyclebin&piwik_kwd=ACT_806_recyclebin&act=bg&act_activityCode=ACT_806_recyclebin";
+	         var py =  "http://m.mk.aihuishou.com/ahs/husband/index.html?utm_source=weixin_person&utm_medium=M&utm_campaign=ACT_806_recyclebin&piwik_kwd=ACT_806_recyclebin&act=bg&act_activityCode=ACT_806_recyclebin";
+	         var elseUrl = "http://m.mk.aihuishou.com/ahs/husband/index.html";
+	         var imgUrl = "http://m.mk.aiweixiu.com/ahs/husband/images/share.png";
+			 share(title,elseUrl,imgUrl,desc,pyq,py);
+		</script>
+		<script>
+			//判断是否为微信
+				function is_weixin() {
+			        var ua = navigator.userAgent.toLowerCase();
+			        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			             $(".goBack").hide()
+			        }else{
+			           $(".goBack").show();
+			        }
+			    }
+			    is_weixin();
+		</script>
+	</body>
+</html>

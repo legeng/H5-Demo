@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="expires" content="0">
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="cache-control" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-store">
+	    <meta http-equiv="Cache-Control" content="max-age=0" />
+	    <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate" />
+	    <meta charset="utf-8" />
+	    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+		<title>石门oppo专卖店</title>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>	
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=ea25bf97d613135827525514f03892d7"></script>
+	</head>
+	<body>
+   <script>
+	 function urlParams() {
+	        var args = new Object();
+	        var query = location.search.substring(1);//获取查询串
+	        var pairs = query.split("&");//在逗号处断开
+	        for (var i = 0; i < pairs.length; i++) {
+	            var params = pairs[i].split('=');
+	            if (params.length < 2)continue;
+	            args[params[0]] = params[1];
+	        }
+	        return args;
+	};
+	//四个参数
+	//我的地址
+	var mylat=urlParams().mylat;
+	//我的地址
+	var mylng=urlParams().mylng;
+	//目的地data-latitude
+	var latitude=urlParams().latitude;
+	//目的地data-longitude
+	var longitude=urlParams().longitude;
+	//
+	var oldPosition=mylng+','+mylat;
+	var newPosition=longitude+','+latitude;
+	 var provinces = [{
+		"name": "我的位置",
+		"center": oldPosition,
+		"type": 0
+	},
+	{
+		"name": "门店地址",
+		"center": newPosition,
+		"type": 1
+	}];  
+   </script>
+	<!--详细信息-->
+		<div id="header">
+			<p class="door_name">石门oppo专卖店</p>
+			<div class="class_content">
+				<span></span>
+				<span>湖南常德武陵区石门县步行街</span>
+			</div>
+			<a href="tel:18210290635" class="this_tel">
+				<i></i>
+				<span>021-56564512</span>
+			</a>
+		</div>
+	<!--地图板块-->
+		<div id="container" style="width: 100%;height: 400px;" tabindex="0"></div>	
+		<script>
+			var all_height=document.documentElement.clientHeight;
+     	    var headerdemo=document.getElementById('header').offsetHeight;
+     	    var contain_box=document.getElementById('container');
+     	    contain_box.style.height=all_height-headerdemo+'px';   			
+		</script>
+	</body>
+</html>
+   <script type="text/javascript">
+   		var map = new AMap.Map("container", {
+       	 	resizeEnable: true,
+			zoom: 14
+   		});
+        var markers = []; 
+        for (var i = 0; i < provinces.length; i += 1) {
+    			var marker;
+    			if (provinces[i].type === 0) {
+    				var content= "<div class = 'taiwan'>我的位置</div>";
+    				marker = new AMap.Marker({
+  					content:content,
+    					position: provinces[i].center.split(','),
+//  					offset: new AMap.Pixel(-12,-12),
+    					zIndex: 10100000,
+    					title: provinces[i].name,
+    					map: map
+    				});
+    			}else{
+              var content= "<div class = 'taiwan'>门店</div>";
+              baodao = new AMap.Marker({
+                content: content,
+                position: provinces[i].center.split(','),
+                title: provinces[i].name,
+//              offset: new AMap.Pixel(0,0),
+                map: map
+              });
+          }
+    			markers.push(marker);
+    		}
+    </script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>

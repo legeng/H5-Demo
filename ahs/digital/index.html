@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>爱回收-数码服务站 | 爱回收 爱生活  </title>
+    <meta name="keywords" content="爱回收"/>
+    <meta name="description" content="爱回收"/> 
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/common.css?v=JFiT6cuOJdYbYkv463Alp_1zqnBKDt_KC7paUnYmhrk" rel="Stylesheet" type="text/css" />
+
+    <link href="images/common/favicon.ico" mce_href="/favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="images/common/favicon.ico" mce_href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="images/common/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link id="css" href="css/project100.css?v=ke3VXxfnKIoBElEJoM_SUy7zvjIwaD38j_qPZPATrl4" rel="stylesheet" />
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=wqBXfIN3HkpM1AHKWujjCdsi"></script>
+
+    <script type="text/javascript">
+    /* Google */
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24492769-1']);
+    _gaq.push(['_trackPageview']);
+    /* DSP */
+    var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', 'm-172285-0']);
+
+    /* criteo */
+    window.criteo_q  = window.criteo_q || [];
+   
+    //var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6206c0fb3ed4e6feb904c97664c91527' type='text/javascript'%3E%3C/script%3E"));
+    var _ahs = [];
+    var baseDomain = "";
+    var loading = "<div class='loading'><div class='loading_icon'></div>信息加载中，让眼睛放松一下吧！</div>";
+    var version = 1.44;
+    var aihuishouConfig = {
+        popwindowUrl: "./PopWindow",
+        apiUrl: "/Api",
+        pageClick : {}
+    };
+
+    var _paq = _paq || [];
+    /* Aihuishou Statistics */
+    _ahs.push(function(){
+        _paq.push(["setDomains", ["*.www.aihuishou.com","*.aihuishou.com"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//tk.aihuishou.com/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 1]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    });
+
+    _ahs.push(function () {
+        $(document).ready(function () {
+            /* placeholder BEGIN */
+            jQuery.placeholder = function (input) {
+                var $input = $(input);
+                var placeholder = $input.attr('placeholder');
+                if (!placeholder) return true;
+                if ($input.val) {
+                    if ($input.val() == '' || $input.val() === placeholder) $input.val(placeholder).addClass('placeholder');
+                    $input.focus(function () {
+                        if ($input.val() == placeholder) $input.val('').removeClass('placeholder');
+                    }).blur(function () {
+                        if ($input.val() == '') $input.val(placeholder).addClass('placeholder');
+                    });
+                }
+                else if ($input.text) {
+                    var placeholder = $input.attr('placeholder');
+                    if (!placeholder) return true;
+                    if (!$input.text()) $input.text(placeholder).addClass('placeholder');
+                    $input.focus(function () {
+                        if ($input.text() == placeholder) $input.text('').removeClass('placeholder');
+                    });
+                    $input.blur(function () {
+                        if ($input.text() == '') $input.text(placeholder).addClass('placeholder');
+                    });
+                }
+            };
+            jQuery.fn.placeholder = function () {
+                this.each(function () {
+                    var input = this;
+                    jQuery.placeholder(input);
+                });
+                return this;
+            };
+
+            jQuery.fn.valueExcludePlaceHolder = function(){
+                var result = "";
+                this.each(function(){
+                    var $input = $(this);
+                    var placeholder = $input.attr("placeholder");
+                    if ($input.val)
+                    {                      
+                        var value = $input.val();
+                        if (placeholder != value)
+                        {
+                            result = value;
+                        }                      
+                    }
+                    else if ($input.text)
+                    {
+                        var value = $input.text();
+                        if (placeholder != value)
+                        {
+                            result = value;
+                        }                
+                    }                   
+                });
+                return result;
+            };
+
+            $('input').placeholder();
+            $('textarea').placeholder();
+            /* placeholder END */
+
+        });
+    });
+</script>
+    <script type="text/javascript">
+    function MCR(Controller, Model, Render) {
+        this.controller = new Controller();
+        this.model = new Model();
+        this.render = new Render();
+
+        this.controller.model = this.model;
+        this.controller.render = this.render;
+        this.model.controller = this.controller;
+        this.render.controller = this.controller;
+
+
+        if (typeof (this.model.init) == "function") {
+            this.model.init();
+        }
+
+        if (typeof (this.render.init) == "function") {
+            this.render.init();
+        }
+
+        if (typeof (this.controller.init) == "function") {
+            this.controller.init();
+        }
+    }
+
+    function ahsRender() {
+        this.viewCache = {};
+        _ahs.push(["/lib/easytemplate/easytemplate.js?v=" + version]);
+
+        //同步获取view模板
+        this.getViewTemplate = function (path) {
+            if (path.id) {
+                if (this.viewCache[path.id]) {
+                    return this.viewCache[path.id];
+                }
+                else {
+                    var template = $("#pageTemplate").find("#" + path.id).val();
+                    this.viewCache[path.id] = template;
+                    return template;
+                }
+            }
+        };
+
+        //同步渲染view
+        this.view = function (viewPath, model) {
+            return easyTemplate(this.getViewTemplate(viewPath), model).toString();
+        };
+
+    }
+</script>
+</head>
+<body class="   ">
+     
+ 
+<div id="header" class="  ">
+    <div class="navbar">
+        <div class="navbar-content">
+            <!--<div id="region-selection" data-currentid="1">
+                北京
+            </div>-->
+            <ul class="nav-right">
+                <!--<li class="ordercenter  ">
+                    <i></i>
+                        <a href="javascript:;" title="订单中心" id="head_pc" class="no_hover">
+                            我的订单<span class="triangle_right"></span>
+                        </a>
+
+                    <div class="logon-hover">
+                        <a href="/account">个人中心</a>
+                        <a onclick="if (confirm('确定要退出吗？') == false){ return false;}" href="http://www.aihuishou.com/Account/Logout.html" title="退出登录" id="logout_btn" class="no_hover">
+                            退出登录
+                        </a>
+                    </div>
+
+                </li>
+                <li class="recyclecart">
+                    <div id="recycle-cart">
+                        <i class="icon-cart"></i>回收车<span class="highlight">0</span>件<i class="icon-dropdown"></i>
+                        <div class="spacer"></div>
+                        <div id="recycle-cart-pop">
+
+                            <div class="nogoods">回收车中还没有商品，赶紧回收吧！</div>
+                            <div class="hasgoods"></div>
+                        </div>
+                    </div>
+                </li>-->
+
+                <li class=""><a href="http://www.aihuishou.com/activity?name=zhaopin" target="_blank" title="爱回收2016校园招聘" class="no_hover">2016校园招聘</a></li>
+                <li class="highlight"><a href="http://www.aihuishou.com/home/Intro.html" title="爱回收网,关于我们,专业手机回收,服务贴心,价格公道" class="no_hover" target="_blank">关于我们</a></li>
+                <li class="highlight"><a href="http://www.aihuishou.com/home/safe.html" target="_blank" title="安全保-知名保险公司和爱回收网联合推出的安全保障服务" class="no_hover">安全保</a></li>
+                <li onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '头部菜单-数码服务站']);"><a href="http://mk.aihuishou.com/ahs/digital/index.html" class="no_hover main_project" title="爱回收网数码服务站-换数据线,电池换新">数码服务站</a></li>
+                <li><a href="http://www.kdyoupin.com//b2b" title="企业电商商家，二手机，库存机回收" class="no_hover main_project" target="_blank">企业回收</a></li>
+                
+                <li><a href="http://mk.aihuishou.com/ahs/xuanchuan/ahs.html" title="爱回收绿色办公室，绿色数据中心" class="no_hover main_project" target="_blank">绿色办公室</a></li>
+                <li><a href="http://www.aihuishou.com/help/CommonQuestion.html" target="_blank" title="帮助中心 | 常见问题" class="no_hover">帮助中心</a></li>
+                <li class="sitemap">
+                    网站导航
+                    <i class="icon-dropdown"></i>
+                    <div class="spacer"></div>
+                    <ul id="header_sitemap_pop">
+                        <li>
+                            <dl>
+                                <dt>主要频道</dt>
+                                <dd><a href="http://www.aihuishou.com/" class="no_hover" title="爱回收旧机回收,专业手机回收,笔记本回收,中国专业可靠的二手手机回收平台" target="_blank">旧机回收</a></dd>
+                                <dd><a href="http://www.aiweixiu.com" class="no_hover" title="方便快捷专业，爱维修带给您全新的维修体验" target="_blank">手机快修</a></dd>
+                                <dd><a href="http://www.kdyoupin.com" class="no_hover" title="口袋优品,二手手机,专业质检,品质认证,买二手手机的不二选择" target="_blank">口袋优品</a></dd>
+
+                            </dl>
+                        </li>
+                        <li class="other-channel">
+                            <dl>
+                                <dt>其他频道</dt>
+                                <dd><a href="http://www.aihuishou.com/share" class="no_hover" title="爱回收网怎么样,专业可信,爱回收网真实用户评价,晒单返现,微博晒单" target="_blank">用户评价</a></dd>
+                                <dd><a href="http://www.aihuishou.com/home/xiaoge.html" class="no_hover" title="爱回收网专业质检团队,优质快捷有范儿" target="_blank">走近小哥</a></dd>
+                                <dd><a href="http://www.aihuishou.com/home/Intro.html" title="爱回收网,关于我们,专业手机回收,服务贴心,价格公道" class="no_hover" target="_blank">关于我们</a></dd>
+                                <dd><a href="http://www.aihuishou.com/brand" title="二手数码产品回收品牌-二手电子产品回收品牌-爱回收官网" class="no_hover" target="_blank">回收品牌</a></dd>
+                             </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>相关服务</dt>
+                                <dd><a class="no_hover" title="爱回收：服务条款" href="http://www.aihuishou.com/help/AhsServices.html" target="_blank" rel="nofollow">服务条款</a></dd>
+                                <dd class="kefu_pop"><a href="#kefupop" class="no_hover">在线客服</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="top-area">
+        <div class="search">
+                <a href="http://www.aihuishou.com/" title="爱回收网,手机回收,笔记本回收,减法新生活,中国专业可靠的二手数码回收平台">                   
+                    <span class="icon-logo"></span>
+                </a>
+                <a href="http://www.aihuishou.com/activity?name=databackup" class="backup" title="爱回收网,一分钟快速备份手机数据" target="_blank" style="margin-left: 40px;">
+                    <img src="images/common/home_entrance.png">
+                </a>
+                <div class="searchbox">
+                    <input id="txt-keyword" type="text" placeholder="请输入手机型号" autocomplete="off" class="ac_input" />
+                    <a id="btnSearchKeyWords" href="http://www.aihuishou.com/shouji" title="二手手机回收｜旧手机回收｜二手手机交易－爱回收">
+                    </a>
+                </div>
+        </div>
+      
+       <div class="nav-projects">
+                <div class="tab-menu">
+                    <ul>
+                        <li>
+                            <a href="http://www.aihuishou.com"  target="_blank" class="activemenu" title="手机回收,二手手机回收,专业靠谱的数码产品回收平台"> 旧机回收 <i></i></a>
+                        </li>
+                       
+                        <li>
+                            <a href="http://www.kdyoupin.com" title="口袋优品,二手良品官网,超划算的二手手机购买网" target="_blank">                        
+                                <div class="popup-triangle">                               
+                                        <span class="arrow"></span>
+                                        <span class="tip">iPhone7带回家</span>                               
+                                </div>
+                                口袋优品<i></i>                        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.aiweixiu.com" title="爱维修,手机快修服务,爱维修官网" target="_blank">手机快修<i></i></a>
+                        </li>
+                        <!--<li class="digital_li">
+                            <a href="http://www.aiweixiu.com" title="爱维修,手机快修服务,爱维修官网" target="_blank">数码回收站<i></i></a>
+                        </li>-->
+                    </ul>
+                    <div class="icon-app ahs-track-hover" data-track-category="PC-Common-Header" data-track-action="ahs-qrcode-hover" data-track-name="ahs-qrcode-header-hover,url:/activity">
+                        <i></i>爱回收APP
+                        <div class="app-content">
+                            <div class="qr-wrap">
+                                <img src="images/common/qrcode-app.png" alt="爱回收app下载" /><figcaption>爱回收APP<br />回收更便捷</figcaption>
+                            </div>
+                            <div class="qr-wrap">
+                                <img src="images/common/qrcode-wechat.png" alt="爱回收微信公众号" /><figcaption>微信扫一扫<br />邀请赚现金</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       </div>
+    </div>
+</div>
+
+    <div id="body">
+        
+
+<div id="digital">
+    <div class="p100-header">
+        <!-- <img src="images/activity/banner.png" alt="1元钱帮你办三件事"> -->
+        <h1>数码服务站</h1>
+        <h3>爱回收&nbsp;&nbsp;爱生活</h3>
+        <i></i>
+        <span>
+        		以下服务仅在门店提供
+        </span>
+    </div>
+    <!-- 我们提供的服务 -->
+    <div class="main">
+    		<div class="else-info-pop">
+    			<i class="close-pop"></i>
+    			<p class="info_top">爱回收门店还为您提供以下服务：</p>
+    			<p>1.清洗手机外壳(防尘布擦拭)</p>
+    			<p>2.软件操作(通讯录备份、下载部分安装软件)</p>
+    			<p>3.门店免费充电(应急充电)</p>
+    			<p class="info_bottom">活动详情请到爱回收官方门店咨询</p>
+    			<p>咨询热线：400-1616-365</p>
+    		</div>
+    		<div class="info-pop">
+    			<i class="close-pop"></i>
+    			<img src="images/activity/pop.png"/>
+    		</div>
+    		<div class="digital-service">
+    			<h2>我们提供的服务</h2>
+    			<ul class="service-list" id="service_one">
+    				<li class="cdb on" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '押金借用充电宝']);">
+    					<div class="li_bor">
+	    					<i class="onPIC"></i>
+	    					<div class="digital_info">
+	    						<p>押金借用充电宝</p>
+	    						<span>
+	    							支付100元押金即可免费租借充电宝(可免费使用5天)
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    				<li class="ys" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '押金借用雨伞']);">
+    					<div class="li_bor">
+	    					<i></i>
+	    					<div class="digital_info">
+	    						<p>押金借用雨伞</p>
+	    						<span>
+	    							支付50元押金即可免费租借雨伞(可免费使用5天)
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    				<li class="dc" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '免费干电池换新']);">
+    					<div class="li_bor">
+	    					<i></i>
+	    					<div class="digital_info">
+	    						<p>免费干电池换新</p>
+	    						<span>
+	    							前往门店以旧换新(限5号、7号废旧电池)
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    			</ul>
+    			<div class="clearboth"></div>
+    			<ul class="service-list" id="service_two">
+    				<li class="tm" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '免费手机贴膜']);">
+    					<div class="li_bor">
+	    					<i></i>
+	    					<div class="digital_info">
+	    						<p>免费手机贴膜</p>
+	    						<span>
+	    							iPhone5/iPhone6系列、三星Galaxy S5/Note4、iphone7系列
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    				<li class="sjx" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '苹果数据线59元']);">
+    					<div class="li_bor">
+	    					<i></i>
+	    					<div class="digital_info">
+	    						<p>苹果数据线59元</p>
+	    						<span>
+                                    MFI 苹果认证数据线售卖，适配苹果系列产品
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    				<li class="qt" onclick="_paq.push(['trackEvent', 'digital', '数码服务站', '其它服务']);">
+    					<div class="li_bor">
+	    					<i></i>
+	    					<div class="digital_info">
+	    						<p>其它服务</p>
+	    						<span>
+	    							&nbsp;
+	    						</span>
+	    					</div>
+    					</div>
+    				</li>
+    			</ul>
+    			<div class="clearboth"></div>
+    		</div>
+    </div>
+    <!-- 活动门店 -->
+    <div class="shop">
+        <h2>活动门店</h2>
+        <ul class="shop-city-nav" id="js-shop-city-nav">
+            <li class="sh" data-id="1">上海</li>
+			<li class="bj" data-id="31">北京</li>
+            <li class="sz" data-id="256">深圳</li>
+            <li class="gz" data-id="103">广州</li>
+        </ul>
+        <div class="shop-address container" id="js-shop-address">
+            <div class="shop-nav-wrap">
+                <div class="up disabled"><div class="triangle"><span></span></div></div>
+                <div class="shop-nav">
+                    <ul class="shop-nav-list clearfix">
+                        <li class="item current" title="全部(37)"><i>&bull;</i>全部<span>(37)</span></li>
+                            <li class="item" data-id="694" title="东城区(3)"><i>&bull;</i>东城区<span>(3)</span></li>
+                            <li class="item" data-id="695" title="西城区(1)"><i>&bull;</i>西城区<span>(1)</span></li>
+                            <li class="item" data-id="696" title="朝阳区(13)"><i>&bull;</i>朝阳区<span>(13)</span></li>
+                            <li class="item" data-id="697" title="丰台区(2)"><i>&bull;</i>丰台区<span>(2)</span></li>
+                            <li class="item" data-id="698" title="石景山区(1)"><i>&bull;</i>石景山区<span>(1)</span></li>
+                            <li class="item" data-id="699" title="海淀区(11)"><i>&bull;</i>海淀区<span>(11)</span></li>
+                            <li class="item" data-id="703" title="顺义区(1)"><i>&bull;</i>顺义区<span>(1)</span></li>
+                            <li class="item" data-id="704" title="昌平区(3)"><i>&bull;</i>昌平区<span>(3)</span></li>
+                            <li class="item" data-id="705" title="大兴区(2)"><i>&bull;</i>大兴区<span>(2)</span></li>
+                    </ul>
+                </div>
+                <div class="down"><div class="triangle"><span></span></div></div>
+            </div>
+            <div class="shop-switch clearfix">
+                <div class="right"><span></span></div>
+                <div class="left disabled"><span></span></div>
+            </div>
+            <!-- 这个的宽度是 1190 -->
+            <div class="shop-content-wrap">
+                <!-- 这个的宽度是 1190 + margin -->
+                <div class="shop-content">
+                    <ul class="shop-content-list clearfix">
+                            <li class="show" data-region-id="694">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=238" target="_blank">
+                                    <h3>北京东方广场店</h3>
+                                    <p title="北京市东城区东长安街1号东方广场地铁层ED51号">北京市东城区东长安街1号东方广场地铁层ED51号</p>
+                                    <p>010-58436662</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="694">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=76" target="_blank">
+                                    <h3>北京东方银座店</h3>
+                                    <p title="北京市东城区东直门外大街48号银座mall地下一层">北京市东城区东直门外大街48号银座mall地下一层</p>
+                                    <p>010-58436363</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="694">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=28" target="_blank">
+                                    <h3>北京国瑞店</h3>
+                                    <p title="北京市东城区崇外大街18号国瑞购物中心B2层">北京市东城区崇外大街18号国瑞购物中心B2层</p>
+                                    <p>01059432680</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="695">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=56" target="_blank">
+                                    <h3>北京新华百货店</h3>
+                                    <p title="北京市西城区新街口北大街1 号新华百货一层">北京市西城区新街口北大街1 号新华百货一层</p>
+                                    <p>01056077154</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=42" target="_blank">
+                                    <h3>北京朝阳大悦城店</h3>
+                                    <p title="北京市朝阳区朝阳北路101号地下一层（靠近地铁通道处）">北京市朝阳区朝阳北路101号地下一层（靠近地铁通道处）</p>
+                                    <p>010-59467284</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=32" target="_blank">
+                                    <h3>北京太阳宫凯德店</h3>
+                                    <p title="北京市朝阳区太阳宫中路12号冠城大厦凯德mall太阳宫店地下一层">北京市朝阳区太阳宫中路12号冠城大厦凯德mall太阳宫店地下一层</p>
+                                    <p>010－59432721</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=34" target="_blank">
+                                    <h3>北京金地店</h3>
+                                    <p title="北京市朝阳区建国路91号金地中心C座地下一层">北京市朝阳区建国路91号金地中心C座地下一层</p>
+                                    <p>010-59432950</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=111" target="_blank">
+                                    <h3>北京贵友大厦店</h3>
+                                    <p title="北京市朝阳区建国门外大街甲5号贵友大厦一层">北京市朝阳区建国门外大街甲5号贵友大厦一层</p>
+                                    <p>010－57268577</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=105" target="_blank">
+                                    <h3>北京龙湖广场店</h3>
+                                    <p title="北京市朝阳北路长楹天街购物广场东区地下二层">北京市朝阳北路长楹天街购物广场东区地下二层</p>
+                                    <p>010-57460055</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=100" target="_blank">
+                                    <h3>北京凤凰汇店</h3>
+                                    <p title="北京市朝阳区曙光西里甲5号院24号楼凤凰汇购物中心地下一层">北京市朝阳区曙光西里甲5号院24号楼凤凰汇购物中心地下一层</p>
+                                    <p>010-58410110</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=101" target="_blank">
+                                    <h3>北京世茂工三店</h3>
+                                    <p title="北京市朝阳区工人体育场北路13号世茂工三地下一层">北京市朝阳区工人体育场北路13号世茂工三地下一层</p>
+                                    <p>010-57148080</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=142" target="_blank">
+                                    <h3>北京爱琴海店</h3>
+                                    <p title="北京市朝阳区七圣中街12号院爱琴海购物中心一层">北京市朝阳区七圣中街12号院爱琴海购物中心一层</p>
+                                    <p>010-57289994</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=143" target="_blank">
+                                    <h3>北京东坝金隅店</h3>
+                                    <p title="北京市朝阳区东坝中路38号楼金隅嘉品MALL 地下一层">北京市朝阳区东坝中路38号楼金隅嘉品MALL 地下一层</p>
+                                    <p>010-57290004</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=146" target="_blank">
+                                    <h3>北京望京嘉茂店</h3>
+                                    <p title="北京市朝阳区望京广顺北大街33号望京凯德mall购物中心地下一层">北京市朝阳区望京广顺北大街33号望京凯德mall购物中心地下一层</p>
+                                    <p>010-56149911</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=147" target="_blank">
+                                    <h3>北京远洋未来广场店</h3>
+                                    <p title="北京市朝阳区北四环东路73号远洋未来广场购物中心一层">北京市朝阳区北四环东路73号远洋未来广场购物中心一层</p>
+                                    <p>010-57732009</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=214" target="_blank">
+                                    <h3>北京悠唐店</h3>
+                                    <p title="北京市朝阳区三丰北里2号楼悠唐生活广场地下一层">北京市朝阳区三丰北里2号楼悠唐生活广场地下一层</p>
+                                    <p>010-56222822</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="696">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=182" target="_blank">
+                                    <h3>北京新奥店</h3>
+                                    <p title="北京市朝阳区湖景东路新奥购物中心地下一层中庭">北京市朝阳区湖景东路新奥购物中心地下一层中庭</p>
+                                    <p> 010-57107733</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="697">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=39" target="_blank">
+                                    <h3>北京角门店</h3>
+                                    <p title="北京市丰台区马家堡东路101号银泰百货地下一层">北京市丰台区马家堡东路101号银泰百货地下一层</p>
+                                    <p>01059445935</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="697">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=74" target="_blank">
+                                    <h3>北京方庄店</h3>
+                                    <p title="北京市丰台区方庄芳城园二区15号家乐福一层">北京市丰台区方庄芳城园二区15号家乐福一层</p>
+                                    <p>010-57148123</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="698">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=176" target="_blank">
+                                    <h3>北京石景山万达店</h3>
+                                    <p title="北京石景山区石景山路乙18号万达广场步行街一层">北京石景山区石景山路乙18号万达广场步行街一层</p>
+                                    <p> 010-57106776</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=161" target="_blank">
+                                    <h3>北京万柳华联店</h3>
+                                    <p title="北京市海淀区巴沟路2号万柳华联购物中心地下一层">北京市海淀区巴沟路2号万柳华联购物中心地下一层</p>
+                                    <p>010-58436567</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=148" target="_blank">
+                                    <h3>北京华宇店</h3>
+                                    <p title="北京市海淀区中关村南大街2号院-2华宇时尚购物中心一层">北京市海淀区中关村南大街2号院-2华宇时尚购物中心一层</p>
+                                    <p>010-56149933</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=149" target="_blank">
+                                    <h3>北京卓展店</h3>
+                                    <p title="北京市海淀区复兴路69号卓展购物中心地下一层">北京市海淀区复兴路69号卓展购物中心地下一层</p>
+                                    <p>010-56136262</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=154" target="_blank">
+                                    <h3>北京枫蓝国际店</h3>
+                                    <p title="北京市海淀区西直门北大街32号枫蓝国际购物中心一层">北京市海淀区西直门北大街32号枫蓝国际购物中心一层</p>
+                                    <p>010-56181414</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=81" target="_blank">
+                                    <h3>北京新中关店</h3>
+                                    <p title="北京市海淀区中关村大街19号新中关购物中心地下一层">北京市海淀区中关村大街19号新中关购物中心地下一层</p>
+                                    <p>010-57462112</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=72" target="_blank">
+                                    <h3>北京圣熙8号店</h3>
+                                    <p title="北京市海淀区学清路8号圣熙8号购物中心一层中庭">北京市海淀区学清路8号圣熙8号购物中心一层中庭</p>
+                                    <p>010-57174280</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=73" target="_blank">
+                                    <h3>北京上地华联店</h3>
+                                    <p title="北京市海淀区农大南路1号楼上地华联商厦一层 ">北京市海淀区农大南路1号楼上地华联商厦一层 </p>
+                                    <p>010-56209053</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=78" target="_blank">
+                                    <h3>北京凯德晶品店</h3>
+                                    <p title="北京市海淀区复兴路51号凯德晶品购物中心地下一层">北京市海淀区复兴路51号凯德晶品购物中心地下一层</p>
+                                    <p>010-57497070</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=87" target="_blank">
+                                    <h3>北京五彩城店</h3>
+                                    <p title="北京市海淀区清河中街68号五彩城购物中心西区一层">北京市海淀区清河中街68号五彩城购物中心西区一层</p>
+                                    <p>010-57454411</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=46" target="_blank">
+                                    <h3>北京方圆店</h3>
+                                    <p title="北京市海淀区方圆家乐福地下一层">北京市海淀区方圆家乐福地下一层</p>
+                                    <p>01057173664</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="699">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=199" target="_blank">
+                                    <h3>北京翠微凯德店</h3>
+                                    <p title="北京市海淀区翠微路12号新华联商业大厦地下一层">北京市海淀区翠微路12号新华联商业大厦地下一层</p>
+                                    <p> 010-57125335</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="703">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=144" target="_blank">
+                                    <h3>北京顺义华联店</h3>
+                                    <p title="北京市顺义区仁和镇新顺南大街8号院1幢华联金街购物中心地下一层 ">北京市顺义区仁和镇新顺南大街8号院1幢华联金街购物中心地下一层 </p>
+                                    <p>010-56420044</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="704">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=155" target="_blank">
+                                    <h3>北京天通苑华联店</h3>
+                                    <p title="北京市昌平区东小口镇天通苑中苑F区华联购物中心一层中庭">北京市昌平区东小口镇天通苑中苑F区华联购物中心一层中庭</p>
+                                    <p>010-56181771</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="704">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=103" target="_blank">
+                                    <h3>北京龙德广场店</h3>
+                                    <p title="北京市昌平区立汤路186号龙德广场一层">北京市昌平区立汤路186号龙德广场一层</p>
+                                    <p>010-57460033</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="704">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=209" target="_blank">
+                                    <h3>北京昌平悦荟万科店</h3>
+                                    <p title="北京市昌平区南环路10号院1号悦荟万科广场地下一层">北京市昌平区南环路10号院1号悦荟万科广场地下一层</p>
+                                    <p> 010-57232723</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="705">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=195" target="_blank">
+                                    <h3>北京西红门荟聚店</h3>
+                                    <p title="北京市大兴区欣宁街15号院宜家荟聚购物中心三层">北京市大兴区欣宁街15号院宜家荟聚购物中心三层</p>
+                                    <p> 010-57125252</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="show" data-region-id="705">
+                                <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=77" target="_blank">
+                                    <h3>北京大兴绿地店</h3>
+                                    <p title="北京市大兴区金星西路3号院3号楼绿地缤纷城一层服务台左侧 ">北京市大兴区金星西路3号院3号楼绿地缤纷城一层服务台左侧 </p>
+                                    <p>010-57257166</p>
+                                    <div class="footer">
+                                        <p><i></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="shop-city-lists" id="js-shop-city-lists">
+                <ul class="nav">
+                    <!-- 上海 -->
+                    <li data-id="1">
+                        <ul>
+                            <li class="item current" title="全部(43)"><i>&bull;</i>全部<span>(43)</span></li>
+                                <li class="item" data-id="3" title="杨浦区(5)"><i>&bull;</i>杨浦区<span>(5)</span></li>
+                                <li class="item" data-id="4" title="闵行区(2)"><i>&bull;</i>闵行区<span>(2)</span></li>
+                                <li class="item" data-id="5" title="徐汇区(4)"><i>&bull;</i>徐汇区<span>(4)</span></li>
+                                <li class="item" data-id="6" title="长宁区(3)"><i>&bull;</i>长宁区<span>(3)</span></li>
+                                <li class="item" data-id="8" title="卢湾区(1)"><i>&bull;</i>卢湾区<span>(1)</span></li>
+                                <li class="item" data-id="9" title="虹口区(2)"><i>&bull;</i>虹口区<span>(2)</span></li>
+                                <li class="item" data-id="10" title="黄浦区(4)"><i>&bull;</i>黄浦区<span>(4)</span></li>
+                                <li class="item" data-id="11" title="浦东新区(8)"><i>&bull;</i>浦东新区<span>(8)</span></li>
+                                <li class="item" data-id="13" title="普陀区(4)"><i>&bull;</i>普陀区<span>(4)</span></li>
+                                <li class="item" data-id="14" title="宝山区(3)"><i>&bull;</i>宝山区<span>(3)</span></li>
+                                <li class="item" data-id="15" title="松江区(2)"><i>&bull;</i>松江区<span>(2)</span></li>
+                                <li class="item" data-id="16" title="嘉定区(3)"><i>&bull;</i>嘉定区<span>(3)</span></li>
+                                <li class="item" data-id="615" title="青浦区(1)"><i>&bull;</i>青浦区<span>(1)</span></li>
+                                <li class="item" data-id="616" title="奉贤区(1)"><i>&bull;</i>奉贤区<span>(1)</span></li>
+                        </ul>
+                    </li>
+                    <!-- 北京 -->
+                    <li data-id="31">
+                        <ul>
+                            <li class="item current" title="全部(37)"><i>&bull;</i>全部<span>(37)</span></li>
+                                <li class="item" data-id="694" title="东城区(3)"><i>&bull;</i>东城区<span>(3)</span></li>
+                                <li class="item" data-id="695" title="西城区(1)"><i>&bull;</i>西城区<span>(1)</span></li>
+                                <li class="item" data-id="696" title="朝阳区(13)"><i>&bull;</i>朝阳区<span>(13)</span></li>
+                                <li class="item" data-id="697" title="丰台区(2)"><i>&bull;</i>丰台区<span>(2)</span></li>
+                                <li class="item" data-id="698" title="石景山区(1)"><i>&bull;</i>石景山区<span>(1)</span></li>
+                                <li class="item" data-id="699" title="海淀区(11)"><i>&bull;</i>海淀区<span>(11)</span></li>
+                                <li class="item" data-id="703" title="顺义区(1)"><i>&bull;</i>顺义区<span>(1)</span></li>
+                                <li class="item" data-id="704" title="昌平区(3)"><i>&bull;</i>昌平区<span>(3)</span></li>
+                                <li class="item" data-id="705" title="大兴区(2)"><i>&bull;</i>大兴区<span>(2)</span></li>
+                        </ul>
+                    </li>
+                    <!-- 深圳 -->
+                    <li data-id="256">
+                        <ul>
+                            <li class="item current" title="全部(18)"><i>&bull;</i>全部<span>(18)</span></li>
+                                <li class="item" data-id="2508" title="罗湖区(3)"><i>&bull;</i>罗湖区<span>(3)</span></li>
+                                <li class="item" data-id="2509" title="福田区(6)"><i>&bull;</i>福田区<span>(6)</span></li>
+                                <li class="item" data-id="2510" title="南山区(3)"><i>&bull;</i>南山区<span>(3)</span></li>
+                                <li class="item" data-id="2511" title="宝安区(1)"><i>&bull;</i>宝安区<span>(1)</span></li>
+                                <li class="item" data-id="2512" title="龙岗区(1)"><i>&bull;</i>龙岗区<span>(1)</span></li>
+                                <li class="item" data-id="2513" title="盐田区(1)"><i>&bull;</i>盐田区<span>(1)</span></li>
+                                <li class="item" data-id="4112" title="龙华新区(3)"><i>&bull;</i>龙华新区<span>(3)</span></li>
+                        </ul>
+                    </li>
+                    <!-- 广州 -->
+                    <li data-id="103">
+                        <ul>
+                            <li class="item current" title="全部(22)"><i>&bull;</i>全部<span>(22)</span></li>
+                                <li class="item" data-id="2486" title="荔湾区(2)"><i>&bull;</i>荔湾区<span>(2)</span></li>
+                                <li class="item" data-id="2487" title="越秀区(2)"><i>&bull;</i>越秀区<span>(2)</span></li>
+                                <li class="item" data-id="2488" title="海珠区(5)"><i>&bull;</i>海珠区<span>(5)</span></li>
+                                <li class="item" data-id="2489" title="天河区(7)"><i>&bull;</i>天河区<span>(7)</span></li>
+                                <li class="item" data-id="2490" title="白云区(2)"><i>&bull;</i>白云区<span>(2)</span></li>
+                                <li class="item" data-id="2492" title="番禺区(1)"><i>&bull;</i>番禺区<span>(1)</span></li>
+                                <li class="item" data-id="2494" title="南沙区(1)"><i>&bull;</i>南沙区<span>(1)</span></li>
+                                <li class="item" data-id="2495" title="萝岗区(1)"><i>&bull;</i>萝岗区<span>(1)</span></li>
+                                <li class="item" data-id="2496" title="增城区(1)"><i>&bull;</i>增城区<span>(1)</span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="content">
+                    <!-- 上海 -->
+                    <li data-id="1">
+                        <ul>
+                                <li class="show" data-region-id="3">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=17" target="_blank">
+                                        <h3>上海五角场万达店</h3>
+                                        <p title="淞沪路77号万达广场地下一层（ZARA旁）">淞沪路77号万达广场地下一层（ZARA旁）</p>
+                                        <p>021-61534152</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="3">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=20" target="_blank">
+                                        <h3>上海中原城市广场店</h3>
+                                        <p title="杨浦区国和路701号中原城市广场二号楼一楼">杨浦区国和路701号中原城市广场二号楼一楼</p>
+                                        <p>021-61534162</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="3">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=31" target="_blank">
+                                        <h3>上海滨江百联店</h3>
+                                        <p title="上海市杨浦区平凉路1399号">上海市杨浦区平凉路1399号</p>
+                                        <p>021-60517541</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="3">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=98" target="_blank">
+                                        <h3>上海长阳欧尚店</h3>
+                                        <p title="长阳路1750号一楼">长阳路1750号一楼</p>
+                                        <p>13661872893</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="3">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=180" target="_blank">
+                                        <h3>上海百联又一城店</h3>
+                                        <p title="上海市杨浦区淞沪路8号地下一层">上海市杨浦区淞沪路8号地下一层</p>
+                                        <p>021-61520134</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="4">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=102" target="_blank">
+                                        <h3>上海仲盛店</h3>
+                                        <p title="都市路5001号地下一层">都市路5001号地下一层</p>
+                                        <p>021-61524062</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="4">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=54" target="_blank">
+                                        <h3>上海置业广场店</h3>
+                                        <p title=" 上海市闵行区东川路2092号"> 上海市闵行区东川路2092号</p>
+                                        <p>021-61520346</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="5">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=68" target="_blank">
+                                        <h3>上海田林沃尔玛店</h3>
+                                        <p title="徐汇区桂林路402号桂林路田林路沃尔玛一楼">徐汇区桂林路402号桂林路田林路沃尔玛一楼</p>
+                                        <p>021-61524146</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="5">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=75" target="_blank">
+                                        <h3>上海星游城店</h3>
+                                        <p title="天钥桥路580号星游城地下二层">天钥桥路580号星游城地下二层</p>
+                                        <p>021-60517343</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="5">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=30" target="_blank">
+                                        <h3>上海光启城店</h3>
+                                        <p title="徐汇宜山路425号地下二层">徐汇宜山路425号地下二层</p>
+                                        <p>021-60443241</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="5">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=108" target="_blank">
+                                        <h3>上海徐汇家乐福店</h3>
+                                        <p title="徐汇区斜土路1995号地下一层">徐汇区斜土路1995号地下一层</p>
+                                        <p>021-61524063</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="6">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=151" target="_blank">
+                                        <h3>上海星空广场店</h3>
+                                        <p title="长宁区虹桥路1665号一楼">长宁区虹桥路1665号一楼</p>
+                                        <p>021-61520423</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="6">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=5" target="_blank">
+                                        <h3>上海中山公园龙之梦店</h3>
+                                        <p title="长宁路1018号龙之梦二楼3、4号线入口处">长宁路1018号龙之梦二楼3、4号线入口处</p>
+                                        <p>021-61314933</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="6">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=53" target="_blank">
+                                        <h3>上海西郊百联店</h3>
+                                        <p title="长宁区西郊百联购物广场中庭（近迪卡侬）">长宁区西郊百联购物广场中庭（近迪卡侬）</p>
+                                        <p>021-61520544</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="8">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=3" target="_blank">
+                                        <h3>上海广场店</h3>
+                                        <p title="淮海中路138号上海广场一楼中庭">淮海中路138号上海广场一楼中庭</p>
+                                        <p>021-61140566</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="9">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=29" target="_blank">
+                                        <h3>上海虹口龙之梦店</h3>
+                                        <p title="上海市虹口区西江湾路388号B2层">上海市虹口区西江湾路388号B2层</p>
+                                        <p>021-61534167</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="9">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=99" target="_blank">
+                                        <h3>上海曲阳家乐福店</h3>
+                                        <p title="玉田路288号">玉田路288号</p>
+                                        <p>021-61524121</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="10">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=145" target="_blank">
+                                        <h3>上海香港名店街店</h3>
+                                        <p title="上海市黄浦区人民大道9-99号">上海市黄浦区人民大道9-99号</p>
+                                        <p>021-61524191</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="10">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=150" target="_blank">
+                                        <h3>上海日月光店</h3>
+                                        <p title="上海市黄浦区徐家汇路618号徐汇区地下一楼">上海市黄浦区徐家汇路618号徐汇区地下一楼</p>
+                                        <p>021-61524124</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="10">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=27" target="_blank">
+                                        <h3>上海黄浦新苑店</h3>
+                                        <p title="西藏南路1130号世纪联华一楼">西藏南路1130号世纪联华一楼</p>
+                                        <p>021-61534179</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="10">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=185" target="_blank">
+                                        <h3>上海淮海巴黎春天店</h3>
+                                        <p title="上海市黄浦区淮海中路939号巴黎春天B2层">上海市黄浦区淮海中路939号巴黎春天B2层</p>
+                                        <p>021-60443029</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=233" target="_blank">
+                                        <h3>上海金谊广场店</h3>
+                                        <p title="上海市浦东新区上南路4457号">上海市浦东新区上南路4457号</p>
+                                        <p>1731760 9919 </p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=21" target="_blank">
+                                        <h3>上海周浦万达店</h3>
+                                        <p title="浦东新区周浦镇年家浜路518号万达广场一楼">浦东新区周浦镇年家浜路518号万达广场一楼</p>
+                                        <p>021-61534163</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=22" target="_blank">
+                                        <h3>上海世纪联华浦电店</h3>
+                                        <p title="上海市浦东新区浦电路357号世纪联华商店街">上海市浦东新区浦电路357号世纪联华商店街</p>
+                                        <p>021-61534170</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=4" target="_blank">
+                                        <h3>上海文峰广场店</h3>
+                                        <p title="张扬北路801号文峰广场1楼主通道">张扬北路801号文峰广场1楼主通道</p>
+                                        <p>021-60443267</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=37" target="_blank">
+                                        <h3>上海正大广场店</h3>
+                                        <p title="浦东新区陆家嘴西路168号3楼">浦东新区陆家嘴西路168号3楼</p>
+                                        <p>021-60517547</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=45" target="_blank">
+                                        <h3>上海汇智广场店</h3>
+                                        <p title="金科路3057号汇智国际商业中心一楼">金科路3057号汇智国际商业中心一楼</p>
+                                        <p>02160517647</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=52" target="_blank">
+                                        <h3>上海金桥家乐福店</h3>
+                                        <p title="上海浦东新区碧云路279号">上海浦东新区碧云路279号</p>
+                                        <p>021-60517548</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="11">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=170" target="_blank">
+                                        <h3>上海正大生活馆店</h3>
+                                        <p title="上海市浦东新区杨高中路2128号一楼">上海市浦东新区杨高中路2128号一楼</p>
+                                        <p>021-61524236</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="13">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=1" target="_blank">
+                                        <h3>上海亚新店</h3>
+                                        <p title="长寿路401号亚新生活广场一楼中庭">长寿路401号亚新生活广场一楼中庭</p>
+                                        <p>021-60442842</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="13">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=2" target="_blank">
+                                        <h3>上海中环百联店</h3>
+                                        <p title="真光路1288号中环百联广场一楼中庭">真光路1288号中环百联广场一楼中庭</p>
+                                        <p>021-61315330</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="13">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=6" target="_blank">
+                                        <h3>上海我格广场店</h3>
+                                        <p title="武宁路99号我格广场地下一层">武宁路99号我格广场地下一层</p>
+                                        <p>021-61314811</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="13">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=218" target="_blank">
+                                        <h3>上海万里家乐福店</h3>
+                                        <p title="上海市普陀区新村路1500号一层">上海市普陀区新村路1500号一层</p>
+                                        <p>021-60517484</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="14">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=178" target="_blank">
+                                        <h3>上海诺亚新天地店</h3>
+                                        <p title="上海宝山区牡丹江路318号">上海宝山区牡丹江路318号</p>
+                                        <p>17717860709</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="14">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=187" target="_blank">
+                                        <h3>上海祁连沃尔玛店</h3>
+                                        <p title="上海市宝山区聚丰园路205号一层">上海市宝山区聚丰园路205号一层</p>
+                                        <p>021-60443423</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="14">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=19" target="_blank">
+                                        <h3>上海宝山万达店</h3>
+                                        <p title="一二八纪念路 968 弄万达广场一楼（ZARA旁）">一二八纪念路 968 弄万达广场一楼（ZARA旁）</p>
+                                        <p>17717864370</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="15">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=175" target="_blank">
+                                        <h3>上海松江大学城店</h3>
+                                        <p title="上海市松江区文汇路1028号109-110（松江大学城四期）">上海市松江区文汇路1028号109-110（松江大学城四期）</p>
+                                        <p>021-60488403</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="15">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=67" target="_blank">
+                                        <h3>上海松江万达店</h3>
+                                        <p title="广富林路658弄松江万达广场一楼">广富林路658弄松江万达广场一楼</p>
+                                        <p>17321306542</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="16">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=82" target="_blank">
+                                        <h3>上海嘉亭荟店</h3>
+                                        <p title="墨玉南路1055号一楼">墨玉南路1055号一楼</p>
+                                        <p>17717864237</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="16">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=24" target="_blank">
+                                        <h3>上海中冶祥腾店</h3>
+                                        <p title="嘉定区真南路4368弄6号中冶祥腾城市广场一楼">嘉定区真南路4368弄6号中冶祥腾城市广场一楼</p>
+                                        <p>17721024054</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="16">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=35" target="_blank">
+                                        <h3>上海江桥万达店</h3>
+                                        <p title="嘉定区金沙江西路1051弄江桥广场万达一楼近家乐福入口">嘉定区金沙江西路1051弄江桥广场万达一楼近家乐福入口</p>
+                                        <p>021-60517543</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="615">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=141" target="_blank">
+                                        <h3>上海徐泾家乐福店</h3>
+                                        <p title="上海青浦区沪青平公路1829号家乐福一楼">上海青浦区沪青平公路1829号家乐福一楼</p>
+                                        <p>021-61524069</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="616">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=1&amp;shopId=236" target="_blank">
+                                        <h3>上海奉贤宝龙店</h3>
+                                        <p title="上海市奉贤区航南公路5639号B1层">上海市奉贤区航南公路5639号B1层</p>
+                                        <p>13524853974</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+                    <!-- 北京 -->
+                    <li data-id="31">
+                        <ul>
+                                <li class="show" data-region-id="694">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=238" target="_blank">
+                                        <h3>北京东方广场店</h3>
+                                        <p title="北京市东城区东长安街1号东方广场地铁层ED51号">北京市东城区东长安街1号东方广场地铁层ED51号</p>
+                                        <p>010-58436662</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="694">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=76" target="_blank">
+                                        <h3>北京东方银座店</h3>
+                                        <p title="北京市东城区东直门外大街48号银座mall地下一层">北京市东城区东直门外大街48号银座mall地下一层</p>
+                                        <p>010-58436363</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="694">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=28" target="_blank">
+                                        <h3>北京国瑞店</h3>
+                                        <p title="北京市东城区崇外大街18号国瑞购物中心B2层">北京市东城区崇外大街18号国瑞购物中心B2层</p>
+                                        <p>01059432680</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="695">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=56" target="_blank">
+                                        <h3>北京新华百货店</h3>
+                                        <p title="北京市西城区新街口北大街1 号新华百货一层">北京市西城区新街口北大街1 号新华百货一层</p>
+                                        <p>01056077154</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=42" target="_blank">
+                                        <h3>北京朝阳大悦城店</h3>
+                                        <p title="北京市朝阳区朝阳北路101号地下一层（靠近地铁通道处）">北京市朝阳区朝阳北路101号地下一层（靠近地铁通道处）</p>
+                                        <p>010-59467284</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=32" target="_blank">
+                                        <h3>北京太阳宫凯德店</h3>
+                                        <p title="北京市朝阳区太阳宫中路12号冠城大厦凯德mall太阳宫店地下一层">北京市朝阳区太阳宫中路12号冠城大厦凯德mall太阳宫店地下一层</p>
+                                        <p>010－59432721</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=34" target="_blank">
+                                        <h3>北京金地店</h3>
+                                        <p title="北京市朝阳区建国路91号金地中心C座地下一层">北京市朝阳区建国路91号金地中心C座地下一层</p>
+                                        <p>010-59432950</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=111" target="_blank">
+                                        <h3>北京贵友大厦店</h3>
+                                        <p title="北京市朝阳区建国门外大街甲5号贵友大厦一层">北京市朝阳区建国门外大街甲5号贵友大厦一层</p>
+                                        <p>010－57268577</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=105" target="_blank">
+                                        <h3>北京龙湖广场店</h3>
+                                        <p title="北京市朝阳北路长楹天街购物广场东区地下二层">北京市朝阳北路长楹天街购物广场东区地下二层</p>
+                                        <p>010-57460055</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=100" target="_blank">
+                                        <h3>北京凤凰汇店</h3>
+                                        <p title="北京市朝阳区曙光西里甲5号院24号楼凤凰汇购物中心地下一层">北京市朝阳区曙光西里甲5号院24号楼凤凰汇购物中心地下一层</p>
+                                        <p>010-58410110</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=101" target="_blank">
+                                        <h3>北京世茂工三店</h3>
+                                        <p title="北京市朝阳区工人体育场北路13号世茂工三地下一层">北京市朝阳区工人体育场北路13号世茂工三地下一层</p>
+                                        <p>010-57148080</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=142" target="_blank">
+                                        <h3>北京爱琴海店</h3>
+                                        <p title="北京市朝阳区七圣中街12号院爱琴海购物中心一层">北京市朝阳区七圣中街12号院爱琴海购物中心一层</p>
+                                        <p>010-57289994</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=143" target="_blank">
+                                        <h3>北京东坝金隅店</h3>
+                                        <p title="北京市朝阳区东坝中路38号楼金隅嘉品MALL 地下一层">北京市朝阳区东坝中路38号楼金隅嘉品MALL 地下一层</p>
+                                        <p>010-57290004</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=146" target="_blank">
+                                        <h3>北京望京嘉茂店</h3>
+                                        <p title="北京市朝阳区望京广顺北大街33号望京凯德mall购物中心地下一层">北京市朝阳区望京广顺北大街33号望京凯德mall购物中心地下一层</p>
+                                        <p>010-56149911</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=147" target="_blank">
+                                        <h3>北京远洋未来广场店</h3>
+                                        <p title="北京市朝阳区北四环东路73号远洋未来广场购物中心一层">北京市朝阳区北四环东路73号远洋未来广场购物中心一层</p>
+                                        <p>010-57732009</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=214" target="_blank">
+                                        <h3>北京悠唐店</h3>
+                                        <p title="北京市朝阳区三丰北里2号楼悠唐生活广场地下一层">北京市朝阳区三丰北里2号楼悠唐生活广场地下一层</p>
+                                        <p>010-56222822</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="696">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=182" target="_blank">
+                                        <h3>北京新奥店</h3>
+                                        <p title="北京市朝阳区湖景东路新奥购物中心地下一层中庭">北京市朝阳区湖景东路新奥购物中心地下一层中庭</p>
+                                        <p> 010-57107733</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="697">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=39" target="_blank">
+                                        <h3>北京角门店</h3>
+                                        <p title="北京市丰台区马家堡东路101号银泰百货地下一层">北京市丰台区马家堡东路101号银泰百货地下一层</p>
+                                        <p>01059445935</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="697">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=74" target="_blank">
+                                        <h3>北京方庄店</h3>
+                                        <p title="北京市丰台区方庄芳城园二区15号家乐福一层">北京市丰台区方庄芳城园二区15号家乐福一层</p>
+                                        <p>010-57148123</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="698">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=176" target="_blank">
+                                        <h3>北京石景山万达店</h3>
+                                        <p title="北京石景山区石景山路乙18号万达广场步行街一层">北京石景山区石景山路乙18号万达广场步行街一层</p>
+                                        <p> 010-57106776</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=161" target="_blank">
+                                        <h3>北京万柳华联店</h3>
+                                        <p title="北京市海淀区巴沟路2号万柳华联购物中心地下一层">北京市海淀区巴沟路2号万柳华联购物中心地下一层</p>
+                                        <p>010-58436567</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=148" target="_blank">
+                                        <h3>北京华宇店</h3>
+                                        <p title="北京市海淀区中关村南大街2号院-2华宇时尚购物中心一层">北京市海淀区中关村南大街2号院-2华宇时尚购物中心一层</p>
+                                        <p>010-56149933</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=149" target="_blank">
+                                        <h3>北京卓展店</h3>
+                                        <p title="北京市海淀区复兴路69号卓展购物中心地下一层">北京市海淀区复兴路69号卓展购物中心地下一层</p>
+                                        <p>010-56136262</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=154" target="_blank">
+                                        <h3>北京枫蓝国际店</h3>
+                                        <p title="北京市海淀区西直门北大街32号枫蓝国际购物中心一层">北京市海淀区西直门北大街32号枫蓝国际购物中心一层</p>
+                                        <p>010-56181414</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=81" target="_blank">
+                                        <h3>北京新中关店</h3>
+                                        <p title="北京市海淀区中关村大街19号新中关购物中心地下一层">北京市海淀区中关村大街19号新中关购物中心地下一层</p>
+                                        <p>010-57462112</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=72" target="_blank">
+                                        <h3>北京圣熙8号店</h3>
+                                        <p title="北京市海淀区学清路8号圣熙8号购物中心一层中庭">北京市海淀区学清路8号圣熙8号购物中心一层中庭</p>
+                                        <p>010-57174280</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=73" target="_blank">
+                                        <h3>北京上地华联店</h3>
+                                        <p title="北京市海淀区农大南路1号楼上地华联商厦一层 ">北京市海淀区农大南路1号楼上地华联商厦一层 </p>
+                                        <p>010-56209053</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=78" target="_blank">
+                                        <h3>北京凯德晶品店</h3>
+                                        <p title="北京市海淀区复兴路51号凯德晶品购物中心地下一层">北京市海淀区复兴路51号凯德晶品购物中心地下一层</p>
+                                        <p>010-57497070</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=87" target="_blank">
+                                        <h3>北京五彩城店</h3>
+                                        <p title="北京市海淀区清河中街68号五彩城购物中心西区一层">北京市海淀区清河中街68号五彩城购物中心西区一层</p>
+                                        <p>010-57454411</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=46" target="_blank">
+                                        <h3>北京方圆店</h3>
+                                        <p title="北京市海淀区方圆家乐福地下一层">北京市海淀区方圆家乐福地下一层</p>
+                                        <p>01057173664</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="699">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=199" target="_blank">
+                                        <h3>北京翠微凯德店</h3>
+                                        <p title="北京市海淀区翠微路12号新华联商业大厦地下一层">北京市海淀区翠微路12号新华联商业大厦地下一层</p>
+                                        <p> 010-57125335</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="703">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=144" target="_blank">
+                                        <h3>北京顺义华联店</h3>
+                                        <p title="北京市顺义区仁和镇新顺南大街8号院1幢华联金街购物中心地下一层 ">北京市顺义区仁和镇新顺南大街8号院1幢华联金街购物中心地下一层 </p>
+                                        <p>010-56420044</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="704">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=155" target="_blank">
+                                        <h3>北京天通苑华联店</h3>
+                                        <p title="北京市昌平区东小口镇天通苑中苑F区华联购物中心一层中庭">北京市昌平区东小口镇天通苑中苑F区华联购物中心一层中庭</p>
+                                        <p>010-56181771</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="704">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=103" target="_blank">
+                                        <h3>北京龙德广场店</h3>
+                                        <p title="北京市昌平区立汤路186号龙德广场一层">北京市昌平区立汤路186号龙德广场一层</p>
+                                        <p>010-57460033</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="704">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=209" target="_blank">
+                                        <h3>北京昌平悦荟万科店</h3>
+                                        <p title="北京市昌平区南环路10号院1号悦荟万科广场地下一层">北京市昌平区南环路10号院1号悦荟万科广场地下一层</p>
+                                        <p> 010-57232723</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="705">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=195" target="_blank">
+                                        <h3>北京西红门荟聚店</h3>
+                                        <p title="北京市大兴区欣宁街15号院宜家荟聚购物中心三层">北京市大兴区欣宁街15号院宜家荟聚购物中心三层</p>
+                                        <p> 010-57125252</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="705">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=31&amp;shopId=77" target="_blank">
+                                        <h3>北京大兴绿地店</h3>
+                                        <p title="北京市大兴区金星西路3号院3号楼绿地缤纷城一层服务台左侧 ">北京市大兴区金星西路3号院3号楼绿地缤纷城一层服务台左侧 </p>
+                                        <p>010-57257166</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+                    <!-- 深圳 -->
+                    <li data-id="256">
+                        <ul>
+                                <li class="show" data-region-id="2508">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=58" target="_blank">
+                                        <h3>深圳京基凤凰印象店</h3>
+                                        <p title="凤凰路181号京基凤凰印象商业广场">凤凰路181号京基凤凰印象商业广场</p>
+                                        <p>0755-33126053</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2508">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=109" target="_blank">
+                                        <h3>深圳喜荟城店</h3>
+                                        <p title="太宁路8号喜荟城购物中心">太宁路8号喜荟城购物中心</p>
+                                        <p>0755-33126056</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2508">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=183" target="_blank">
+                                        <h3>深圳KK mall店</h3>
+                                        <p title="深南东路5016号KK mall京基·百纳空间">深南东路5016号KK mall京基·百纳空间</p>
+                                        <p>0755-32923346</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=220" target="_blank">
+                                        <h3>深圳 KK ONE 店</h3>
+                                        <p title="沙头街道京基滨河时代KK one">沙头街道京基滨河时代KK one</p>
+                                        <p>0755-61903591</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=113" target="_blank">
+                                        <h3>深圳COCO Park店</h3>
+                                        <p title="福华三路269号COCO Park">福华三路269号COCO Park</p>
+                                        <p>0755-36327046</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=63" target="_blank">
+                                        <h3>深圳中信地铁商场店</h3>
+                                        <p title="上步南路1093号中信地铁商城负1层">上步南路1093号中信地铁商城负1层</p>
+                                        <p>0755-33126529</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=57" target="_blank">
+                                        <h3>深圳乐淘里店</h3>
+                                        <p title="华强北路1019号华强广场">华强北路1019号华强广场</p>
+                                        <p>0755-33126502</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=96" target="_blank">
+                                        <h3>深圳皇庭广场店</h3>
+                                        <p title="福华三路118号皇庭国商购物广场">福华三路118号皇庭国商购物广场</p>
+                                        <p>0755-32885815</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2509">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=97" target="_blank">
+                                        <h3>深圳丰盛町店</h3>
+                                        <p title="深南大道6019号丰盛町商业步行街负2层">深南大道6019号丰盛町商业步行街负2层</p>
+                                        <p>0755-32885820</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2510">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=41" target="_blank">
+                                        <h3>深圳益田假日店</h3>
+                                        <p title="深南大道9028号益田假日广场">深南大道9028号益田假日广场</p>
+                                        <p>0755-33168150</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2510">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=162" target="_blank">
+                                        <h3>深圳天利名城店</h3>
+                                        <p title="海德三道85号天利名城购物中心">海德三道85号天利名城购物中心</p>
+                                        <p>0755-36327084</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2510">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=164" target="_blank">
+                                        <h3>深圳宝能all city店</h3>
+                                        <p title="中心路2233号宝能all city购物中心南区">中心路2233号宝能all city购物中心南区</p>
+                                        <p>0755-33168249</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2511">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=167" target="_blank">
+                                        <h3>深圳金港城店</h3>
+                                        <p title="金海路4009号金港城">金海路4009号金港城</p>
+                                        <p>0755-33165047</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2512">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=179" target="_blank">
+                                        <h3>深圳龙岗万科店</h3>
+                                        <p title="龙翔大道7188号 万科广场">龙翔大道7188号 万科广场</p>
+                                        <p>0755-32885924</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2513">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=163" target="_blank">
+                                        <h3>深圳广富百货店</h3>
+                                        <p title="海山路海山道1号广富百货">海山路海山道1号广富百货</p>
+                                        <p>0755-36327024</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="4112">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=232" target="_blank">
+                                        <h3>深圳龙华九方店</h3>
+                                        <p title="人民路九方购物中心">人民路九方购物中心</p>
+                                        <p>0755-61903603</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="4112">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=198" target="_blank">
+                                        <h3>深圳ICO购物中心店</h3>
+                                        <p title="东环二路251号ICO时尚购物中心">东环二路251号ICO时尚购物中心</p>
+                                        <p>0755-61903574</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="4112">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=256&amp;shopId=48" target="_blank">
+                                        <h3>深圳缤果空间店</h3>
+                                        <p title="民塘路深圳北站缤果空间">民塘路深圳北站缤果空间</p>
+                                        <p>0755-33126030</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+                    <!-- 广州 -->
+                    <li data-id="103">
+                        <ul>
+                                <li class="show" data-region-id="2486">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=181" target="_blank">
+                                        <h3>广州恒宝广场店</h3>
+                                        <p title="宝华路133号恒宝广场">宝华路133号恒宝广场</p>
+                                        <p>020-29842704</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2486">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=140" target="_blank">
+                                        <h3>广州西城都荟店</h3>
+                                        <p title="黄沙大道8号西城都荟">黄沙大道8号西城都荟</p>
+                                        <p>020-29865924</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2487">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=106" target="_blank">
+                                        <h3>广州景点商场店</h3>
+                                        <p title="中山五路68号景点商业城">中山五路68号景点商业城</p>
+                                        <p>020--66636907</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2487">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=64" target="_blank">
+                                        <h3>广州动漫星城店</h3>
+                                        <p title="吉祥路1号动漫星城东区负一楼">吉祥路1号动漫星城东区负一楼</p>
+                                        <p>020-29860704</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2488">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=47" target="_blank">
+                                        <h3>广州广百新一城店</h3>
+                                        <p title="宝岗大道498号广百新一城1楼">宝岗大道498号广百新一城1楼</p>
+                                        <p>020-29860644</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2488">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=66" target="_blank">
+                                        <h3>广州江南新地店</h3>
+                                        <p title="江南西地铁站">江南西地铁站</p>
+                                        <p>020-29860714</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2488">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=50" target="_blank">
+                                        <h3>广州丽影广场店</h3>
+                                        <p title="新港中路356号丽影广场">新港中路356号丽影广场</p>
+                                        <p>020-66632240</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2488">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=86" target="_blank">
+                                        <h3>广州乐峰广场店</h3>
+                                        <p title="工业大道北106-108号乐峰广场">工业大道北106-108号乐峰广场</p>
+                                        <p>020-29894076</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2488">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=173" target="_blank">
+                                        <h3>广州万科里店</h3>
+                                        <p title="江燕路99号万科里">江燕路99号万科里</p>
+                                        <p>020-66699490</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=152" target="_blank">
+                                        <h3>广州万菱汇店</h3>
+                                        <p title="天河路230号万菱汇国际中心">天河路230号万菱汇国际中心</p>
+                                        <p>020-29034294</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=107" target="_blank">
+                                        <h3>广州维多利广场店</h3>
+                                        <p title="体育西路101号维多利广场">体育西路101号维多利广场</p>
+                                        <p>020-29038164</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=62" target="_blank">
+                                        <h3>广州高德汇店</h3>
+                                        <p title="花城大道88号高德汇2座1楼">花城大道88号高德汇2座1楼</p>
+                                        <p>020-29860614</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=79" target="_blank">
+                                        <h3>广州花城汇1店</h3>
+                                        <p title="珠江新城花城汇中区珠江新城">珠江新城花城汇中区珠江新城</p>
+                                        <p>020-29847034</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=44" target="_blank">
+                                        <h3>广州天河又一城店</h3>
+                                        <p title="体育西路54号天河又一城负1楼">体育西路54号天河又一城负1楼</p>
+                                        <p>020-28140725</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=201" target="_blank">
+                                        <h3>广州东圃购物中心店</h3>
+                                        <p title="东圃大马路1号东圃购物中心">东圃大马路1号东圃购物中心</p>
+                                        <p>020-29865724</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2489">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=226" target="_blank">
+                                        <h3>广州天河城店</h3>
+                                        <p title="天河路208号天河城负1楼">天河路208号天河城负1楼</p>
+                                        <p>020-29860634</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2490">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=104" target="_blank">
+                                        <h3>广州五号停机坪店</h3>
+                                        <p title="云霄路353栋五号停机坪广场">云霄路353栋五号停机坪广场</p>
+                                        <p>020-29038152</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2490">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=158" target="_blank">
+                                        <h3>广州白云万达店</h3>
+                                        <p title="云城东路509号万达广场">云城东路509号万达广场</p>
+                                        <p>020-28149254</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2492">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=60" target="_blank">
+                                        <h3>广州番禺万达店</h3>
+                                        <p title="南村镇兴南大道368号番禺万达广场">南村镇兴南大道368号番禺万达广场</p>
+                                        <p>020-29860624</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2494">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=221" target="_blank">
+                                        <h3>广州南沙万达店</h3>
+                                        <p title="双山大道南沙万达广场">双山大道南沙万达广场</p>
+                                        <p>020-22098346</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2495">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=193" target="_blank">
+                                        <h3>广州萝岗万达店</h3>
+                                        <p title="开创大道2019号萝岗万达广场">开创大道2019号萝岗万达广场</p>
+                                        <p>020-28140724</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="show" data-region-id="2496">
+                                    <a href="http://www.aihuishou.com/help/OutletsMode.html?cityId=103&amp;shopId=88" target="_blank">
+                                        <h3>广州增城万达店</h3>
+                                        <p title="荔城街增城大道69号万达广场">荔城街增城大道69号万达广场</p>
+                                        <p>020-29894075</p>
+                                        <div class="footer">
+                                            <p><i></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 活动规则 -->
+    <div class="rule">
+        <div class="container">
+            <h2>活动规则</h2>
+            <p>1.“100服务”仅限门店提供，暂不提供上门服务，敬请谅解。</p>
+            <p>2.关注“爱回收”官方微信，并分享图文消息至朋友圈，即可享受以上三项服务。</p>
+            <p>3.所有数据线为我们回收得到，并且经过精心筛选、清理和包装。（所有数据线只能作为数据传输使用，请不要长时间充电）</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <!-- 侧边栏导航 -->
+    <div id="aside">
+        <!--<div class="aside_nav" id="kefu_help" title="联系爱回收客服">
+            <div class="aside_icon"></div>
+            <div class="text">客服</div>
+            <ul class="desc">
+                <li>机器人客服<br>7*24小时</li>
+                <li>人工客服<br>9:00-21:00</li>
+            </ul>    
+        </div>-->
+        <div class="aside_nav" id="ldx-sidebar" title="微信扫一扫 邀请赚现金">
+            <div class="aside_icon"></div>
+            <div class="text">邀请有礼</div>
+            <div class="ldx-pop"></div>
+        </div>
+        <div class="aside_nav" id="goTop" title="返回顶部">
+            <div class="aside_icon"></div>
+        </div>
+    </div>
+    <div id="foot" class="">
+    <div class="footer_info">
+        <div id="footerinfo_left">
+            <dl>
+                <dt>交易方式</dt>
+                <dd><a href="http://www.aihuishou.com/help/ondoorMap.html" title="上海交易方式" class="no_hover" target="_blank">上海交易方式</a></dd>
+                <dd><a href="http://www.aihuishou.com/help/ondoorMapBJ.html" title="北京交易方式" class="no_hover" target="_blank">北京交易方式</a></dd>
+                <dd><a href="http://www.aihuishou.com/help/NationalTrade.html" title="全国交易方式" class="no_hover" target="_blank">全国交易方式</a></dd>
+            </dl>
+            <dl>
+                <dt>质检说明</dt>
+                <dd><a href="http://www.aihuishou.com/help/CheckDefinition.html" title="质检名词解释" class="no_hover" target="_blank">质检名词解释</a></dd>
+                <dd><a href="http://www.aihuishou.com/help" title="专业质检说明" class="no_hover" target="_blank">专业质检说明</a></dd>
+            </dl>
+            <dl>
+                <dt>帮助中心</dt>
+                <dd><a href="http://www.aihuishou.com/help/CommonQuestion.html" title="手机回收常见问题" class="no_hover" target="_blank">常见问题</a></dd>
+                <dd><a href="http://www.aihuishou.com/help/AhsServices.html" title="服务条款" class="no_hover" target="_blank">服务条款</a></dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="http://www.aihuishou.com/home/Intro.html" title="了解爱回收" class="no_hover" target="_blank">了解我们</a></dd>
+                <dd><a href="http://www.aihuishou.com/help/Recruit.html" title="加入爱回收" class="no_hover" target="_blank">加入我们</a></dd>
+                <dd><a href="http://www.aihuishou.com/help/Recycle.html?name=RecycleCoop" title="加盟合作" class="no_hover" target="_blank">加盟合作</a></dd>
+                <dd><a href="http://www.aihuishou.com/activity?name=zhaopin" title="爱回收2015校园招聘" class="no_hover" target="_blank">2016校园招聘</a></dd>
+            </dl>       
+            <dl class="follow-qr">
+                <dd class="qr-wrap">
+                    <img src="images/common/qrcode-app.png" alt="爱回收app下载" />
+                    <figcaption>爱回收APP</figcaption>
+                </dd>
+                <dd class="qr-wrap">
+                    <img src="images/common/qrcode-wechat.png" alt="爱回收微信公众号" />
+                    <figcaption>微信公众号</figcaption>
+                </dd>
+            </dl>
+        </div>
+        <div id="footerinfo_right">
+            <div class="footerinfo_time">
+                <p class="ahs_contact_phone">400-1616-365</p>
+                <p class="ahs_contact_time">周一至周日 9:00-21:00</p>
+            </div>
+           <!-- <div class="icon_kefu_footer kefu_pop"><div class="icon_kefu_text">在线客服</div></div>-->
+            <div class="footerinfo_addr">
+                <p>爱回收寄件地址：上海市宝山区纪蕴路588号1号楼6楼 唐生收</p>
+                <p>唐生收 021-55609898</p>
+                <br /><br />
+                <a href="http://www.aihuishou.com/help/NationalTrade.html" target="_blank" class="no_hover" title="爱回收免费快递说明">快递费用说明</a>
+            </div>
+
+        </div>
+        <br />
+        <br />
+    </div>
+
+
+    <div class="copyright">
+        
+        <a class="no_hover" href="http://www.miibeian.gov.cn/" title="爱回收：ICP号" rel="external nofollow" target="_blank"><div class="ICP"></div></a>&nbsp;&nbsp;
+        <a class="no_hover" href="http://www.alipay.com" title="支付宝商家认证" rel="external nofollow" target="_blank"><div class="alipay_foot"></div></a>&nbsp;&nbsp;
+        <a class="no_hover" href='https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqq0ili575jvlptdlmfxy2vl' rel="external nofollow" target="_blank" title="上海市工商局"><div class="gongshangju_foot"></div></a>&nbsp;&nbsp;
+        <a class="no_hover" href='http://www.shjbzx.cn/' rel="external nofollow" target="_blank" title="上海网警"><div class="wangjing_foot"></div></a>&nbsp;&nbsp;
+        <a class="no_hover" href='http://webscan.360.cn/index/checkwebsite?url=www.aihuishou.com' rel="external nofollow" target="_blank" title="360网站安全检测100分"><div class="check360_foot"></div></a>
+        <br /><br />
+        <div class="company-addr">宝山运营中心：上海市宝山区纪蕴路588号1号楼6楼 </div>
+Copyright 2010 - 2016 上海悦易网络信息技术有限公司 &nbsp; &nbsp; 沪ICP备10043802号 - 2
+    </div>
+
+
+</div>
+
+    <div id="popwindow_shadow_bg"><iframe frameborder="0" id="popwindow_frame"></iframe></div>
+    <div class="pop_window" id="popWindow"></div>
+    <div id="pageTemplate" style="display: none;">
+        
+    </div>
+    <input id="userId" value="" type="hidden" />
+    <input id="ahs_um" value="" type="hidden" />
+    <input id="userIsLogin" value="0" type="hidden" />
+    
+    <script src="js/lib/jquery-1.9.1.min.js"></script>
+    <script src="js/common/ahs.min.js?v=KDuhIsl0l_KQs97BiOIvNFmL1A2qrQJQpmRvEE1w_aM" type="text/javascript"></script>
+    <script src="js/common/common.min.js?v=mK1ZIL08purWOY3WBCLOyldRTm0A9Zj0Ft1zs5CNf0c" type="text/javascript"></script>
+    <script type="text/javascript">
+    /* Google Statistics */
+    _ahs.push(function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    });
+
+    /* DSP Statistics */
+    _ahs.push(function () {
+        _mvq.push(['$logConversion']);
+        var mvl = document.createElement('script');
+        mvl.type = 'text/javascript'; mvl.async = true;
+        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mvl, s);
+    });
+
+    var _trc_ = {}, _prm_ = {};
+    /* BAIDU Statistics */
+    _ahs.push(function () {
+        // 默认
+        var bd = document.createElement('script');
+        bd.type = 'text/javascript'; bd.async = true;
+        bd.src = ('https:' == document.location.protocol ? 'https://hm.baidu.com/h.js?6206c0fb3ed4e6feb904c97664c91527' : 'http://hm.baidu.com/h.js?6206c0fb3ed4e6feb904c97664c91527');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(bd, s);
+
+
+        // 百姓网充值统计
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.async = true;
+            hm.src = "//hm.baidu.com/hm.js?d967f933b496a0741b57f403503a1d89";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        //var _trc_ = _trc_ || {}, _prm_ = _prm_ || {};
+        (function () {
+            var e = document.createElement("script");
+            e.async = true;
+            e.src = "//trac.imarvelous.cn/tracking.js?ffb076727652c0abfb19096cb2b36a1c";
+            var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(e, s);
+        }
+         )();
+    });
+
+    /* Criteo 推送 */
+    _ahs.push(function () {
+        // 默认
+        (function () {
+            var criteo = document.createElement("script");
+            criteo.async = true;
+            criteo.src = "//static.criteo.net/js/ld/ld.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(criteo, s);
+        })();
+    });
+
+
+    /*
+        VE 亿起发
+    */
+    _ahs.push(function () {        
+        !function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="//configch2.veinteractive.com/tags/F1B08B93/4A95/4897/820A/2B0897BC6C3E/tag.js";var b=document.getElementsByTagName("head")[0];if(b)b.appendChild(a,b);else{var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}();
+    });
+
+
+    /* 小能 */
+    _ahs.push(function () {
+        var $body = $(document.body);
+        if (!$body.hasClass('diyXiaoneng')) {
+            _ahs.push([
+            			  function () {
+		                // 小能客服插件,延时加载
+		                NTKF_PARAM = {
+		                    siteid: "kf_9741",       //企业ID，必填，取值参见文档开始表
+		                    settingid: "kf_9741_1460945695499",      //缺省客服配置ID，必填，取值参见文档开始表
+		                    uid: "",        //用户ID,未登录可以为空
+		                    uname: "",        //用户名，未登录可以为空
+		                    isvip: "0",          //是否为vip用户
+		                    userlevel: ""      //网站自定义会员级别
+		                };
+		
+		                var e = document.createElement("script");
+		                e.type = 'text/javascript';
+		                e.async = true;
+		                e.src = "//dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9741";
+		                var s = document.getElementsByTagName("script")[0];
+		                s.parentNode.insertBefore(e, s);
+		            }
+//                     function () {
+//                         var userId = document.getElementById("userId").value;
+//                         var userIsLogin = document.getElementById("userIsLogin").value;
+//                         var ahs_um = document.getElementById("ahs_um").value;
+//                         NTKF_PARAM = {
+//                             siteid: "kf_9741", //企业ID，必填，取值参见文档开始表
+//                             settingid: "kf_9741_1428479892305", //缺省客服配置ID，必填，取值参见文档开始表
+//                             uid: userId.toString(), //用户ID,未登录可以为空
+//                             uname: ahs_um.toString(), //用户名，未登录可以为空
+//                             isvip: userIsLogin.toString(), //是否为vip用户
+//                             userlevel: (userId == 0 ? "未登录用户" : "已登录用户") //网站自定义会员级别
+//                         };
+//                     }, "//dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9741"
+            ]);
+        }
+
+    });
+</script>
+    
+    <script>
+        _ahs.push(["js/activity/project100.min.js"]);
+    </script>
+
+
+    <noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>

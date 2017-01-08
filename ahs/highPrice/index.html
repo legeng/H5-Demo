@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>限时高价回收活动</title>
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <link href="image/favicon.ico" mce_href="/favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="image/favicon.ico" mce_href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="image/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.mk.aihuishou.com"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//tk.aihuishou.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 4]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript>
+      <p><img src="//tk.aihuishou.com/piwik.php?idsite=4" style="border:0;" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Code -->
+</head>
+<body>
+    <header id="header">
+        <p>&nbsp;&nbsp;爱回收-高价回收</p>
+        <a class="backtop" href="javascript:history.go(-1)"></a>
+   </header>
+    <div class="main">
+        <div class="jiao"></div>
+        <div class="header"></div>
+        <div class="good-list" id="good-list-info"></div>
+        <div class="clearfix"></div>
+        <div class="more-good"><a href="http://m.aihuishou.com/shouji"><img src="image/button-default.png" ></a></div>
+        <div class="clearfix"></div>
+    </div>
+    <script type="text/template" id="good-list">
+        <% if(goodList.length > 0) { %>
+            <% _.each(goodList , function(item,index) { %>
+                <div class="good-item" onclick="_paq.push(['trackEvent', 'highPrice', '高价回收', '<%= item.goodDesc %>']);">
+                    <div class="good-desc">
+                        <p class="good-high-price"><img src="image/high-price.png"  alt=""></p><span class="high-price">+<%= item.highPrice %></span>
+                        <p class="good-image good-image-icon"><a href="<%= item.url %>"><img src="" data-original="<%= item.image %>" alt="" class="h5-img-lazy-load lazy-hide"></a></p>
+                        <p class="good-desc-more"><%= item.goodDesc %></p>
+                        <p class="good-price"><span class="tag">限时回收价</span>￥<%= item.price %></p>
+                        <!-- <p class="good-old-price">限时高价回收 <span class="tag">￥ <%= item.oldPrice%></span></p> -->
+                    </div>
+                    <div class="button"><a href="<%= item.url %>">马上回收</a></div>
+                </div>
+            <% }) %>
+        <% } %>
+    </script>
+
+<!-- document adaptive-->
+<script type="text/javascript" src="js/lib/adaptive.js"></script>
+<!-- End document adaptive -->
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script src="../../resources/js/url.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>    
+<script src="../../resources/js/share.js"></script>
+<script type="text/javascript">
+     getWX();
+     var title = "爱回收手机回收节来袭，现金券iPhone大放送";
+     var desc = "多款手机高价收，分期iPhone年年换，呼朋唤友同享乐";
+     var pyq = "http://m.mk.aihuishou.com/ahs/recycleFestival/index.html";
+     var py = "http://m.mk.aihuishou.com/ahs/recycleFestival/index.html";
+     var elseUrl = "http://m.mk.aihuishou.com/ahs/recycleFestival/index.html";
+     var imgUrl = "http://m.mk.aiweixiu.com/ahs/luckyWheel/img/share.png";
+     share(title,elseUrl,imgUrl,desc,pyq,py); 
+
+     function is_weixin(){
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                 $(".move_back").hide();
+            }else{
+                 $(".move_back").show();
+            }
+     }
+     is_weixin();
+     //隐藏头部
+			function is_andriod(){
+		        if (/aihuishou_official_android/i.test(navigator.userAgent.toLowerCase())) {
+		            $('#header').hide();
+		        }else{
+		             
+		        }
+		    }
+			is_andriod();
+</script>
+<script type="text/javascript" src="js/lib/require.min.js" data-main="js/index"></script>
+</body>
+</html>

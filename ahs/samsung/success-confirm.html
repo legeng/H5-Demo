@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>三星Galaxy Note7体验团</title>
+    <link rel="stylesheet" type="text/css" href="css/three.css"/>
+    <script src="js/Adaptive.js"></script>
+    		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+</head>
+<body>                       
+<div class="threeBg">          
+	<a class="threeBack" href="http://clubweixin.samsung.com/sns/activity/ahsback?state=N7TB" onclick="_paq.push(['trackEvent', 'samsung', '三星', '回到首页']);">回到首页</a>
+	<div class="contentOd">
+		<div class="dingdanhao">订单号码：<span></span></div>
+		<div class="jine">订单金额：<span></span></div>
+		<div class="zhuangtai">订单状态：<span></span></div>
+		<div class="jiujixing">回收机型：<span>苹果(iphone5s)</span></div>
+		<div class="xingming">邮寄人姓名：<span></span></div>
+		<div class="shoujihao">邮寄人手机号：<span></span></div>
+	</div>
+</div>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/m-mk-analytics.js"></script>
+<script>
+	function urlParams() {
+        var args = new Object();
+        var query = location.search.substring(1);//获取查询串
+        var pairs = query.split("&");//在逗号处断开
+        for (var i = 0; i < pairs.length; i++) {
+            var params = pairs[i].split('=');
+            if (params.length < 2)continue;
+            args[params[0]] = params[1];
+        }
+        return args;
+  }
+  //订单号
+  $('.dingdanhao span').html(urlParams().orderNo)
+  //旧机型
+  $('.jiujixing span').html(decodeURIComponent(urlParams().content))
+  //总金额
+  $('.jine span').html(urlParams().orderPrice)
+  //订单状态
+ $('.zhuangtai span').html(decodeURIComponent(urlParams().statusName));
+ //邮寄人姓名
+ $('.xingming span').html(decodeURIComponent(urlParams().thisName)) 
+ //邮寄人手机号
+ $('.shoujihao span').html(urlParams().thisPhone);
+ //邮寄人手机号
+</script>
+</body>
+</html>

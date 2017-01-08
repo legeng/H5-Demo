@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>环保三人行活动</title>
+		<link rel="stylesheet" href="css/three.css">
+		<script src="../../resources/js/Adaptive.js"></script>
+		<style>
+			.img{
+				display: none;
+			}
+		</style>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+			<div class="page" id="page">
+				<div class="mobile_Header">
+					<i class="header_left" onclick="history.go(-1)"></i>
+					<span class="header_right"></span>
+				</div>
+				<div class="top" id="top"></div>
+				<div class="middle">
+					<a href="#" class="one" id="oneBtn" onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '第一个按钮'])"></a>
+					<a href="#" class="two" id="twoBtn" onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '立即买手机'])"></a>
+				</div>
+				<div class="bottom">
+					<div class="three" id="threeBtn" onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '点击查看'])"></div>
+				</div>
+				<ul class="fixedBottom">
+					<li class="gz" id="gz" onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '查看活动规则'])">查看活动规则</li>
+					<li class="dl" id="dl" onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '登录/登出'])">登录</li>
+				</ul>
+			</div>
+			
+			<ul class="login_pop">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" id="verifyCode" placeholder="请填写验证码" maxlength="6"/><span id="yzh" class="phone-yzm">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<input type="botton" value="登录" id="login"  onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '登录'])"/>
+				</li>
+				<span class="close"></span>
+			</ul>
+			<ul class="login_pop_img">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" class="img_yzm" id="certCode" placeholder="请填写图形码"/><img src="" id="portrait"/>
+				</li>
+				<li class="img_li">
+					<input type="text" id="verifyCode01" placeholder="请填写验证码" maxlength="6"/><span id="yzh01" class="phone-yzm">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<input type="botton" value="登录" id="login_img"  onclick="_hmt.push(['_trackEvent', '三人行活动', 'img_click', '登录'])"/>
+				</li>
+				<span class="close"></span>
+			</ul>
+			<div class="wraning">
+				<p>友情提示</p>
+				<div class="wz">确定要退出吗？</div>
+				<div class="w_btn">
+					<span class="qd">确定</span>
+					<span class="qx">取消</span>
+				</div>
+			</div>
+			<div class="shuoming">
+				<ul class="sm_title">
+					<li>乐</li>
+					<li>玩</li>
+					<li>吃</li>
+					<div class="slider"></div>
+				</ul>
+				<ul class="le">
+					<li class="ming">电影票活动规则：</li>
+					<li>1.用户在活动页面点击"马上卖手机"，成功交易即可获得格瓦拉2D电影兑换券一张，仅限三人行影片，兑换券将以短信形式发出；</li>
+					<li>2.活动范围：全国</li>
+					<li>3.本次活动截止日期至2016.6.30，每天限量100张，先到先得，同一用户同一手机号只可参与一次；</li>
+					<li>4.本活动不与其他活动叠加，不可兑换现金，不记名，不挂失，活动最终解释权归爱回收所有，
+						凡以不正当手段参与本次活动的，爱回收有权终止其参与活动，取消其资格。</li>
+				</ul>
+				<ul class="wan" style="display: none">
+					<li class="ming">抽奖活动：</li>
+					<li>1.所有用户均可参与抽奖活动，每位用户仅可参与一次；</li>
+					<li>2.本次活动截止日期至2016.6.30</li>
+					<li>3.本活动最终解释权归爱回收所有，凡以不正当手段参与本次活动，爱回收有权终止其参与活动，取消其资格。</li>
+				</ul>
+				<ul class="chi" style="display: none">
+					<li class="ming">三人行活动：</li>
+					<li>1.活动范围：上海地区用户；</li>
+					<li>2.本次活动日期2016.6.24至2016.6.30，同一用户同一手机只可参与一次；</li>
+					<li>3.活动期间上海地区用户成功参与回收凭借回执单前往三人行骨头王火锅所有门店均可获得39元钵钵鸡一份,每桌限送一份，不打包限堂吃；</li>
+					<li>4.本活动最终解释权归爱回收所有，凡以不正当手段参与本次活动，爱回收有权终止其参与活动，取消其资格。</li>
+				</ul>
+				<span class="close"></span>
+			</div>
+			<div class="pop_success">
+				<a class="success_btn" class="konw" href="http://m.aihuishou.com/shouji?act=bg&act_activityCode=ACT_627_THREE">卖手机换大片</a>
+				<span class="close"></span>
+			</div>
+			<div class="pop_fail">
+				<a class="fail_btn" href="http://m.aihuishou.com/shouji?act=bg&act_activityCode=ACT_627_THREE">卖手机换大片</a>
+				<span class="close"></span>
+			</div>
+			<div class="arrow"></div>
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="../../resources/js/url.js"></script>
+		<script src="js/three.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+		<script src="../../resources/js/share.js"></script>
+		<script>
+		    getWX();
+		  	share('爱回收遇上三人行？引爆夏至盛宴','http://m.mk.aihuishou.com/ahs/threeLines/threeLines.html?act=bg&act_activityCode=ACT_627_THREE','http://m.mk.aiweixiu.com/ahs/threeLines/images/share.jpg','我就回收个手机，居然请我看电影，吃火锅','http://m.mk.aihuishou.com/ahs/threeLines/threeLines.html?utm source=weixin_pengyouquan&utm medium=m&utm canmpaign=sanren&act=bg&act_activityCode=ACT_627_THREE','http://m.mk.aihuishou.com/ahs/threeLines/threeLines.html?utm source=weixin_person&utm medium=m&utm canmpaign=sanren&act=bg&act_activityCode=ACT_627_THREE');
+		</script>
+	</body>
+</html>

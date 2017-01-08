@@ -1,0 +1,790 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+.header{
+	width: 100%;
+	height: 15.78rem;
+	background: url(../images/bg1.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.header .dingyue{
+	width: 6.86rem;
+	height:1.58rem;
+	background: url(../images/dingyue.png) no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.43rem;
+	z-index: 5;
+	top: 13.20rem;
+}
+.header .move_back{
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/fanhui.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 3px;
+	top: 2px;
+	z-index: 10000;
+}
+.middle{
+	width: 100%;
+	height: 14.5rem;
+	background: url(../images/bg2.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.middle .left{
+	position: absolute;
+	top: 0;
+	left:1.03rem ;
+	width: 3.62rem;
+	height: 13.9rem;	
+}
+.middle .left li{
+	width: 3.62rem;
+	height:2.13rem;
+	margin-top: 0.2133rem;
+	font-size: 0.47rem;
+	text-align: center;
+}
+.middle .left .activeLeft{
+	background: url(../images/choosen.png) no-repeat;
+}
+.left li:nth-child(1){
+	background: url(../images/1.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0;
+	line-height: 0.64rem;
+	padding-top: 0.4rem;
+}
+ .left li:nth-child(2){
+	background: url(../images/2.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.13rem;
+}
+.left li:nth-child(3){
+	background: url(../images/3.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.13rem;
+}
+.left li:nth-child(4){
+	background: url(../images/4.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 0.64rem;
+	padding-top: 0.4rem;
+}
+.left li:nth-child(5){
+	background: url(../images/5.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.13rem;
+}
+.left li:nth-child(6){
+	background: url(../images/6.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0.23rem;
+	line-height: 0.64rem;
+	padding-top: 0.4rem;
+}
+.middle .right{
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left:4.65rem ;
+	width: 10.196rem;
+	height: 13.9rem;	
+}
+/**/
+/*.down{
+	width: 100%;
+	height:2.1rem ;
+	top: 9rem;
+	position: absolute;
+	z-index: 10000;
+}
+.down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+.down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size:100% 100% ;
+}*/
+/*iphone6*/
+.xuan1{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: block;
+}
+.xuan1 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan1 .up li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	background: url(../images/left1.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+.xuan1 .up li:nth-child(1){
+	margin-left: 2.1rem;
+}
+.xuan1 .up li:nth-child(2){
+	margin-left: 1.9rem;
+}
+.xuan1 .up .upActive{
+	background: url(../images/left2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan1 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan1 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan1 .down1 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan1 .down1 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan1 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan1 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+/*xiao mi*/
+.xuan2{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: none;
+}
+.xuan2 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan2 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan2 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan2 .down2 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan2 .down2 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan2 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan2 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+/*华为*/
+.xuan3{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: none;
+}
+.xuan3 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan3 .up li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	background: url(../images/left1.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+.xuan3 .up li:nth-child(1){
+	margin-left: 2.1rem;
+}
+.xuan3 .up li:nth-child(2){
+	margin-left: 1.9rem;
+}
+.xuan3 .up .upActive{
+	background: url(../images/left2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan3 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan3 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan3 .down3 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan3 .down3 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan3 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan3 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+
+/*sanxing*/
+.xuan4{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: none;
+}
+.xuan4 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan4 .up li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	background: url(../images/left1.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+.xuan4 .up li:nth-child(1){
+	margin-left: 2.1rem;
+}
+.xuan4 .up li:nth-child(2){
+	margin-left: 1.9rem;
+}
+.xuan4 .up .upActive{
+	background: url(../images/left2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan4 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan4 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan4 .down4 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan4 .down4 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan4 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan4 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+/*xiang ji*/
+.xuan5{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: none;
+}
+.xuan5 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan5 .up li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	background: url(../images/left1.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+.xuan5 .up li:nth-child(1){
+	margin-left: 2.1rem;
+}
+.xuan5 .up li:nth-child(2){
+	margin-left: 1.9rem;
+}
+.xuan5 .up .upActive{
+	background: url(../images/left2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan5 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan5 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan5 .down5 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan5 .down5 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan5 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan5 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+/*mac*/
+.xuan6{
+	width: 10.196rem;
+	height: 13.9rem;	
+	position: absolute;
+	display: none;
+}
+.xuan6 .up{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 4rem;
+}
+.xuan6 .up li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	background: url(../images/left1.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+	margin-left: 0.36rem;
+}
+/*.xuan6 .up li:nth-child(1){
+	margin-left: 0.1rem;
+}
+.xuan6 .up li:nth-child(2){
+	margin-left: 0.1rem;
+}
+.xuan6 .up li:nth-child(3){
+	margin-left: 0.1rem;
+}
+.xuan6 .up li:nth-child(4){
+	margin-left: 0.1rem;
+}*/
+.xuan6 .up .upActive{
+	background: url(../images/left2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan6 .down{
+	width: 100%;
+	height:2.1rem ;
+	margin-top: 3rem;
+}
+.xuan6 .down li{
+	font-size: 0.384rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	float: left;
+}
+/**/
+.right .xuan6 .down6 .active{
+	background: url(../images/manzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right .xuan6 .down6 .active2{
+	background: url(../images/bumanzhu2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**/
+.xuan6 .down li:nth-child(1){
+	margin-left: 2.1rem;
+	background: url(../images/manzhu1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan6 .down li:nth-child(2){
+	margin-left: 1.9rem;
+	background: url(../images/bumanzhu1.png) no-repeat;
+	background-size:100% 100% ;
+}
+
+
+/**/
+.footer{
+	width: 100%;
+	height: 15.27rem;
+	background: url(../images/bg3.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.footer .contentDown{
+	text-align: center;
+}
+.contentDown li:nth-child(1){
+	font-size: 0.512rem;
+	color: #e33038;
+	font-family: arial;
+	height: 2.56rem;
+	line-height: 2.56rem;
+}
+.contentDown li:nth-child(1) span{
+	font-size: 1.58rem;
+	color: #e33038;
+}
+.contentDown li:nth-child(2){
+	font-size: 0.512rem;
+	color: #e9777b;
+}
+.contentDown li:nth-child(2) span{
+	color: #e33038;
+	font-family: arial;
+}
+.contentDown li:nth-child(3){
+	height: 1.70rem;
+	width: 100%;
+	margin-top: 0.4rem;
+}
+.share{
+	display: inline-block;
+	width: 6.35rem;
+	height:1.70rem ;
+	background: url(../images/tongzhi.png) no-repeat;
+	background-size: 100% 100%;
+}
+.goIndex{
+	display: inline-block;
+	width:5.4rem ;
+	height: 1.70rem;
+	background: url(../images/huishou.png) no-repeat;
+	background-size: 100% 100%;
+}
+.contentDown li:nth-child(4){
+	font-size: 0.34rem;
+	color: #e33038;
+	height: 0.34rem;
+	margin-top: 0.4rem;
+}
+
+/*分享*/
+.blackZhe{
+	display: none;
+	width: 100% ;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;	
+}
+.fenxiang{
+	width: 16rem;
+	height: 10.475rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	z-index: 201;
+	top: 0; 
+}
+
+.downdetails1{
+	position: absolute;
+	left: 0.2rem;
+	top: 11.76rem;
+	text-align: center;
+}
+.downdetails1 i{
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+}
+.downdetails2{
+	position: absolute;
+	top: 11.76rem;
+	left: 2.2rem;
+} 
+.downdetails2 i{
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+}
+.downdetails2 i:nth-child(2){
+	margin-left: 1rem;
+}
+.downdetails3{
+	position: absolute;
+	left: 0.3rem;
+	top: 11.76rem;
+}
+.downdetails3 i{
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+	margin-left: 0.3rem;
+}
+.downdetails4{
+	width: 100%;
+	position: absolute;
+	top: 11.76rem;
+	text-align: center;
+}
+.downdetails4 i{
+	display: inline-block;
+	width: auto;
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+	margin-left: 0;
+	line-height: 0.6rem;
+}
+.downdetails4 i:nth-child(4){
+	display: block;
+}
+.downdetails5{
+	position: absolute;
+	top: 11.76rem;
+	left: 1.2rem;
+} 
+.downdetails5 i{
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+}
+.downdetails5 i:nth-child(2){
+	margin-left: 0.6rem;
+}
+.downdetails6{
+	width: 100%;
+	position: absolute;
+	top: 11.76rem;
+	text-align: center;
+}
+.downdetails6 i{
+	font-size: 0.47rem;	
+	font-style: normal;
+	font-family: arial;
+	margin-left: 0rem;
+	line-height: 0.6rem;
+}
+.downdetails6 i:nth-child(2){
+	margin-left: 0.2rem;
+}
+.downdetails6 i:nth-child(3){
+	display: block;
+}
+
+/*订阅弹窗*/
+.blackOne{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: black;
+	opacity: 0.8;
+	display: none;
+}
+.winDing{
+	width: 11.10rem;
+	height: 11.35rem;
+	position: fixed;
+	z-index: 1000;
+	left: 50%;
+	top: 50%;
+	margin-left: -5.55rem;
+	margin-top: -5.675rem;
+	background: url(../images/m.png) no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+.yourMobile{
+	width: 8.1rem;
+	height: 1.5rem;
+	display: block;
+	position: absolute;
+	left: 2.2rem;
+	top: 6.7rem;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 0.512rem;
+	line-height: 1.5rem;
+}
+.goDing{
+	width: 9.8rem;
+	height: 1.7rem;
+	background-color: #f86229;
+	position: absolute;
+	left: 50%;
+	margin-left: -4.9rem;
+	top: 9rem;
+	color: white;
+	text-align: center;
+	line-height: 1.7rem;
+	border-radius: 2px;
+	font-size: 0.64rem;
+}
+.dingClose{
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../images/m-guan.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0.5rem;
+	top: 3.4rem;
+}
+
+
+/*注意事项*/
+.mnotice{
+	width: 12.16rem;
+	height: 5.248rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.08rem;
+	top: 8rem;
+	display: block;
+}
+.mnotice li{
+	font-size: 0.384rem;
+	line-height: 0.77rem;
+	font-family: arial;
+	color: white;
+}
+
+/*nodemand*/
+.nodemand{
+	width: 100%;
+	height: 2.1rem;
+	line-height: 1.8rem;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

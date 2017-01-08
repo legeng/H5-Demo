@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收礼包</title>
+		<link rel="stylesheet" type="text/css" href="css/red.css"/>
+	    <script src="../../resources/js/Adaptive.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+		<div class="mengCeng"></div>
+		<div class="successTicket">
+			<div class="successCode">
+				<span>补贴券码：</span>
+				<b class="successB"></b>
+			</div>
+			<div class="successClose"></div>
+			<a href="http://m.aihuishou.com/shouji?act=bg&act_activityCode=ACT_715_REDPACKETS" class="successGo">立即回收</a>
+		</div>
+		<div class="move_back" onclick="history.go(-1)"></div>
+		<!--1-->
+		<div class="pageOne">
+			<div class="pageOup">
+				<ul class="login_pop">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="oneNum"/>
+					<input type="text" id="verifyCode" placeholder="请填写验证码" maxlength="6" class="oneCode"/>
+					<span id="yzh" class="phone-yzm oneYzm"  onclick="_paq.push(['trackEvent', 'redBags', '红包', '获取验证码']);">获取验证码</span>
+					<div id="login" onclick="_paq.push(['trackEvent', 'redBags', '红包', '立即领取']);" class="oneBtn"/>立即领取</div>
+				</ul>
+			</div>
+			<div class="pageOdown"></div>
+		</div>
+		<!--1-->
+		<!--2-->
+		<div class="pageTwo">
+			<div class="pageTup">
+				<ul class="login_pop_img">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11"class="twoNum"/>
+					<input type="text" class="img_yzm twoImgCode" id="certCode" placeholder="请填写图形码" maxlength="6" />
+					<img src="" id="portrait" class="twoPic"/>
+					<input type="text" id="verifyCode01" placeholder="请填写验证码" maxlength="6" class="twoCode"/>
+					<span id="yzh01" class="phone-yzm twoYzm"  onclick="_paq.push(['trackEvent', 'redBags', '红包', '获取验证码']);">获取验证码</span>
+					<div id="login_img"  onclick="_paq.push(['trackEvent', 'redBags', '红包', '立即领取']);" class="twoBtn">立即领取</div>
+				</ul>
+			</div>
+			<div class="pageTdown"></div>
+		</div>
+		<!--2-->			
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="../../resources/js/url.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>
+		<script src="js/loginRedBags.js"></script>
+		<script src="js/bags.js"></script>
+	</body>
+</html>

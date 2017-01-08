@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收数码环保服务站</title>
+		<link rel="stylesheet" type="text/css" href="css/out.css"/>
+		<link rel="stylesheet" type="text/css" href="css/digital.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>		
+		<script src="../../resources/js/Adaptive.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+		<div class="move_back" onclick="history.go(-1)"></div>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	<!--<img data-src="images/1.gif" class="swiper-lazy">
+          			<div class="swiper-lazy-preloader"></div>-->
+			    <div class="swiper-slide slide1"></div>
+			    <div class="swiper-slide slide2"></div>
+			    <div class="swiper-slide slide3"></div>
+			    <div class="swiper-slide slide4"></div>
+			    <div class="swiper-slide slide5">
+			    	<div class="loveIn ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0s"></div>
+			    	<div class="roundEyes"></div>
+			    		<div class="digitalBtn ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+			    			<div class="btnBags">
+			    				<div class="btnBagsUp"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '领取礼包']);"></div>
+			    				<div class="btnBagsDown"></div>
+			    			</div>
+			    			<div class="btnFriends">
+			    				<div class="btnFriendsUp"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '分享朋友']);"></div>
+			    				<div class="btnFriendsDown"></div>
+			    			</div>
+			    		</div>
+			    		<div class="digitalRules" onclick="_paq.push(['trackEvent', 'digital', '数码站', '活动规则']);"></div>
+			    </div>
+		    </div>
+		</div>
+		<div class="blackDemo"></div>
+		<div class="guizeWindow">
+			<div class="rulesClose"></div>
+		</div>
+		<div class="getRewards">
+			<div class="rewardKonw">我知道了</div>
+			<div class="rewardClose"></div>
+		</div>
+		<div class="shareGuide"></div>
+		<!--login--登录---->
+			<ul class="login_pop">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="oneNum"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" id="verifyCode" placeholder="请填写验证码" maxlength="6" class="oneCode"/>
+					<span id="yzh" class="phone-yzm"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '获取验证码']);">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<div id="login"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '登录']);">领取礼包</div>
+				</li>
+				<span class="close"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '关闭']);"></span>
+			</ul>
+			<ul class="login_pop_img">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="twoNum"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" class="img_yzm" id="certCode" placeholder="请填写图形码" class="twoImgCode"/>
+					<img src="" id="portrait"/>
+				</li>
+				<li class="img_li">
+					<input type="text" id="verifyCode01" placeholder="请填写验证码" maxlength="6" class="twoCode"/>
+					<span id="yzh01" class="phone-yzm"  onclick="_paq.push(['trackEvent', 'digital', '数码站', '获取验证码']);">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<div id="login_img" onclick="_paq.push(['trackEvent', 'digital', '数码站', '登录']);" >领取礼包</div>
+				</li>
+				<span class="close" onclick="_paq.push(['trackEvent', 'digital', '数码站', '关闭']);"></span>
+			</ul>
+		
+		<script src="js/swiper.animate.min.js"></script>
+		<script src="../../resources/js/swiper.min.js"></script>
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>		
+		<script src="../../resources/js/url.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>		
+		<script src="../../resources/js/share.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>	
+		<script src="js/login.js"></script>
+		<script src="js/shuma.js"></script>
+		<script>
+			 getWX();
+			 var title = "“爱”一直伴你左右";
+			 var desc = "数码环保服务站送你温馨礼包";
+			 var pyq = "http://m.mk.aihuishou.com/ahs/digital/digital.html?utm_source=weixin_pengyouquan&utm_medium=M&utm_campaign=ACT_722_DEPSS&piwik_kwd=ACT_722_DEPSS&act=bg&act_activityCode=ACT_722_DEPSS";
+			 var py = "http://m.mk.aihuishou.com/ahs/digital/digital.html?utm_source=weixin_person&utm_medium=M&utm_campaign=ACT_722_DEPSS&piwik_kwd=ACT_722_DEPSS&act=bg&act_activityCode=ACT_722_DEPSS";
+			 var elseUrl = "http://m.mk.aihuishou.com/ahs/digital/digital.html";
+			 var imgUrl = "http://m.mk.aiweixiu.com/ahs/digital/images/shareD.png";
+			 share(title,elseUrl,imgUrl,desc,pyq,py);
+		</script>
+	</body>
+</html>

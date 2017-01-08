@@ -1,0 +1,46 @@
+@charset "utf-8";
+html,body,div,img{
+	margin:0;
+	padding:0;
+}
+img{
+	border:0;
+}
+body{
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+.box{width: 100%;overflow: hidden;}
+.header{
+	height:560px ;
+	position: relative;
+}
+.header img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}	
+.content{
+	height:420px ;
+	position: relative;
+}
+.content img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.footer{
+	position: relative;
+	height: 674px;
+}
+.footer img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+
+
+
+
+
+

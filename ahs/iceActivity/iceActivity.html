@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>冰点低价！拯救手机碎屏</title>
+		<link rel="stylesheet" type="text/css" href="css/icePoint.css"/>
+		<script src="../../resources/js/Adaptive.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+		  var _paq = _paq || [];
+		  _paq.push(["setDomains", ["*.m.mk.aiweixiu.com"]]);
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+		    var u="//tk.aihuishou.com/";
+		    _paq.push(['setTrackerUrl', u+'piwik.php']);
+		    _paq.push(['setSiteId', 8]);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=8" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+		<div class="move_back" onclick="history.go(-1)"></div>
+		<div class="mengceng"></div>
+		<div class="iceHeader"></div>
+		<div class="iceContent">
+			<div class="getNow" onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', '点击领券']);"></div>
+		</div>
+		<div class="iceFooter">
+			<div class="upBtn">
+				<div class="process" onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', '活动流程']);"></div>
+				<div class="rules" onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', '活动规则']);"></div>
+			</div>
+			<div class="downBtn" onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', '参与门店']);"></div>
+		</div>
+		<!--btn-->
+		<div class="activityRules"></div>
+		<div class="activityProcessFather">
+			<div class="activityProcess"></div>
+		</div>
+		
+		<div class="successTicket">
+			<div class="nowGo"></div>
+		</div>
+		<!--login-->
+		<ul class="login_pop">
+			<li class="phone">
+				<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="fir"/>
+			</li>	
+			<li class="yzm_li">
+				<input type="text" id="verifyCode" placeholder="请填写验证码" maxlength="6"/ class="secd">
+				<span id="yzh" class="phone-yzm"  onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', '获取验证码']);" class="code1">获取验证码</span>
+			</li>	
+			<li class="deng_btn">
+				<input type="button" value="" id="login"  onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', 'login点击领取']);" class="thir"/>
+			</li>
+		</ul>
+		<ul class="login_pop_img">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="fir1"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" class="img_yzm fou" id="certCode" placeholder="请填写图形码" maxlength="4"/>
+					<img src="" id="portrait" class="ImgPic"/>
+				</li>
+				<li class="img_li">
+					<input type="text" id="verifyCode01" placeholder="请填写验证码" maxlength="6" class="secd1"/>
+					<span id="yzh01" class="phone-yzm" >获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<input type="button" value="" id="login_img"  onclick="_paq.push(['trackEvent', 'iceActivity', '冰点活动', 'login点击领取']);" class="thir1"/>
+				</li>
+				
+			</ul>
+		<!--参与门店-->
+		<div class="md">
+            <span class="title">门店位置<span class="closepopup"></span></span>
+            <ul class="city">
+               
+            </ul>
+            <ul id="county" class="col-left">
+            </ul>
+            <ul id="door" class="col-right">
+            </ul>
+        </div>
+		
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="../../resources/js/url.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+		<script src="../../resources/js/share.js"></script>
+		<script src="js/ice.js"></script>
+		<script>
+		    getWX();
+		  	share('冰点低价！拯救手机碎屏！','http://m.mk.aiweixiu.com/awx/iceActivity/iceActivity.html','http://m.mk.aiweixiu.com/awx/iceActivity/images/share.png','【冰点低价】手机换屏盛夏优惠来袭！速速领走红包','http://m.mk.aiweixiu.com/awx/iceActivity/iceActivity.html?utm_source=weixin_pengyouquan&utm_medium=M&utm_campaign=ice&piwik_kwd=ice&act=bg&act_activityCode=ACT_708_WEIXIU','http://m.mk.aiweixiu.com/awx/iceActivity/iceActivity.html?utm_source=weixin_person&utm_medium=M&utm_campaign=ice&piwik_kwd=ice&act=bg&act_activityCode=ACT_708_WEIXIU');
+		</script>
+	</body>
+</html>

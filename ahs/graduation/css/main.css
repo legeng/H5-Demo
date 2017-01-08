@@ -1,0 +1,437 @@
+@charset "utf-8";
+html,body,div,span,input,p,ul,li,span{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+}
+html,body{
+	overflow:auto;
+}
+.swiper-container,div.swiper-wrapper,.bor_nav{
+	overflow:auto;
+}
+img{
+	border:none;
+}
+input{
+	-webkit-appearance: none;
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*------------login----------------*/
+div.pop{
+	margin:30px;
+	width:11.2rem;
+	border-radius: 3px;
+	font-weight: 800;
+	color:#999;
+	background:#fff;
+	padding-bottom: 12px;
+	display: none;
+	position:absolute;
+	left:50%;
+	top:25%;
+	margin-left:-5.6rem;
+	z-index:2000;
+}
+div.pop p{
+	height:1.6rem;
+	width:11.2rem;
+	text-align: center;
+	background:url(../images/login/top.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 13px;
+}
+.phone_bor,.yzm_bor,.sec_bor{
+	width:80%;
+	height:1.5rem;
+	border:1px solid #999;
+	border-radius: 3px;
+	margin:0 auto 12px;
+	position:relative;
+}
+.phone_bor span{
+	width:1.3rem;
+	height:1.5rem;
+	display: inline-block;
+	background:url(../images/login/icon01.png) no-repeat center;
+	background-size: 0.701rem 1.1rem;
+	border-right: 1px solid #999;
+}
+.yzm_bor span{
+	width:1.3rem;
+	height:1.5rem;
+	display: inline-block;
+	background:url(../images/login/icon03.png) no-repeat center;
+	background-size: 0.701rem 1.1rem;
+	border-right: 1px solid #999;
+}
+.sec_bor span{
+	width:1.3rem;
+	height:1.5rem;
+	display: inline-block;
+	background:url(../images/login/icon02.png) no-repeat center;
+	background-size: 0.701rem 1.1rem;
+	border-right: 1px solid #999;
+}
+.pop .sec_bor input{
+	width:5rem;
+}
+.sec_bor .imgDiv{
+	display: inline-block;
+	position:absolute;
+	right:0;
+	height:1.5rem;
+	width:3.6rem;
+}
+.sec_bor .imgDiv img{
+	width:100%;
+	height:100%;
+}
+.pop input{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	padding-left:3px;
+	height:1.3rem;
+	line-height: 1.5rem;
+	border:none;
+}
+.pop .btns{
+	width:6.6rem;
+	height:1.5rem;
+	line-height: 1.5rem;
+	background:#FBD544;
+	text-align: center;
+	color:#333;
+	font-size:18px;
+	margin:0 auto;
+}
+.sec_bor{
+	display: none;
+}
+.pop .phone-yzm{
+	display: inline-block;
+	background:#FBD544;
+	height:1.5rem;
+	width:3.6rem;
+	line-height:1.5rem;
+	position:absolute;
+	right:0;
+	font-size:12px;
+	text-align: center;
+	color:#333;
+}
+.phone-yzm-gray{
+	background:#999;
+	color: #000;
+}
+.close{
+	display: block;
+	position:absolute;
+	right:0;
+	top:3%;
+	width:1.2rem;
+	height:0.9rem;
+	background:url(../images/login/close.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*-----------------top-------------------*/
+.page .arrow{
+	width:36px;
+	height:36px;
+	display: block;
+	background:#000 url(../images/arrow.png) no-repeat center;
+	background-size:16px 24px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	opacity: 0.5;
+	-webkit-	opacity: 0.5;
+}
+.page .top{
+	background:url(../images/gra_top.png) no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+	height:7.186rem;
+}
+.bg{
+	background:url(../images/bar.png) repeat-y center;
+	width:100%;
+	background-size:100% auto;
+	padding-bottom:15px;
+	text-align: center;
+}
+.bg .gz_btn{
+	background:url(../images/gz_bg.png) no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 5rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+	font-size: 16px;
+	text-align: center;
+	color:#583826;
+	font-weight: 800;
+	margin-bottom:12px;
+}
+.bg .gz_content{
+	display: inline-block;
+	text-align: center;
+	background:url(../images/gz.png) no-repeat;
+	background-size: 100% 100%;
+	width:14.379rem;
+	height:8.96rem;
+	padding:1.5rem 10px 0 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top:1rem;
+}
+.bg .gz_content p{
+	font-size: 0.65rem;
+	line-height:1.2rem;
+	text-align: left;
+	color:#fff;
+	text-indent: 1.3rem;
+}
+.bg .gz_content p.time{
+	padding-bottom:10px;
+	text-align: center;
+}
+.bg .more_phone{
+	font-size:16px;
+	display: inline-block;
+	color:#583826;
+	font-weight: 800;
+	margin-top:24px;
+}
+/*----------券------------*/
+ul.quan_list{
+	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+	padding:12px 8px 2.3rem;
+}
+.quan_list li{
+	-webkit-box-flex: 1;
+    flex-grow: 1;
+    box-flex: 1;
+    width:4.5rem;
+    height:4.5rem;
+    background:url(../images/quan10.png) no-repeat;
+    background-size:100% 100%;
+    list-style: none;
+    position:relative;
+}
+.quan_list li span{
+	width:48px;
+	height:46px;
+	position:absolute;
+	background: url(../images/quan_btn_03.png) no-repeat;
+	background-size: 100% 100%;
+	bottom:-26px;
+	left:50%;
+	margin-left:-24px;
+}
+.quan_list li:nth-child(2){
+	 background:url(../images/quan30.png) no-repeat;
+	  background-size:100% 100%;
+	  margin:0 6px;
+}
+.quan_list li:nth-child(3){
+	 background:url(../images/quan50.png) no-repeat;
+	  background-size:100% 100%;
+}
+
+/*--------手机列表------------*/
+.bg .phone-list{
+	padding:18px 0.774rem 12px;
+}
+.phone-list a{
+	display: none;
+	width:6.826rem;
+	height:9.26rem;
+	margin-bottom:8px;
+	float:left;
+}
+.phone-list a:nth-child(even){
+	margin-left:0.8rem;
+}
+
+.phone-list{
+}
+.phone_nav{
+	width:100%;
+	background:#fff;
+	display: inline-block;
+	height:2rem;
+	line-height: 2rem;
+	border-radius: 5px;
+	margin-top:0.3rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position:relative;
+	z-index:10;
+}
+.bor_nav{
+	width:78%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.phone_nav .swiper-slide {
+	position:relative;
+	text-align:center;
+	width:auto;
+	font-size:16px;
+	color:#583826;
+	font-weight: 800;
+}
+.phone_nav div.swiper-slide:nth-of-type(even){
+	padding:0 20px;
+}
+.phone_nav div.active{
+	color:#fc6081;
+}
+.phone_nav span{
+	display: inline-block;
+	width:30px;
+	height:100%;
+	font-size:18px;
+	height:2rem;
+	line-height: 2rem;
+	position:absolute;
+	left:2%;
+	color:#583826;
+	font-weight: 800;
+	animation: loop_lt 0.5s infinite alternate;
+	-webkit-animation: loop_lt 0.5s infinite alternate;
+}
+@-webkit-keyframes loop_lt{
+	from{
+		left:2%;
+	}
+	to{
+		left:4%;
+	}
+}
+.phone_nav span.next{
+	left:90%;
+	position:absolute;
+	animation: loop 0.5s infinite alternate;
+	-webkit-animation: loop 0.5s infinite alternate;
+}
+@-webkit-keyframes loop{
+	from{
+		left:90%;
+	}
+	to{
+		left:89%;
+	}
+}
+@keyframes loop{
+	from{
+		left:90%;
+	}
+	to{
+		left:89%;
+	}
+}
+.phone-list a:nth-child(1){
+	background:url(../images/phone/type_09.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.phone-list a:nth-child(2){
+	background:url(../images/phone/type_10.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.phone-list a:nth-child(3){
+	background:url(../images/phone/type_13.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.phone-list a:nth-child(4){
+	background:url(../images/phone/type_14.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.phone-list a:nth-child(5){
+	background:url(../images/phone/type_17.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(6){
+	background:url(../images/phone/type_18.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(7){
+	background:url(../images/phone/type_21.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(8){
+	background:url(../images/phone/type_22.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(9){
+	background:url(../images/phone/type_05.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(10){
+	background:url(../images/phone/type_03.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(11){
+	background:url(../images/phone/type_25.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(12){
+	background:url(../images/phone/type_26.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(13){
+	background:url(../images/phone/type_29.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(14){
+	background:url(../images/phone/type_30.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(15){
+	background:url(../images/phone/type_33.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(16){
+	background:url(../images/phone/type_34.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(17){
+	background:url(../images/phone/type_37.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(18){
+	background:url(../images/phone/type_38.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(19){
+	background:url(../images/phone/type_41.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(20){
+	background:url(../images/phone/type_42.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(21){
+	background:url(../images/phone/type_45.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(22){
+	background:url(../images/phone/type_46.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(23){
+	background:url(../images/phone/type_49.png) no-repeat;
+	background-size: 100% 100%;
+}
+.phone-list a:nth-child(24){
+	background:url(../images/phone/type_50.png) no-repeat;
+	background-size: 100% 100%;
+}
+

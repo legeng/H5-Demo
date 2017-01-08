@@ -1,0 +1,204 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+.bg1{
+	overflow-x: hidden;
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+.bg1 img{
+	display: block;
+	width: 1920px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.bg2{
+	overflow-x: hidden;
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+.bg2 img{
+	display: block;
+	width: 1920px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.bg3{
+	overflow-x: hidden;
+	width: 100%;
+	height: 947px;
+	position: relative;
+}
+.bg3 img{
+	display: block;
+	width: 1920px;
+	height: 947px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.tabox{
+	position: absolute;
+	z-index: 10;
+	width:924px ;
+	height: 477px;
+	left: 50%;
+	margin-left: -462px;
+	border: 7px solid #b48ec5;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+}
+.tabox ul{
+	float: left;
+} 
+.tabox .tabLeft{
+	width: 226px;
+	height: 463px;
+	border-right: 2px solid #e3e3e3;
+}
+
+.tabLeft li{
+	display: block;
+	text-align: center;
+	line-height: 66.14px;
+	width: 100%;
+	height: 66.14px;
+	border-bottom: 2px solid #e3e3e3;
+	background-color: #f4f4f4;
+	color:#333333 ;
+}
+.tabLeft .typeActive{
+	color: #ffffff;
+	background-color: #ffcc03;
+}
+.tabLeft li:nth-child(7){
+	border-bottom: none;
+}
+
+.tabox .tabRight{
+	width: 684px;
+	height: 463px;
+	position: relative;
+}
+.tabRight li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.tabRight li:nth-child(1){
+	background: url(../images/iPhone5.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(2){
+	background: url(../images/iPhone5c.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(3){
+	background: url(../images/iPhone5s.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(4){
+	background: url(../images/iPhone6.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(5){
+	background: url(../images/iPhone6-Plus.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(6){
+	background: url(../images/iPhone6s.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(7){
+	background: url(../images/iPhone6s-Plus.png) no-repeat;
+	background-size:100% 100% ;
+}
+.quan{
+	width: 924px;
+	height: 144px;
+	position: absolute;
+	z-index: 50;
+	left: 50%;
+	top: 652px;
+	margin-left: -462px;
+}
+.quan li{
+	display: block;
+	float: left;
+}
+.fifty{
+	width: 278px;
+	height: 144px;
+	background: url(../images/50.png);
+	background-size: 100% 100%;
+	margin-left: 8px;
+}
+.thirty{
+	width: 278px;
+	height: 144px;
+	background: url(../images/30.png);
+	background-size: 100% 100%;
+	margin-left: 35px;
+}
+.ten{
+	width: 278px;
+	height: 144px;
+	background: url(../images/10.png);
+	background-size: 100% 100%;
+	margin-left: 35px;
+}
+.bottomBtn{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	bottom: 0;
+	background-color: #753297;
+}
+.bottomBtn .middle{
+	width: 450px;
+	height: 80px;
+	background: url(../images/button.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+	top: 50%;
+	margin-top: -40px;
+}
+
+
+
+
+
+
+
+
+
+

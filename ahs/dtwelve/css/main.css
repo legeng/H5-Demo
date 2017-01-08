@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+html,body,div,p,ul,ol,li,i,img,a,span,p,h1,h2,h3,h4,h5,h6,input{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	/*box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*
+ */
+#ahs_act{
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+.act_banner{
+	width: 100%;
+	height: 610px;
+	position: relative;
+}
+.act_banner .act_banner_content{
+	width: 1920px;
+	height: 610px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	background: url(../images/banner.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*ticket*/
+.ahs_ticket{
+	width: 100%;
+	background-color:#331c74 ;
+    padding-top: 34px;
+    padding-bottom: 143px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.ahs_ticket .ticket_tittle{
+	width: 863px;
+	height: 99px;
+	background: url(../images/ticket_senyou.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.ticket_all{
+	width: 1200px;
+	font-size: 0;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 54px;
+}
+.ticket_all .ticket_item{
+	height: 140px;
+	width: 380px;
+	display: inline-block;
+	cursor: pointer;
+}
+.ticket_all .item01{
+	background: url(../images/20.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 30px;
+}
+.ticket_all .item01.active{
+	background: url(../images/20_out.png) no-repeat;
+	background-size:100% 100% ;
+}
+.ticket_all .item02{
+	background: url(../images/30.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 30px;
+}
+.ticket_all .item02.active{
+	background: url(../images/30_out.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ticket_all .item03{
+	background: url(../images/50.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ticket_all .item03.active{
+	background: url(../images/50_out.png);
+	background-size: 100% 100%;
+}
+/*机型区域*/
+.mobile_type{
+	width: 100%;
+	background-color: #421f7d;
+	padding-top:100px;
+	padding-bottom: 90px;
+	max-width: 1920px;
+	margin: 0 auto;
+	
+}
+.mobile_type .mobile_type_title{
+	width: 877px;
+	height: 87px;
+	background:url(../images/mobile_title.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.mobile_type .type_all{
+	margin: 0 auto;
+	/*margin-top: 44px;*/
+	width:1030px ;
+	font-size: 0;
+}
+.mobile_item{
+	width: 220px;
+	height: 300px;
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 40px;
+}
+.mobile_item a{
+	display: block;
+	width: 100%;
+	height: 237px;
+	position: relative;
+}
+.mobile_item a span{
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 48px;
+	background-color:#ebd627 ;
+	bottom: -48px;
+	right: 0;
+	/*border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 48px;
+	font-weight: bold;
+	color: #FFFFFF;*/
+	background: url(../images/mobile_type/sell.png) no-repeat;
+	background-size: 100% 100%;
+}
+.mobile_item a span:hover{
+	/*background-color: #fd7c0a;*/
+	background: url(../images/mobile_type/sell_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+.type_all .mobile_item:nth-child(4n+4){
+	margin-right: 0;
+}
+.item_1{
+	background: url(../images/mobile_type/huaweiP9.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_2{
+	background: url(../images/mobile_type/sanxingS7.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_3{
+	background: url(../images/mobile_type/iphone6.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_4{
+	background: url(../images/mobile_type/meituM6.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*2*/
+.item_5{
+	background: url(../images/mobile_type/xiaomi5.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_6{
+	background: url(../images/mobile_type/sanxingS6.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_7{
+	background: url(../images/mobile_type/meizuPRO5.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_8{
+	background: url(../images/mobile_type/sanxingNote3.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*3*/
+.item_9{
+	background: url(../images/mobile_type/huwei7i.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_10{
+	background: url(../images/mobile_type/leshi2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_11{
+	background: url(../images/mobile_type/suoniXz3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_12{
+	background: url(../images/mobile_type/xiaomi4.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*4*/
+.item_13{
+	background: url(../images/mobile_type/meizuMX4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_14{
+	background: url(../images/mobile_type/huawei6plus.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_15{
+	background: url(../images/mobile_type/hongmi_note.png) no-repeat;
+	background-size: 100% 100%;
+}
+.item_16{
+	background: url(../images/mobile_type/hongmi_1s.png) no-repeat;
+	background-size: 100% 100%;
+}
+.mobile_type .go_more_type{
+	display: block;
+	width:200px ;
+	height: 50px;
+	background: url(../images/mobile_type/type_more.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+/*三步走*/
+.step_three{
+	width: 100%;
+	height: 1198px;
+	position: relative;
+}
+.step_three .step_content{
+	width: 1920px;
+	height: 1198px;
+	background: url(../images/step/step_3.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.step_three .gohightprice{
+	position: absolute;
+	z-index: 20;
+	display: block;
+	width: 200px;
+	height: 50px;
+	left: 50%;
+	margin-left: -100px;
+	bottom: 100px;
+	background: url(../images/mashanggaojia.png) no-repeat;
+	background-size:100% 100%;
+}
+/*guiz e*/
+.ahs_rules{
+	width: 100%;
+	background-color: #421f7d;
+	padding-top: 80px;
+	padding-bottom: 110px;
+	letter-spacing: 2px;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.ahs_rules .rule_title{
+	width: 312px;
+	height: 93px;
+	background: url(../images/step/rules.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.rules_up{
+	width: 800px ;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+.rules_down{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.rules_up p{
+	color: #ffea00;
+	font-size: 24px;
+	
+}
+.rules_up li{
+	line-height: 60px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.rules_down p{
+	color: #ffea00;
+	font-size: 24px;
+}
+.rules_down li{
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 42px;
+}
+.rules_down li:nth-child(2){
+	margin-top: 10px;
+}
+
+/*成功弹窗*/
+.sucess_demo{
+	display: none;
+	position: fixed;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+
+}
+.success_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -210px;
+	margin-top: -245px;
+	width: 420px;
+	height: 490px;
+	background:url(../images/tanchuang/success.png) no-repeat;
+	background-size: 100% 100%;	
+}
+.success_content .success_close{
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	background: url(../images/tanchuang/close.png) no-repeat;
+	position: absolute;
+	right: 23px;
+	top: 21px;
+}
+
+.success_content #successCode{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #000000;
+	margin-top: 290px;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+.success_content .success_go{
+	display: block;
+	width: 200px;
+	height:50px ;
+	background: url(../images/tanchuang/go_sell.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin-top:50px;
+}

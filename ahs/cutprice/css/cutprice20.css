@@ -1,0 +1,161 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+.bg1{
+	width: 100%;
+	height:16.42rem;
+	background: url(../images/bg201.png) no-repeat;
+	background-size: 100% 100%;	
+	position: relative;
+}
+.bg1 .move_back{
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/fanhui.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 3px;
+	top: 2px;
+	z-index: 10000;
+}
+.bg2{
+	width: 100%;
+	height:12.16rem;
+	background: url(../images/bg202.png) no-repeat;
+	background-size: 100% 100%;	
+}
+
+.bg3{
+	width: 100%;
+	height:11.456rem;
+	background: url(../images/bg203.png) no-repeat;
+	background-size: 100% 100%;	
+	position: relative;
+}
+.bottomBtn{
+	width: 100%;
+	height: 2.56rem;
+	position: absolute;
+	bottom: 0;
+	background-color:#8f5e9d ;
+}
+.btn{
+	width: 14.72rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.36rem;
+	top: 0;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.btn01{
+	width: 14.72rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.36rem;
+	top: 0;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+.btn .left{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btn .right{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btn01 .right{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*券*/
+.quan{
+	width: 100%;
+	height:3.072rem;
+	position: absolute;
+	bottom: 3.4rem;
+	left: 0;
+}
+.quan li{
+	width:4.864rem ;
+	height: 3.072rem;
+	display: inline-block;
+}
+.quan .fifty{
+	background: url(../images/50.png) no-repeat;
+	background-size:100% 100% ;
+	margin-left: 0.384rem;
+}
+.quan .thirty{
+	background: url(../images/30.png) no-repeat;
+	background-size:100% 100% ;	
+}
+.quan .ten{
+	background: url(../images/10.png) no-repeat;
+	background-size:100% 100% ;	
+}
+
+.blackZhe{
+	display: none;
+	width: 100% ;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;	
+}
+.fenxiang{
+	width: 16rem;
+	height: 10.475rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	z-index: 201;
+	top: 0; 
+}
+
+
+
+
+

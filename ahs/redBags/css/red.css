@@ -1,0 +1,283 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	height: 100%;
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*返回*/
+.move_back{
+		position: absolute;
+		top: 4px;
+   		left: 4px;
+		z-index: 20;
+		width: 30px;
+   		height: 30px;
+   		background: url(../images/back.png) no-repeat;
+   		background-size: 100% 100%;
+}
+/*1*/
+.pageOne{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #ffd800;
+}
+.pageOup{
+	width: 100%;
+	height: 13.877rem;
+	background: url(../images/b1_1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pageOdown{
+	width: 100%;
+	height: 13.739rem;
+	background: url(../images/b1_2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.oneNum{
+	width: 8.8rem;
+	height:1.28rem ;
+	border: none;
+	outline: none;
+	background: none;
+	position: absolute;
+	left: 4.1rem;
+	top: 9.76rem;
+	font-size: 0.512rem;
+	color: #666666;
+}
+.oneCode{
+	width: 4.8rem;
+	height:1.28rem ;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 4.1rem;
+	top: 12.1rem;
+	font-size: 0.512rem;
+	color: #666666;
+	background: none;
+}
+.oneYzm{
+	display: block;
+	width: 3.861rem;
+	height:1.749rem ;
+	text-align: center;
+	line-height:1.749rem ;
+	position: absolute;
+	left: 9.2rem;
+	top: 11.97rem;
+	background:#fef636 ;
+	font-size:0.555rem ;
+	color: #ee4f26;
+	border-radius: 3px;
+}
+.login_pop .phone-yzm-gray{
+	background:darkgray;
+	color: black;
+}
+.login_pop_img .phone-yzm-gray{
+	background:#999999;
+	color: black;
+}
+.oneBtn{
+	width: 10.283rem;
+	height: 1.963rem;
+	text-align: center;
+	line-height: 1.963rem;
+	background: #fef636;
+	border-radius: 3px;
+	color: #ee4f26;
+	font-size: 0.768rem;
+	border: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.1415rem;
+	top: 14.5rem;
+}
+/*2*/
+.pageTwo{
+	width: 100%;
+	display: none;
+}
+.pageTup{
+	width: 100%;
+	height: 16.405rem;
+	background: url(../images/b2_1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pageTdown{
+	width: 100%;
+	height: 13.44rem;
+	background: url(../images/b2_2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.twoNum{
+	width: 8.8rem;
+	height:1.28rem ;
+	border: none;
+	outline: none;
+	background: none;
+	position: absolute;
+	left: 4.1rem;
+	top: 9.76rem;
+	font-size: 0.512rem;
+	color: #666666;
+}
+.twoCode{
+	width: 4.8rem;
+	height:1.28rem ;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 4.1rem;
+	top: 14.4rem;
+	font-size: 0.512rem;
+	color: #666666;
+	background: none;
+}
+.twoYzm{
+	display: block;
+	width: 3.861rem;
+	height:1.749rem ;
+	text-align: center;
+	line-height:1.749rem ;
+	position: absolute;
+	left: 9.2rem;
+	top: 14.3rem;
+	background:#fef636 ;
+	font-size:0.555rem ;
+	color: #ee4f26;
+	border-radius: 3px;
+}
+.twoBtn{
+	width: 10.283rem;
+	height: 1.963rem;
+	text-align: center;
+	line-height: 1.963rem;
+	background: #fef636;
+	border-radius: 3px;
+	color: #ee4f26;
+	font-size: 0.768rem;
+	border: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.1415rem;
+	top: 16.8rem;
+}
+.twoImgCode{
+	width: 4.8rem;
+	height:1.28rem ;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 4.1rem;
+	top: 12.1rem;
+	font-size: 0.512rem;
+	color: #666666;
+	background: none;
+}
+.twoPic{
+	position: absolute;
+	left: 9.8rem;
+	top: 12.1rem;
+	display: inline-block;
+	width:3.5rem;
+	height:1.4rem;
+	line-height:1.4rem;
+	vertical-align: -0.5rem;
+	margin-left: -0.5rem;
+}
+.successTicket{
+	display: none;
+	width: 12.458rem;
+	height: 10.154rem;
+	background: url(../images/kuang.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 9999999999;
+	left: 50%;
+	margin-left: -6.229rem;
+	top: 50%;
+	margin-top: -5.007rem;
+	border-radius: 3px;
+}
+.successGo{
+	display: block;
+	width:10.24rem ;
+	height:1.92rem ;
+	line-height: 1.92rem;
+	text-align: center;
+	border-radius: 3px;
+	background-color:#fef636 ;
+	color: #ee4f26;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.12rem;
+	top: 7.4rem;
+	font-size: 0.768rem;
+}
+.successClose{
+	width: 0.811rem;
+	height:0.853rem ;
+	background: url(../images/guanCLose.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:0.6rem ;
+	right: 0.7rem;
+}
+.mengCeng{
+	display: none;
+	width: 100% ;
+	height: 100%;
+	position: fixed;
+	z-index: 9999999991;
+	left: 0;
+	top: 0;
+	background-color: black;
+	opacity: 0.8;
+}
+.successCode{
+	font-weight: bolder;
+	position: absolute;
+	left: 3.64rem;
+	top: 3.69rem;
+}
+.successCode span{
+	font-size: 0.512rem;
+	color: #d33917;
+}
+.successCode b{
+	font-size: 0.512rem;
+	color: #d33917;
+}
+
+
+
+
+
+
+
+
+
+
+

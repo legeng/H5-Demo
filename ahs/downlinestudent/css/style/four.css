@@ -1,0 +1,332 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+ul,li{
+	list-style: none;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background-color: #f5e440;
+	position: relative;
+}
+.main .slogan{
+	width:12.736rem ;
+	height:3.584rem ;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.368rem;
+	top: 0;
+	background: url(../../images/demo4/slogan.png) no-repeat;
+	background-size: 100% 100%;
+}
+.main .content{
+	width: 16.4rem;
+	height: 11rem;
+	background: url(../../images/demo4/pic.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 50%;
+	margin-left: -8.2rem;
+	bottom: 0;
+}
+.main .button{
+	width: 8.53rem;
+	height: 2.13rem;
+	background: url(../../images/demo4/button.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 50%;
+	margin-left: -4.265rem;
+	bottom: 14.1%;
+}
+/*button动画*/
+.innerScale{
+	animation: play .4s ease-in infinite alternate;
+	-moz-animation: play .4s ease-in infinite alternate ;
+	-webkit-animation: play .4s ease-in infinite alternate ;
+	-ms-animation: play .4s ease-in infinite alternate ;
+}
+@keyframes play{
+	from{transform: scale(0.95);}
+	to{transform: scale(1.05);}
+}
+@-moz-keyframes play{
+	from{-moz-transform: scale(0.95);}
+	to{-moz-transform: scale(1.05);}
+}
+@-ms-keyframes play{
+	from{-ms-transform: scale(0.95);}
+	to{-ms-transform: scale(1.05);}
+}
+@-webkit-keyframes play{
+	from{-webkit-transform: scale(0.95);}
+	to{-webkit-transform: scale(1.05);}
+}
+/*4种奖品*/
+.main .specialSlogan{
+	width: 10.67rem;
+	height: 0.768rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.335rem;
+	top: 19%;
+}
+.main .specialSlogan li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 20;
+}
+.main .specialSlogan li:nth-child(1){
+	display: none;
+	background: url(../../images/demo4/slo3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.main .specialSlogan li:nth-child(2){
+	display: none;
+	background: url(../../images/demo4/slo4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.main .specialSlogan li:nth-child(3){
+	display: none;
+	background: url(../../images/demo4/slo1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.main .specialSlogan li:nth-child(4){
+	display: none;
+	background: url(../../images/demo4/slo2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*8种奖品*/
+.main .prize{
+	width: 100%;
+	height:4.9rem ;
+	position: absolute;
+	top: 24%;
+	margin: 0 auto;
+}
+.main .prize li{
+	height: 4.9rem;
+	position: absolute;	
+}
+/*卫生巾*/
+.prize .prizeWSJ{
+	display: none;
+	width: 13.78rem;
+	background: url(../../images/demo4/prizeWSJ.png) no-repeat;
+	background-size:100% 100% ;
+	left: 50%;
+	margin-left: -6.89rem;
+}
+.prize .prizeWSJ .nickname{
+	display: block;
+	width: 3.7rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.7rem;top: 0.3rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*杜蕾斯*/
+.prize .prizeDLS{
+	display: none;
+	width: 12.78rem;
+	background: url(../../images/demo4/prizeDLS.png) no-repeat;
+	background-size:100% 100% ;
+	left: 50%;
+	margin-left: -6.39rem;
+}
+.prize .prizeDLS .nickname{
+	display: block;
+	width: 3.7rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.6rem;top: 0.24rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*辣条*/
+.prize .prizeLT{
+	display: none;
+	width: 13.88rem;
+	background: url(../../images/demo4/prizeLT.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -6.94rem;
+}
+.prize .prizeLT .nickname{
+	display: block;
+	width: 3.6rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.7rem;top: 0.27rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*二锅头*/
+.prize .prizeEGT{
+	display: none;
+	width: 13rem;
+	background: url(../../images/demo4/prizeEGT.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -6.5rem;	
+}
+.prize .prizeEGT .nickname{
+	display: block;
+	width: 3.6rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.6rem;top: 0.4rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*香蕉*/
+.prize .prizeXJ{
+	display: none;
+	width:12.48rem ;
+	background: url(../../images/demo4/prizeXJ.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -6.24rem;
+}
+.prize .prizeXJ .nickname{
+	display: block;
+	width: 3.5rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.8rem;top: 0.56rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*屁*/
+.prize .prizePI{
+	display: none;
+	width:13rem ;
+	background: url(../../images/demo4/prizePI.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -6.5rem;
+}
+.prize .prizePI .nickname{
+	display: block;
+	width: 3.6rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.6rem;top: 0.25rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*舒肤佳*/
+.prize .prizeSFJ{
+	display: none;
+	width: 13.16rem;
+	background: url(../../images/demo4/prizeSFJ.png) no-repeat;
+	background-size:100% 100% ;
+	left: 50%;
+	margin-left: -6.58rem;
+}
+.prize .prizeSFJ .nickname{
+	display: block;
+	width: 3.6rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.7rem;top: 0.45rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*妇炎洁*/
+.prize .prizeFYJ{
+	display: none;
+	width: 13.88rem;
+	background: url(../../images/demo4/prizeFYJ.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -6.94rem;
+}
+.prize .prizeFYJ .nickname{
+	display: block;
+	width: 3.5rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	left: 2.8rem;top: 0.1rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #dc002b;
+}
+/*弹窗*/
+/*弹窗*/
+.finalAlert{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	
+}
+.finalAlert .finalContent{
+	position: absolute;
+	width: 12.8rem;
+	height:12.40rem;
+	left: 50%;
+	top: 14%;
+	margin-left: -6.4rem;
+	background: url(../../images/demo4/456.png) no-repeat;
+	background-size:  100% 100%;
+}
+.finalAlert .nextone{	
+	width: 6.4rem;
+	height:2.13rem ;
+	margin: 4.3rem auto;
+	background: url(../../images/demo4/finalnext.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.finalAlert .closebutton{
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../../images/demo4/finalclose.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 11.6rem;
+	margin-top: 4.15rem;
+}
+
+

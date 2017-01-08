@@ -1,0 +1,185 @@
+@charset "utf-8";
+html,body,div,p{
+	margin:0;
+	padding:0;
+}
+/*------------login start----------------*/
+div.pop{
+	margin:0 auto;
+    width:350px;
+    height: auto;
+    border-radius: 3px;
+    font-weight: 800;
+    color:#999;
+    background:#fff;
+    padding-bottom: 12px;
+    display: none;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 30%;
+    z-index:9999;
+}
+div.pop p{
+	height:49px;
+	width:350px;
+	text-align: center;
+	background:url(../images/login/top.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 13px;
+}
+.phone_bor,.yzm_bor,.sec_bor{
+	width:80%;
+	height:40px;
+	border:1px solid #999;
+	border-radius: 3px;
+	margin:0 auto 22px;
+	position:relative;
+}
+.phone_bor span{
+	width:35px;
+	height:40px;
+	display: inline-block;
+	background:url(../images/login/icon01.png) no-repeat center;
+	background-size: 15px 20px;
+	border-right: 1px solid #999;
+}
+.yzm_bor span{
+	width:35px;
+	height:40px;
+	display: inline-block;
+	background:url(../images/login/icon03.png) no-repeat center;
+	background-size: 18px 25px;
+	border-right: 1px solid #999;
+}
+.sec_bor span{
+	width:35px;
+	height:40px;
+	display: inline-block;
+	background:url(../images/login/icon02.png) no-repeat center;
+	background-size: 15px 20px;
+	border-right: 1px solid #999;
+}
+.pop .sec_bor input{
+	width:10rem;
+}
+.sec_bor .imgDiv{
+	display: inline-block;
+	position:absolute;
+	right:0;
+	height:2.5rem;
+	width:5.6rem;
+}
+.sec_bor .imgDiv img.pic_login{
+	width:100%;
+	height:100%;
+}
+.pop input{
+	font-size:14px;
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	padding-left:3px;
+	width: 240px;
+	height:39px;
+	line-height: 40px;
+	border:none;
+	background:transparent;
+}
+.pop .btn_login{
+	width: 120px;
+    height: 35px;
+    line-height: 35px;
+	background:#fdd503;
+	text-align: center;
+	color:#333;
+	font-size:16px;
+	margin:0 auto;
+	cursor: pointer;
+}
+.pop .phone-yzm{
+	display: inline-block;
+	background:#fdd503;
+	height: 40px;
+    width: 90px;
+	line-height:40px;
+	position:absolute;
+	right:0;
+	font-size:14px;
+	text-align: center;
+	color:#333;
+	cursor: pointer;
+}
+.phone-yzm-gray{
+	background:#999 !important;
+	color: #000;
+}
+.close{
+	display: block;
+	position:absolute;
+	right:0;
+	top: 5%;
+    width: 35px;
+    height: 27px;
+	background:url(../images/login/close.png) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+/*------------login end----------------*/
+/*------------others start--------------*/
+.layer {
+	position: absolute;
+	width:140px;
+	height:128px;
+	z-index: 999;
+	top:77px;
+	left:17px;
+	cursor: pointer;
+	opacity: 0;
+	-moz-opacity: 0;
+}
+/*-----------others end ---------------*/
+/*-----------30元弹框 start---------------*/
+.pop-success{
+	position:absolute;
+	width:10rem;
+	height:13rem;
+	background:url(../images/tankuang.png) no-repeat;
+	background-size:100% 100%;
+	top:22%;
+	left:50%;
+	margin-left:-5rem;
+	z-index:9999;
+	display:none;
+}
+.pop-success .yzm{
+	position:absolute;
+	top:64%;
+	width:100%;
+	text-align: center;
+	font-size:0.8rem;
+	color:#FCDB00;
+	font-weight:bold;
+}
+.success-btn{
+	width:5.12rem;
+	height:1.62rem;
+	position:absolute;
+	top:76%;
+	left:50%;
+	margin-left:-2.56rem;
+}
+/*.lt li:not(:first-child){
+	margin-top: 50px;
+}*/
+/*-----------弹框 end---------------*/
+
+
+
+
+
+
+
+
+
+

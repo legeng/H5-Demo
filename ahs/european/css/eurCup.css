@@ -1,0 +1,70 @@
+@charset "utf-8";
+html,
+body,
+div,
+img{
+	margin:0;
+	padding:0;
+}
+body,html{width: 100%;overflow-x: hidden;position: relative;}
+/*content*/
+img{
+	display: block;
+	border:0;
+}
+.header{
+	width: 100%;
+	height: 757px;
+	position: relative;
+}
+.header img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.middle{
+	width: 100%;
+	height: 763px;
+	position: relative;
+}
+.middle img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.footer{
+	width: 100%;
+	height: 703px;
+	position: relative;
+}
+.footer img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

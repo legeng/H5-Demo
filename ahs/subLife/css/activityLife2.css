@@ -1,0 +1,73 @@
+
+
+
+body,html{width: 100%;overflow-x: hidden;position: relative;}
+/*马上开启减法生活*/
+.startLife{
+	display: block;
+	width: 443px;
+	height: 174px;
+	position: absolute;
+	left: 50%;
+	margin-left: -222px;
+	top: 3970px;
+	z-index: 999999;
+	background:url(../images/10.png) no-repeat ;
+}
+.header{width: 100%;height:1030px;position: relative;}
+.header img{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px ;
+}
+/*----------------------------------------------------------*/
+.content{width: 100%;height: 1030px;position: relative;}
+.contentImg{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px ;
+}
+.phoneMore{display:block;width: 113px;height: 35px;background: url(../images/9.png) no-repeat;position: absolute;
+			z-index: 1000;left:50%;margin-left: -53px;top: 1000px;
+}
+.phoneNum{
+	position: absolute;
+	z-index: 100;
+	width: 1080px;
+	height: 720px;
+	margin-left: -540px;
+	left: 50%;
+	top: 240px;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-inline-flex;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	}
+	.phoneCon{width: 244px;height: 342px;margin-bottom: 36px;position: relative;cursor: pointer;}
+	.phoneBtn{width: 106px;height: 37px;background: url(../images/11.png) no-repeat;position: absolute;z-index: 200;left: 110px;top: 284px;}
+	.phoneCon img{width: 244px;height: 342px;display: block;}
+/*---------------------------------------------------------*/
+.foot_1{width: 100%;height: 1030px;position: relative;}
+.foot_1 img{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px ;
+}
+.foot_2{width: 100%;height: 960px;position: relative;}
+.foot_2 img{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px ;
+}
+.foot_3{width: 100%;height: 989px;position: relative;}
+.foot_3 img{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px ;
+}
+

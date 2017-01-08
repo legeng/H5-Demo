@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="expires" content="0">
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="cache-control" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-store">
+	    <meta http-equiv="Cache-Control" content="max-age=0" />
+	    <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate" />
+	    <meta charset="utf-8" />
+	    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+		<title>附近门店</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=ea25bf97d613135827525514f03892d7&plugin=AMap.Geocoder"></script>
+   	    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+	</head>
+	<body>
+		<div id="door_top">
+			<p class="top_icon_left"></p>
+			<div class="top_position_content"></div>
+			<ul class="top_icon_right">
+				<li class="right_icon"></li>
+				<li class="right_content"></li>
+			</ul>
+		</div>
+		<!--定位失败-->
+		<!--<div class="icon_error"><p></p><div> Sorry，暂无数据 !</div></div>-->
+		<div id="container"></div>
+		<!--<div id="panel" style="display: none;opacity: 0;" ></div>-->
+		<!--定位的门店信息列表-->
+		<!--<ul class="shop-address-list" id="js-shop-address-list-wrap">
+                <li data-id="17" data-region-id="3" data-latitude="31.30750000" data-longitude="121.51957500">
+                    <div class="shop-item clearfix">
+                        <a class="shop-address" href="pages/detail.html?17">
+                            <strong>上海五角场万达店</strong>
+                            <p>淞沪路77号万达广场地下一层（ZARA旁）商场地下1层主通道</p>
+                        </a>
+                        <a href="tel:021-61534152" class="shop-mobile">
+                            <span></span>
+                        </a>
+                    </div>
+                </li>
+         </ul>-->
+         <ul class="shop-list">
+         	<!--<li data-latitude="31.30750000" data-longitude="121.51957500">
+         		<div class="item_left">
+         			<div class="item_left_up">
+         				<strong>石门oppo专卖店</strong>
+         				<i>1.2km</i>
+         			</div>
+         			<div class="item_left_down">
+         				<i></i>
+         				<span>湖南-常德-武陵区石门县步行街</span>
+         			</div>
+         		</div>
+         		<div class="item_right">
+         			<a href="tel:021-61534152" class="shop-mobile">
+                        <span></span>
+                    </a>
+         		</div>
+         	</li>-->
+         </ul>
+	</body>
+</html>
+<script src="../../resources/js/jquery-1.9.1.min.js"></script>  
+<script>
+    var map, geolocation;
+    var mylng,mylat;
+    //加载地图，调用浏览器定位服务
+    map = new AMap.Map('container', {
+        resizeEnable: true,
+        zoom: 12 //地图显示的缩放级别
+    });
+    map.plugin('AMap.Geolocation', function() {
+        geolocation = new AMap.Geolocation({
+            enableHighAccuracy: true,//是否使用高精度定位，默认:true
+            timeout: 10000,          //超过10秒后停止定位，默认：无穷大
+            buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+            zoomToAccuracy: true,      //定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+            buttonPosition:'RB'
+        });
+        map.addControl(geolocation);
+        geolocation.getCurrentPosition();
+        AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
+        AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
+    });
+    //解析定位结果
+    function onComplete(data) {
+    	mylat=data.position.getLat()
+    	mylng=data.position.getLng()
+        lnglatXY = [data.position.getLng(), data.position.getLat()]; //已知点坐标
+        getdoors(lnglatXY)
+     //逆地理编码
+	        var geocoder = new AMap.Geocoder({
+	            radius: 1000,
+	            extensions: "all"
+	        });        
+	        geocoder.getAddress(lnglatXY, function(status, result) {
+	        		console.log(result)
+	            if (status === 'complete' && result.info === 'OK') {
+	            	//处理返回值
+	                var address = result.regeocode.formattedAddress; //返回地址描述
+	                var detailaddress=result.regeocode.addressComponent.province
+	        			document.getElementsByClassName("top_position_content")[0].innerHTML = address;
+	        			document.getElementsByClassName("right_content")[0].innerHTML = detailaddress;
+	            }
+	        });   
+    }
+    //解析定位错误信息
+    function onError(data) {
+       document.getElementsByClassName("top_position_content")[0].innerHTML = '尚未获取到您的位置信息';
+	   document.getElementsByClassName("right_content")[0].innerHTML = '获取位置';
+       $("#door_top").after('<div class="icon_error"><p></p><div> Sorry，暂无数据 !</div></div>');
+    }
+//------------云图获取附近的门店啊
+function getdoors(lnglatXY){
+    var search, center = lnglatXY;
+    var searchOptions = {
+        map: map,
+//      panel: 'panel',
+        keywords: '',
+        pageSize: 10,
+        orderBy: '_distance'
+    };
+    //加载CloudDataSearch服务插件
+    AMap.service(["AMap.CloudDataSearch"], function() {
+        search = new AMap.CloudDataSearch('5837f1f07bbf195ae861cc6e', searchOptions); 
+        search.searchNearBy(center, 5000,callback);
+    });
+    function callback(status,data){
+    		console.log(status)
+    		console.log(data.datas)
+  		for(i=0;i<data.datas.length;i++){
+  			showDoors(data.datas[i]._name,(parseInt(data.datas[i]._distance)/1000).toFixed(1)+'Km',data.datas[i]._address,data.datas[i].telephone,i,data.datas[i]._location.lat,data.datas[i]._location.lng)
+  		}
+    }	
+}
+//写入门店
+function showDoors(a,b,c,d,i,e,f){
+	$('.shop-list').append(
+	'<li id="demo_'+i+'">'+
+	   '<div class="item_left">'+
+	         '<div class="item_left_up">'+
+	         		'<strong>'+a+'</strong>'+
+	         		'<i>'+b+'</i>'+
+	         '</div>'+
+	         '<div class="item_left_down">'+
+	         	'<i></i>'+
+	         	'<span>'+c+'</span>'+
+	         '</div>'+
+	   '</div>'+
+	   '<div class="item_right">'+
+	         '<a href="" class="shop-mobile">'+
+	                '<span></span>'+
+	          ' </a>'+
+	    '</div>'+
+	'</li>'	
+	);
+	$("#demo_"+i).attr({'data-latitude':e,'data-longitude':f})
+	$("#demo_"+i).find('a').attr('href','tel:'+new Number(d).valueOf())
+}
+//门店点击进入地图页面
+$('.shop-list').delegate('li .item_left','click',function(){
+	var door=encodeURIComponent($(this).find('strong').html());
+	var local=encodeURIComponent($(this).find('span').html());
+	var tel=$(this).siblings().find('a').attr('href');
+	window.location='pages/detail.html?latitude='+$(this).parent().attr('data-latitude')+'&longitude='+$(this).parent().attr('data-longitude')+'&mylng='+mylng+'&mylat='+mylat+'&door='+door+"&local="+local+"&tel="+tel;
+})
+
+
+
+
+
+
+</script>

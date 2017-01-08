@@ -1,0 +1,68 @@
+
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background:#f9f9f9;
+}
+
+.threeBg{
+    	width:14.636rem ;
+    	height:22.50rem ;
+    	background: url(../images/bbg.png) no-repeat;
+    	background-size: 100% 100%;
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -7.318rem;
+    	top: 2.133rem;
+    	text-align: center;
+}
+.threeBack{
+	width: 6rem;
+	height:0.96rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -3rem;
+	display: block;
+	font-family:PingFangSC-Regular;
+	font-size:0.683rem;
+	color:#017EE8;
+	bottom: -1rem;
+	text-align: center;
+	top: 18.6rem;
+}
+
+.contentOd{
+	width: 12rem;
+	font-family:PingFangSC-Regular;
+	font-size:0.512rem;
+	color:#017EE8;
+	text-align: left;
+	left: 50%;
+	margin-left: -4.5rem;
+	top: 6rem;
+	position: absolute;
+	z-index: 5;
+}
+.contentOd div{
+	line-height: 0.917rem;
+}
+
+
+
+
+
+

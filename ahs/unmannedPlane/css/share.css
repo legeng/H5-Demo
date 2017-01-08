@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*-------公共样式----------*/
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+*{margin:0;padding:0;}
+body{background:#fdfdfd;}
+ul,ol,li{list-style:none;}
+a,img{border:none; outline-style:none;}
+a{text-decoration:none;}
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,address,img,
+dl,dt,dd,ol,nav,ul,nav li,label,article,aside,
+footer,header,menu,nav,output,time,mark,audio,video{
+   
+    font-family:"微软雅黑" ;
+    color:#666;
+}
+
+.share{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/background3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.shareCon{
+	position: absolute;
+	left: 50%;
+	margin-left: -41.7%;
+	top: 59%;
+	width: 83.4%;
+	height: 35.93%;
+}
+.shareUp{
+	width: 100%;
+	height: 18.75%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content:space-between ;
+}
+.shareUp li{
+	width: 45.63%;
+	height: 100%;
+}
+.shareUp li:nth-child(1){
+	background: url(../images/shareLeft.png) no-repeat;
+	background-size: 100% 100%;
+}
+.zhuLi{
+	-webkit-animation: xuanZhuan .4s ease-in infinite alternate;
+	animation: xuanZhuan .4s ease-in infinite alternate;
+}
+@-webkit-keyframes xuanZhuan{
+	from{transform: rotate(-5deg);}
+	from{-webkit-transform: rotate(-5deg);}
+	to{transform:rotate(5deg);}
+	to{-webkit-transform:rotate(5deg);}
+}
+@keyframes xuanZhuan{
+	from{transform: rotate(-5deg);}
+	from{-webkit-transform: rotate(-5deg);}
+	to{transform:rotate(5deg);}
+	to{-webkit-transform:rotate(5deg);}
+}
+.iWant{
+	-webkit-animation: xuanZhuan .4s ease-in infinite alternate;
+	animation: xuanZhuan .4s ease-in infinite alternate;
+}
+.shareUp li:nth-child(2){
+	background: url(../images/shareRight.png) no-repeat;
+	background-size: 100% 100%;
+}
+.shareDown{
+	position: relative;
+	margin-top: 12.342%;
+	width: 100%;
+	height: 65.97%;
+	background: url(../images/fang.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.sell1{
+	top: 26.5%;
+	position: absolute;
+	width: 64.8%;
+	height: 73.1%;
+	margin-left:35.5% ;
+	background: url(../images/rightS.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

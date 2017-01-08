@@ -1,0 +1,552 @@
+.list-company{
+	position: relative;
+}
+.list-company:hover{
+	background: #FFF;
+	
+}
+.list-company:hover #list-company-prop{
+	display: block;
+}
+.list-company ul{
+	display: none;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	background: #FFFFFF;
+	left: -2px;
+	top: 32px;
+	border: 1px solid #ddd;
+	border-top:none ;
+	border-radius:3px ;
+	/*box-shadow: 0 0 10px rgba(0,0,0,.12);*/
+}
+.list-company ul span{
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #666;
+}
+#header .navbar .navbar-content .list-company ul span a:hover{
+	color: #fc6232;
+}
+/*内容区域*/
+.ahs_company{
+	width: 100%;
+	overflow-x: hidden;
+	/*font-family: ;*/
+}
+.ahs_company .ahs_company_section1{
+	width: 100%;
+	height:600px ;
+	position: relative;
+}
+.ahs_company .ahs_company_section1 img{
+	display: block;
+	width: 1440px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	margin-left: -720px;
+}
+.ahs_company_section1 ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+}
+.ahs_company_section1 ul li{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.ahs_company_section1 ul .children01{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	font-size: 100px;
+	line-height: 100px;
+	color: #f9e72b;
+	margin-top: 174px;
+	letter-spacing: 15px;
+	font-weight: 900;
+}
+.ahs_company_section1 ul .children02{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	width: 100%;
+	font-size:24px ;
+	color: #FFFFFF;
+	line-height:24px;
+	font-weight: 100;
+	margin-top: 50px;
+}
+.ahs_company_section1 ul .children03{
+	margin-top: 100px;
+	width: 100%;
+}
+.ahs_company_section1 ul .children03special{
+	animation: play .4s ease-in 1 alternate;
+	-moz-animation: play .4s ease-in 1 alternate ;
+	-webkit-animation: play .4s ease-in 1 alternate ;
+	-ms-animation: play .4s ease-in 1 alternate ;
+}
+@keyframes play{
+	0%{transform: translateY(0);}
+	50%{transform: translateY(3px);}
+	100%{transform: translateY(0px);}
+}
+@-moz-keyframes play{
+	from{-moz-transform: scale(0.95);}
+	to{-moz-transform: scale(1.05);}
+}
+@-ms-keyframes play{
+	from{-ms-transform: scale(0.95);}
+	to{-ms-transform: scale(1.05);}
+}
+@-webkit-keyframes play{
+	from{-webkit-transform: scale(0.95);}
+	to{-webkit-transform: scale(1.05);}
+}
+.ahs_company_section1 ul .children03 .children03box{
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background-color: #f9e72b;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.ahs_company_section1 ul .children03 .children03box:active {
+			box-shadow: 0 4px darkgray;
+			top: 2px;
+}
+.ahs_company_section1 ul .children03 .children03box div{
+	width: 300px;
+	height: 40px;
+	margin-left: -150px;
+}
+.ahs_company_section1 ul .children03 div p{
+	float: left;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #000000;
+	font-size: 14px;
+	letter-spacing: 2px;
+	/*font-weight: bolder;*/
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+}
+.children03box_p{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/activity/long-arrow-right.png);
+	margin-left: 65px;
+	margin-top: 10px;
+}
+/*第二部分*/
+.ahs_company_section2{
+	width: 100%;
+	/*height: 500px;*/
+}
+.ahs_company_section2_kinds{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+	line-height: 30px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	margin-top: 100px;
+}
+.ahs_company_section2_content{
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+.ahs_company_section2_content li{
+	margin: 0;
+	padding: 0;
+	margin-right: 90px;
+	width: 148px;
+	display: inline-block;
+}
+.ahs_company_section2_content li img{
+	display: block;
+	
+}
+.ahs_company_section2_content li span{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+	color: #000000;
+	margin-top: 20px;
+	width: 100%;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.ahs_company_section2_content #ahs_company_section2{
+	margin-right: 0;
+}
+/*树*/
+.ahs_company_section3{
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+.ahs_company_section3_box{
+	width: 1440px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	margin-left: -720px;
+	background: url(../images/activity/tree.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+.ahs_company_section3_box div{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.ahs_company_section3_box div span{
+	display: inline-block;
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size:30px ;
+	line-height: 30px;
+	color: #f9e72b;
+	letter-spacing: 4px;
+	margin-top: 165px;
+}
+.ahs_company_section3_box div p{
+	position: absolute;
+	left: 50%;
+	margin-left: -280px;
+	top: 273px;
+	width: 560px;
+	height: 195px;
+	background:url(../images/activity/1yinhao.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_company_section3_box div p i{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	font-style: normal;
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+.ahs_company_section3_box div p .demo1{
+	margin-top: 22px;
+}
+.ahs_company_section3_box div p .demo2{
+	margin-top: 40px;
+}
+.ahs_company_section3_box div p .demo3{
+	margin-top: 40px;
+}
+/*三步走*/
+.ahs_company_section4{
+	width: 100%;
+	height: 1404px;
+	position: relative;	
+}
+.ahs_company_section4_box{
+	position: absolute;
+	width: 1040px;
+	height: 1060px;
+	background: url(../images/activity/step3.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -520px;
+	top: 50%;
+	margin-top: -530px;	
+}
+.ahs_company_section4_box .sanbu{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-top: -105px;
+}
+.ahs_company_section4_box .step{
+	display: block;
+	height: 100px;
+}
+.ahs_company_section4_box .step div{
+	float: left;
+	height: 100px;
+}
+.step_index1{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: bolder;
+	height:100px ;
+	font-size: 100px;
+	line-height: 100px;
+	margin-right: 16px;
+}
+.step_index2{
+	height: 100px;
+}
+.step_index2_01{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;	
+	font-weight: bolder;
+	font-size: 30px;
+	line-height: 60px;
+	color: #000000;
+}
+.step_index2_02{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000000;
+	line-height: 24px;
+}
+.step_01{
+	margin-top: 150px;
+	margin-left: 710px;
+}
+.step_02{
+	margin-top: 285px;
+	margin-left: 75px;
+}
+.step_03{
+	margin-top: 274px;
+	margin-left: 700px;
+}
+/*填写邮箱*/
+.ahs_company_section5{
+	width: 100%;
+	height: 960px;
+	position: relative;
+}
+.ahs_company_section5_box{
+	width: 1440px;
+	height: 960px;
+	position: absolute;
+	left: 50%;
+	margin-left: -720px;
+	background: url(../images/activity/step2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_company_section5_content{
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.ahs_company_section5_content p{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #f9e72b;
+	margin-top: 100px;
+}
+.ahs_company_section5_content span{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin-top: 80px;
+	font-size: 22px;
+	color: #FFFFFF;
+	line-height: 76px;
+	display: inline-block;
+	width: 448px;
+	height: 76px;
+	background: url(../images/activity/2yinhao.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_company_section5_content .divbox{
+	margin-top: 50px;
+}
+.ahs_company_section5_content .divbox b{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+.ahs_company_section5_content .divbox b:nth-child(1){
+	margin-right: 75px;
+}
+.ahs_company_section5_content form{
+	display: inline-block;
+	width: 480px;
+	/*height: 460px;*/
+	background-color:#FFFFFF ;
+	margin-top: 60px;
+	text-align: center;
+	position: relative;
+}
+#regMessage{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+	color: #F42E2D;
+}
+#contentfir{
+	color: #000000;
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	margin-top: 50px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 39px;
+	outline: none;
+	border: 1px solid #CCCCCC;
+	/*outline-color: #f9e72b;*/
+	
+}
+#contentsec{
+	color: #000000;
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 39px;
+	outline: none;
+	/*outline-color: #f9e72b;*/
+	border: 1px solid #CCCCCC;
+}
+#contentthr{
+	color: #000000;
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 39px;
+	outline: none;
+	/*outline-color: #f9e72b;*/
+	border: 1px solid #CCCCCC;
+}
+#contentfou{
+	color: #000000;
+	display: inline-block;
+	width: 400px;
+	height:100px;
+	margin-top: 20px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 39px;
+	outline: none;
+	/*outline-color: #f9e72b;*/
+	border: 1px solid #CCCCCC;
+}
+
+ul,li{
+	list-style: none;
+}
+.label0{
+	font-size: 14px;
+	line-height: 14px;
+	position: absolute;
+	top: 0;
+	left: 35px;
+	z-index: 90;
+	background: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#f9e72b;
+}
+.label1{
+	display: none;
+	top: 70px;
+}
+.label2{
+	display: none;
+	top: 142px;
+}
+.label3{
+	display: none;
+	top: 214px;
+}
+.label4{
+	display: none;
+	top: 280px;
+}
+#contentSub{
+	overflow: hidden;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	width:150px ;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #f9e72b;
+	border-radius: 20px;
+	position: relative;
+}
+#contentSub:active {
+			box-shadow: 0 4px darkgray;
+			top: 2px;
+}
+.contentSub_box{
+	top: 0;
+	left: -150px;
+	width: 300px;
+	height: 40px;
+	position: absolute;
+}
+.contentSub_box li{
+	float: left;
+	width: 150px;
+	height: 40px;	
+}
+.contentSub_box li.arr{
+	
+}
+.contentSub_box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/activity/long-arrow-right.png);
+	margin-left: 65px;
+	margin-top: 10px;
+}
+.contentSub_box li.mess{
+	font-family: Arial, "Microsoft YaHei", SimSun, Helvetica, sans-serif;
+	line-height: 40px;
+	text-align: center;
+    line-height: 40px;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/*品质保证*/
+.ahs_company_section6{
+	width: 100%;
+	height: 134px;
+	background-color: #434343;
+}
+
+
+
+
+
+
+
+
+
+
+
+

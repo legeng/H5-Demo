@@ -1,0 +1,448 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	/*-webkit-overflow-scrolling: touch;*/
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	height: 100%;
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+.bg1{
+	width: 100%;
+	height: 22.673rem;
+	background: url(../images/bg_01.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.header{
+	width: 100%;
+	height: 9.288rem;
+	background: url(../images/biaoti-1.png) no-repeat;
+	background-size:100% 100% ;
+}
+.prize{
+	width: 100%;
+	height:15.742rem ;
+	background: url(../images/choujiang.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 8.25rem;
+}
+#lottery{
+	width: 13.217rem;
+	height: 12.934rem;
+	position: absolute;
+	left: 1.4rem;
+	top: 1rem;
+}
+#lottery table{
+	width: 12.07rem;
+	height: 10.85rem;
+	position: absolute;
+	left: 0.58rem;
+	top: 0.6rem;
+}
+.lottery-unit{
+	position: absolute;
+	display: block;
+	width:3.6rem;
+	height:3.2rem;
+	/*display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-content: center;
+	-webkit-align-items: center;*/
+}
+.demo{
+	display: block;
+	width:104%;
+	height:106%;
+	position: absolute;
+	z-index: 10;
+	left: -2%;
+	top: -3%;
+}
+.active{
+	background: url(../images/zhongjiang.png) no-repeat;
+	background-size: 100% 100%;
+}
+.xuan{
+	width: 3.43rem;
+	height:2.96rem ;
+	background: url(../images/lipin.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.xuan span{
+	display: block;
+	width: 3.43rem;
+	height:2.96rem;
+	position: absolute;
+	z-index: 20;
+}
+.lottery-unit-0{
+	/*background: red;*/
+	left: 0.3175rem;
+	top: 0.3125rem;
+}
+.lottery-unit-1{
+	/*background: green;*/
+	left: 4.235rem;
+	top: 0.3125rem;
+}
+.lottery-unit-2{
+/*	background: gray;*/
+	left:8.1525rem;
+	top: 0.3125rem;
+}
+.lottery-unit-3{
+	/*background: red;*/
+	left:8.1525rem;
+	top: 3.825rem;
+}
+.special_begin{
+	width:3.84rem;
+	height:3.32rem ;
+	background: url(../images/xiaomiMiddle.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 4.07rem;
+	top: 3.78rem;
+}
+.special_begin p{
+	font-size: 0.4rem;
+	color: white;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 2.3rem;
+}
+.lottery-unit-4{
+/*	background: green;*/
+	left:8.1525rem;
+	top: 7.3375rem;
+}
+.lottery-unit-5{
+	/*background: gray;*/
+	left: 4.235rem;
+	top: 7.3375rem;
+}
+.lottery-unit-6{
+	/*background: red;*/
+	left: 0.3175rem;
+	top: 7.3375rem;
+}
+.lottery-unit-7{
+	/*background: green;*/
+	left: 0.3175rem;
+	top: 3.825rem;
+}
+/*奖品图片*/
+.content0{
+	background: url(../images/dianshi.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content1{
+	background: url(../images/wurenji.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content2{
+	background: url(../images/yidong.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content3{
+	background: url(../images/aihuishou.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content4{
+	background: url(../images/jinghuaqi.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content5{
+	background: url(../images/daijinquan.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content6{
+	background: url(../images/shouhuan.png) no-repeat;
+	background-size: 100% 100%;
+}
+.content7{
+	background: url(../images/aihuishou.png) no-repeat;
+	background-size: 100% 100%;
+}
+.bg2{
+	width: 100%;
+	height:20.870rem;
+	background: url(../images/bg_02.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	
+}
+.introduction{
+	width:5.58rem ;
+	height:1.46rem ;
+	background: #df2d5e;
+	border-radius: 20px;
+	font-size: 0.721rem;
+	color: #FFFFFF;
+	line-height: 1.46rem;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -2.79rem;
+	bottom: 0.4rem;
+}
+.goHuishou{
+	width:5.58rem ;
+	height:1.46rem ;
+	background: #df2d5e;
+	border-radius: 20px;
+	font-size: 0.721rem;
+	color: #FFFFFF;
+	line-height: 1.46rem;
+	text-align: center;
+	position: absolute;
+	left: 1.8rem;
+	top: 0.4rem;
+}
+.logs{
+	width:5.58rem ;
+	height:1.46rem ;
+	background: #379cd5;
+	border-radius: 20px;
+	font-size: 0.721rem;
+	color: #FFFFFF;
+	line-height: 1.46rem;
+	text-align: center;
+	position: absolute;
+	right: 1.8rem;
+	top: 0.4rem;
+}
+.shuoming{
+	width: 14.068rem;
+    font-size: 0.541rem;
+    color: #FFFFFF;
+    position: absolute;
+    top: 11.3rem;
+    left: 50%;
+    margin-left: -7.034rem;
+}
+.shuoming li{
+	display: block;
+	line-height: 0.74rem;
+}
+.shuoming li span{
+	color: #e5c20a;
+}
+.messagePrize{
+	width: 14.428rem;
+	height:4.432rem ;
+	position: absolute;
+	top: 4rem;
+	left: 50%;
+	margin-left: -7.214rem;
+	overflow: hidden;
+}
+.prizeContent{
+	width: 14.428rem;
+	position: absolute;
+	top: 0;
+}
+.prizeContent li{
+   display: block;
+   width: 14.428rem;
+   height: 1.108rem;
+   position: relative;
+}
+.prizeContent li span{
+	display: block;
+	color: #FFFFFF;
+    width: 14.428rem;
+    height: 1.108rem;
+    line-height: 1.108rem;
+	font-size: 0.592rem;
+}
+.prizeContent li span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+}
+.prizeContent li span:nth-child(2){
+	position: absolute;	
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+.prizeContent li span:nth-child(3){
+	color: #e5c20a;
+	position: absolute;	
+	top: 0;
+	left: 0;
+	text-align: right;
+}
+/*奖品选项*/
+.getPrize{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 90000000;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+}
+.congratuation{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 0.703rem;
+	margin-top: 4rem;
+}
+.myOwn{
+	width: 100%;
+	font-size:0.82rem ;
+	color:#fa2073 ;
+	text-align: center;
+	margin-top: 5.2rem;
+	
+}
+.myOwnContent{
+	width:10.84rem ;
+	height: 9.80rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.42rem;
+	top: 5.5rem;
+	background: url() no-repeat;
+	background-size:100% 100% ;
+}
+.btnHUI{
+	width: 5.58rem;
+	height: 1.60rem;
+	background: url(../images/button-huishou.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	top: 15rem;
+	left: 2.2rem;
+}
+.btnFEN{
+	width: 5.58rem;
+	height: 1.60rem;
+	background: url(../images/button-fenxiang.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	top: 15rem;
+	right: 2.2rem;
+}
+.myNotice{
+	width: 7.6rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.5rem;
+	top: 17.8rem;
+	color:#f8d508 ;
+	font-size: 0.447rem;
+}
+.myNotice li{
+	line-height: 0.618rem;
+	float: left;
+	
+}
+.myNotice li span{
+	display: block;
+}
+
+
+.myJilu{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	background: rgba(0,0,0,0.8);
+}
+.myJilu ul{
+	width: 12.48rem;
+	height: 10.52rem;
+	background: url(../images/myjilu.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.24rem;
+	top: 50%;
+	margin-top: -5.26rem;
+	padding-top: 2.5rem;
+}
+.myJilu ul div{
+	width: 10rem;
+	height: 7.1rem;
+	left: 50%;
+	margin-left: -5rem;
+	position: absolute;
+	top: 2.4rem;
+	font-size: 0.541rem;
+	text-align: center;
+	overflow: scroll;
+}
+.myJilu ul div p{
+	line-height: 1rem;
+}
+.introduce{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.8);
+}
+.introduce p{
+	width:12.6rem ;
+	height: 18.6rem;
+	background: url(../images/jieshaoPrize.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.3rem;
+	top: 50%;
+	margin-top: -9.3rem;
+}
+.flyShare{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:999999999 ;	
+}
+.flyShare p{
+	width: 100%;
+	height: 14.5rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size:100% 100% ;
+}

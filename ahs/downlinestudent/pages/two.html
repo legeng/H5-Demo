@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+    <title>舍友回收站 | 出卖我的爱，感觉好痛快～</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style/two.css"/>
+	<script src="../../../resources/js/Adaptive.js"></script>
+	<!-- Piwik -->
+	<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+	</script>
+	<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->	
+</head>
+<body>
+    <!-- 竖屏提示 -->
+    <div class="mask lock flex flex-v flex-align-center flex-pack-center">
+        <div class="lock-bg"></div>
+        <p class="lock-txt">为了更好的体验，请使用竖屏浏览</p>
+    </div>
+	<div class="thewhole">
+		<div class="slogan"></div>
+		<div class="down">
+			<div class="label1"></div>
+			<div class="databox">
+				<!--<div class="addNotice">*外号不能为空</div>-->
+				<input type="text" class="name" maxlength="5" oninput="javascript:setShowLength(this, 5, 'cost_tpl_title_length');" onpropertychange="javascript:setShowLength(this, 5, 'cost_tpl_title_length');" onkeyup="javascript:setShowLength(this, 5, 'cost_tpl_title_length');"/> 
+				<ul class="thisleft">
+					<li class="active" id="cost_tpl_title_length">5</li>
+					<li>/5</li>
+				</ul>
+			</div>
+			
+			<div class="label2"></div>
+			<ul class="typeContent">
+				<li onclick="_paq.push(['trackEvent', 'student', '回收舍友', '公的']);">
+					<p style="background:white url(../images/demo2/gong.png) no-repeat; background-size: 100% 100%;"></p>
+					<p style="background: url(../images/demo2/fontgongde.png) no-repeat;background-size: 100% 100%;width:1.43rem ;height: 0.6rem;"></p>
+				</li>
+				<li onclick="_paq.push(['trackEvent', 'student', '回收舍友', '母的']);">
+					<p style="background:white url(../images/demo2/mude.png) no-repeat; background-size: 100% 100%;"></p>
+					<p style="background: url(../images/demo2/fontmude.png) no-repeat;background-size: 100% 100%;	width:1.43rem ;height: 0.64rem;"></p>
+				</li>
+				<li onclick="_paq.push(['trackEvent', 'student', '回收舍友', '品种不明']);">
+					<p style="background:white url(../images/demo2/buming.png) no-repeat; background-size: 100% 100%;"></p>
+					<p style="background: url(../images/demo2/fontbuming.png) no-repeat;background-size: 100% 100%;	width:3rem ;height: 0.68rem;"></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    
+		<script src="../../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="../../../resources/js/url.js"></script>
+		<!--本次活动的引用JS-->
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>		
+		<script src="../../../resources/js/share.js"></script>
+		<script src="../../../resources/js/m-mk-analytics.js"></script>
+		<script>
+			//页面点击js
+			$('.typeContent li').click(function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				if($('.name').val().trim()==''){
+					$('.name').addClass('color1')
+					$('.name').attr('placeholder','*外号不能为空');
+					$('.name').css('text-align','center');
+					$('.thisleft').hide();
+				}else{
+					//带两个参数1、外号nickname 2、品种 kinds
+					window.location="three.html?nickname="+encodeURIComponent($('.name').val().trim())+"&type="+$(this).index();				
+				}
+			});
+			//input输入
+			$('.name').focus(function(){
+				    $(this).removeClass('color1')
+					$('.name').attr('placeholder','');
+					$('.name').css('text-align','left');
+					$('.thisleft').show();
+					//
+					$('.typeContent li').removeClass('active');
+			});
+			function setShowLength(obj, maxlength, id){ 	
+				var rem = maxlength - obj.value.length; 
+				var wid = id; 
+				if (rem < 0){ 
+					rem = 0; 
+				} 
+				document.getElementById(wid).innerHTML = rem; 
+			}
+			//安卓压缩页面的问题
+//			var oHeight = $(document).height(); //浏览器当前的高度
+//			   $(window).resize(function(){
+//			 
+//				   if($(document).height() < oHeight){
+//				         
+//				        $("#footer").css("position","static");
+//				    }else{
+//				         
+//				        $("#footer").css("position","absolute");
+//				    }
+//			        
+//			   });
+			  var HEIGHT = $('body').height();
+		      $(window).resize(function() {
+		            $('.thewhole').height(HEIGHT);
+		       });
+		</script>
+		<script src="../js/wchat.js"></script>
+</body>
+</html>

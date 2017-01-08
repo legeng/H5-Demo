@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+    <title>幸运大转盘</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css?v=1.01122"/>
+	<link rel="stylesheet" type="text/css" href="css/lucky.css?v=2.112123121211211"/>
+	<script src="../../resources/js/Adaptive.js"></script>
+	<!-- Piwik -->
+	<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+	</script>
+	<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->	
+</head>
+<body>
+	<!--头部-->
+	<header id="header">
+        <p>幸运大转盘</p>
+        <a class="backtop" href="javascript:history.go(-1)"></a>
+   </header>	
+    <!-- 竖屏提示 -->
+    <!--<div class="mask lock flex flex-v flex-align-center flex-pack-center">
+        <div class="lock-bg"></div>
+        <p class="lock-txt">为了更好的体验，请使用竖屏浏览</p>
+    </div>-->
+    <div class="theWhole">
+    		<div class="thisSan"></div>
+	    <div class="header">
+	    		<img src="img/turnplate_06.png" style="width: 100%;height: 100%;"/>
+	    </div>
+	    <div class="mainContent">
+	    		<!--转盘-->
+		    <div id="box" class="box">
+		        <div class="outer KinerLottery KinerLotteryContent"><img src="img/turnplate.m_031.png" style="width: 100%;height: 100%;"></div>
+		        <div class="inner KinerLotteryBtn start innerScale"></div>
+		    </div>	 
+		    <!---->
+		    <div class="chance">还剩 <span>?</span> 次抽奖机会</div>
+	    </div>
+	    <div class="prizeList">
+	    		<div class="listCon">
+	    			<ul class="listConBox">
+	    				<!--<li><span>13155490369</span><span>2010-11-11</span><span>奖品</span></li>-->
+		    		</ul>
+	    		</div>
+	    </div>
+	    <div class="notice">
+	    		<li>1.每日登陆，获得一次抽奖机会</li>
+	    		<li>2.邀请好友，凡有好友通过您的邀请链接进入回收节活动页，每天可增加一次抽奖机会</li>
+	    		<li>3.<span onclick="window.location='notice.html?v=2.0'" style="text-decoration: underline;font-weight: bold;">奖品说明</span></li>
+	    </div>
+    </div>
+<!--弹窗汇总-->
+<div class="windBlack">
+	<!--iphone7-->
+	<div class="myPhone">
+		<!--<p class="phoneCode">中奖码：abcdefghi2016</p>-->
+		<!--<p class="phoneCode"></p>-->
+		<div class="blackClose"></div>
+	</div>	
+	<!--A码-->
+	<div class="myCode">
+		<div class="codeType"></div>
+		<!--<p class="aCode"></p>-->
+		<div class="blackClose"></div>
+		<a href="javascript:void(0);" class="goUse" target="_blank"></a>
+	</div>
+	<!--口袋-->
+	<div class="myCode2">
+		<div class="codeType"></div>
+		<!--<p class="aCode"></p>-->
+		<div class="blackClose"></div>
+		<a href="javascript:void(0);" class="goUse" target="_blank"></a>
+	</div>	
+	<!--流量-->
+	<div class="myLiu">
+		<div class="liuType"></div>
+		<div class="blackClose"></div>
+	</div>
+</div>
+
+
+
+
+<!---->
+    <!--登录-->
+ 			<ul class="login_pop">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="oneNum"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" id="verifyCode" placeholder="请填写验证码" maxlength="6" class="oneCode"/>
+					<span id="yzh" class="phone-yzm"  onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '获取验证码']);">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<div id="login"  onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '马上抽奖']);">马上抽奖</div>
+				</li>
+				<span class="close"  onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '关闭']);"></span>
+			</ul>
+			<ul class="login_pop_img">
+				<li class="phone">
+					<input type="text" id="tel" placeholder="请填写手机号码" maxlength="11" class="twoNum"/>
+				</li>
+				<li class="yzm_li">
+					<input type="text" class="img_yzm" id="certCode" placeholder="请填写图形码" class="twoImgCode"/>
+					<img src="" id="portrait"/>
+				</li>
+				<li class="img_li">
+					<input type="text" id="verifyCode01" placeholder="请填写验证码" maxlength="6" class="twoCode"/>
+					<span id="yzh01" class="phone-yzm"  onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '获取验证码']);">获取验证码</span>
+				</li>
+				<li class="deng_btn">
+					<div id="login_img" onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '马上抽奖']);" >马上抽奖</div>
+				</li>
+				<span class="close" onclick="_paq.push(['trackEvent', 'luckyWheel', '幸运大转盘', '关闭']);"></span>
+			</ul>   
+    
+        <script src="js/zepto.min.js"></script>
+        <script src="js/kinerLottery.js"></script>
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="js/scroll.js?v=1.0"></script>
+		<script src="../../resources/js/url.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>		
+		<script src="../../resources/js/share.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>	
+		<script src="js/login.js?v=2.31121"></script>
+		<script>
+			//隐藏头部
+			function is_andriod(){
+		        if (/aihuishou_official_android/i.test(navigator.userAgent.toLowerCase())) {
+		            $('#header').hide();
+		        }else{
+		             
+		        }
+		    }
+			is_andriod();			
+		</script>
+</body>
+</html>

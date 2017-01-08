@@ -1,0 +1,242 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	position: relative;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/**/
+.bg1{
+	width: 100%;
+	height:10.88rem;
+	background: url(../images/bg1.png) no-repeat;
+	background-size: 100% 100%;	
+	position: relative;
+}
+.bg1 .move_back{
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/fanhui.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 3px;
+	top: 2px;
+	z-index: 10000;
+}
+.bg2{
+	width: 100%;
+	height:17.28rem;
+	background: url(../images/bg2.png) no-repeat;
+	background-size: 100% 100%;	
+}
+.bg3{
+	width: 100%;
+	height:14.50rem;
+	background: url(../images/bg3.png) no-repeat;
+	background-size: 100% 100%;	
+	position: relative;
+}
+.bg3 .tabox{
+	width: 14.12rem;
+	height: 12.46rem;
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	margin-left: -7.06rem;
+	border: 0.128rem solid #f2a481;
+	top: 5.6rem;
+	border-radius: 5px;
+}
+.tabLeft{
+	float: left;
+	width: 4.821rem;
+	height:12.204rem;
+	border-right: 0.043rem solid #e3e3e3;
+	font-size: 0.512rem;
+	background-color: #f4f4f4;
+}
+.tabLeft li{
+	font-family: arial;
+	color: 333333;
+	width: 100%;
+	height: 1.743rem;
+	line-height: 1.743rem;
+	text-align: center;
+	border-bottom: 0.043rem solid #e3e3e3;
+}
+.typeActive{
+	background-color: #ffcc00;
+	color: #ffffff;
+}
+.tabRight{
+	float: left;
+	width: 9.043rem;
+	height:12.204rem ;
+	position: relative;
+}
+.tabRight li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.tabRight li:nth-child(1){
+	display: block;
+	background: url(../images/iPhone5.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(2){
+	background: url(../images/iPhone5c.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(3){
+	background: url(../images/iPhone5s.png);
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(4){
+	background: url(../images/iPhone6.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(5){
+	background: url(../images/iPhone6-Plus.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(6){
+	background: url(../images/iPhone6s.png) no-repeat;
+	background-size:100% 100% ;
+}
+.tabRight li:nth-child(7){
+	background: url(../images/iPhone6s-Plus.png) no-repeat;
+	background-size:100% 100% ;
+}
+.bg4{
+	width: 100%;
+	height:14.976rem;
+	background: url(../images/bg4.png) no-repeat;
+	background-size: 100% 100%;	
+	position: relative;
+}
+.bottomBtn{
+	width: 100%;
+	height: 2.56rem;
+	position: absolute;
+	bottom: 0;
+	background-color:#8f5e9d ;
+}
+.btn{
+	width: 14.72rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.36rem;
+	top: 0;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.btn01{
+	width: 14.72rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.36rem;
+	top: 0;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+.btn .left{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btn .right{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.btn01 .right{
+	width:7.04rem ;
+	height: 1.92rem;
+	background: url(../images/button-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*券*/
+.quan{
+	width: 100%;
+	height:3.072rem;
+	position: absolute;
+	bottom: 3.4rem;
+	left: 0;
+}
+.quan li{
+	width:4.864rem ;
+	height: 3.072rem;
+	display: inline-block;
+}
+.quan .fifty{
+	background: url(../images/50.png) no-repeat;
+	background-size:100% 100% ;
+	margin-left: 0.384rem;
+}
+.quan .thirty{
+	background: url(../images/30.png) no-repeat;
+	background-size:100% 100% ;	
+}
+.quan .ten{
+	background: url(../images/10.png) no-repeat;
+	background-size:100% 100% ;	
+}
+
+.blackZhe{
+	display: none;
+	width: 100% ;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;	
+}
+.fenxiang{
+	width: 16rem;
+	height: 10.475rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	z-index: 201;
+	top: 0; 
+}
+
+
+
+
+

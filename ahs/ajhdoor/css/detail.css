@@ -1,0 +1,91 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	-webkit-overflow-scrolling: touch;
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body {
+    font-family: "microsoft yahei",Verdana,Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 320px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background: #F0F0F0;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*内容区域*/
+.taiwan{
+	color: #000000;
+	font-size: 12px;
+	float: left;
+	width: 60px;
+}
+/*头部样式*/
+#header{
+	width: 100%;
+	background-color:#FFFFFF ;
+	padding: 15px 0 15px 10px;
+}
+#header .door_name{
+	font-weight: bold;
+	font-size: 15px;
+	color: #332a29;
+}
+#header .class_content{
+	margin-top: 10px;
+}
+#header .class_content span:nth-child(1){
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/aa_06.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#header .class_content span:nth-child(2){
+	height: 14px;
+	font-size: 14px;
+	color: #7d7d7d;
+}
+#header .this_tel{
+	color: #7D7D7D;
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+}
+#header .this_tel i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/ab_03.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

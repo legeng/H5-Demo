@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<title>爱回收优惠券活动</title>
+		<link rel="stylesheet" href="css/aCode.css">
+		<script src="../../resources/js/Adaptive.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+	</head>
+	<body>
+		<div class="mobile_Header">
+		<i class="header_left" onclick="history.go(-1)"></i>
+		<span class="header_right"></span>
+		</div>
+		<div class="fullPage"></div>
+		<script src="../../resources/js/jquery-1.9.1.min.js"></script>
+		<script src="../../resources/js/url.js"></script>
+		<script src="../../resources/js/m-mk-analytics.js"></script>
+		<script>
+			$(".header_right").html($("title").html()) //header标题
+			function is_weixin() {
+		        var ua = navigator.userAgent.toLowerCase();
+		        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		             $(".mobile_Header").hide()
+		        }else{
+		           $(".mobile_Header").show();
+		        }
+		    }
+		    is_weixin();
+</script>
+	</body>
+</html>

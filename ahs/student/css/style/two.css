@@ -1,0 +1,124 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body,html,div,li,ul,p,input{
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.thewhole{
+	width: 100%;
+	height: 100%;
+	background-color: #f5e440;
+}
+.thewhole .slogan{
+	position: absolute;
+	width: 14.2rem;
+	height:4.93rem ;
+	background: url(../../images/demo2/slogan.png) no-repeat;
+	background-size: 100% 100%;
+	left: 50%;
+	margin-left: -7.1rem;
+	top: 1.69rem;
+}
+.down{
+	width: 14.2rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.1rem;
+	top: 8.9rem;
+}
+.down .label1{
+	width: 6.976rem;
+	height: 0.75rem;
+	background: url(../../images/demo2/inputwaihao.png) no-repeat;
+	background-size: 100% 100%;
+}
+.down .label2{
+	width: 6.976rem;
+	height: 0.75rem;
+	background: url(../../images/demo2/inputpinzhong.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 1.28rem;
+}
+.databox{
+	margin-top: 0.576rem;
+	width: 100%;
+	height: 2.13rem;
+	position: relative;
+}
+.name::-webkit-input-placeholder { color:#e5652a; }
+.name{
+	border: 0.12rem solid #000000;
+	width: 100%;
+	height: 2.13rem;
+	line-height: 2.13rem;
+	display: block;
+	font-size: 0.768rem;	
+	padding-left: 0.64rem;
+}
+/*input框三种状态*/
+/*1、未填写提交，不能为空*/
+.databox .color1{
+	border-color: #e5652a;
+}
+/**/
+.databox .thisleft{
+	height: 2.13rem;
+	line-height: 2.13rem;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+.databox .thisleft li{
+	font-size: 0.64rem;
+	float: left;
+}
+.databox .thisleft .active{
+	color: #e5652a;
+}
+/*改版*/
+.typeContent{
+	margin-top: 1.28rem;
+	width: 100%;
+	height: 7.68rem;
+	position: relative;
+	
+}
+.typeContent li{
+	float: left;
+	margin-right: 0.38rem;
+	width:4.48rem ;
+	height:7.68rem ;
+}
+.typeContent li:nth-child(1){
+	background: url(../../images/demo2/gongBegin.png) no-repeat;
+	background-size: 100% 100%;
+}
+.typeContent li:nth-child(1).active{
+	background: url(../../images/demo2/gongEnd.png) no-repeat;
+	background-size: 100% 100%;
+}
+.typeContent li:nth-child(2){
+	background: url(../../images/demo2/mudeBegin.png) no-repeat;
+	background-size: 100% 100%;
+}
+.typeContent li:nth-child(2).active{
+	background: url(../../images/demo2/mudeEnd.png) no-repeat;
+	background-size: 100% 100%;
+}
+.typeContent li:nth-child(3){
+	margin-right: 0;
+	background: url(../../images/demo2/bumingBegin.png) no-repeat;
+	background-size: 100% 100%;
+}
+.typeContent li:nth-child(3).active{
+	background: url(../../images/demo2/bumingEnd.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+

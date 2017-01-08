@@ -1,0 +1,332 @@
+        /* 样式重置 */
+        body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;-webkit-overflow-scrolling: touch;box-sizing:border-box ;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}	
+        body,html{height:100%;position: relative;}
+        ul,dl,ol{list-style:none;}
+        img,fieldset,input[type="submit"]{border:0 none;}
+        img{display:inline-block;overflow:hidden;vertical-align:top;}
+        em{font-style:normal;}
+        strong{font-weight:normal;}
+        table{border-collapse:collapse;border-spacing:0;}
+        button,input[type="button"]{cursor:pointer;border:0 none;}
+        textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+        menu{margin:0;padding:0;}
+        body{-webkit-user-select:none;-webkit-text-size-adjust:100%!important;font-family:Helvetica;}
+        input[type="number"]{-webkit-user-select:text;}
+        a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+        input,select,textarea{outline:none;}
+        a,button,input{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+        @media all and (-webkit-transform-3d){a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52);}}
+        a{text-decoration:none;}
+        .hide{display: none !important;}
+        .flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-moz-box-orient:horizontal;-webkit-box-orient:horizontal;-o-box-orient:horizontal;box-orient:horizontal; }
+        .flex-v{-webkit-box-orient: vertical;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+        .flex-1{-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;display:block;}
+        .flex-align-center{-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+        .flex-pack-center{-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+        .flex-pack-justify{-webkit-box-pack: justify;-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}
+        .mask{position: fixed;background-color: rgba(0, 0, 0, 0.8);left: 0;top: 0;width: 100%;height: 100%;z-index: 999;}
+        .lock{background-color:#000000;color:#FFFFFF;z-index:9999;font-size:0.28125rem;}
+        .lock-bg{width:2.09375rem;height:3.375rem;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAADZBAMAAAD4TT6+AAAAA3NCSVQICAjb4U/gAAAAMFBMVEX///////////////////////////////////////////////////////////////9Or7hAAAAAEHRSTlMAESIzRFVmd4iZqrvM3e7/dpUBFQAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAANsSURBVGiB7du9bxMxFADwl36FjyAigWBBKBILA19/AQn/AM2MhJIRsQDqCBKFATEgwdqpZWFCKkxMKMCEWFoYyxC+xNiWQqGlSczZvst92M757AcS0nvbXa4/3dnnu+d3NQDAhS5zjcFKE0RcdCZ49IWyy8tgbIsj9z0RNgsw6WuwTYB93kgfoOWNsCYs+iML0PVHlsHfYOtm5GsVUnFozQE5A5moF0d+Zw3YUxzZUhDj+PjLZ4LSJji9Yx+E/AeIcnfaxn5CCCGEEEIIIYQQQgghxIyMX3q8ylbf3FGmcvbI2OVoxjZ4VHNEpjosjp2mE3I4PXEcXHNAytnJ5+BqYWSiy7LRbxRESvOKwdh2tRhyIvrD93N3555HG68KIRNhg7w+JzYP3gubRbmgUUhLNsLt4Y7jsol+FkCmpNFO7pJKO3PkCKSl6VLZ5ZvWyIS2FWVbN2yRU3yXWskRRcpPlkhpie9Sx4qoUvbS94oR2c33fFEMgPP8hwd2yLTm2kWIu+eHHbKk6QUZvNd6VkiZ75jVIqJIlup5E3I02N7RGgCd4LePNshNtSOHcTr47ZcFUlrLnnIi+KUOkp1sQPi46RsMENXbdj6yVzdYh3El+PVJPsIv+4MR4a2+kY+MiqjEv+2DRHXQFz5IWFof1LyQI+Lo7/EOF0Q+Jdp+CJxMNasjMr6WbFbXJOdsslldkclkszqnW602AlJObRkR03NAFyZkSv98LYbUNa+cokipyz57I5VggBnTVltkPth854mI1KSnJmeFkLrYfumFBM3KQ/24UwSphA/ABR9kPkTUFKcAgvTKQHl5obxGUV7oIrXYAH3YphY4SQ5KuoWS+OGkoCjJsByEhrS8b5mWo0wQcKYqKJMmnOkbykQSZ0qLMrnGmeajFBxwSh9qEeaW7qD8ctBSwnAsBwGMXR8Wpp7V9If8oxKZRRBCCCGEEEIIIYQQQggh3kEIIb2Z2rEbnohciZKzmiUPeSpu7lLHB4mKu8b/17dB3oZIWDB2QxrRaJ12R+LqXmXUYaORuOBZdkfi70Hj7khcli25I+vxc9Ad+YZxJihtgtI7KPcJyh2LM3ZQRjF7KE9kMQfJFvbSYflk644+oDdTPZD3jF3GWXHW8keaOKvwUNYDoqxMlJ8uPEJ+3MdYrem1bpStcOMPBjyIsXDFjwMAAAAASUVORK5CYII=") 0 0 no-repeat;-webkit-background-size:2.09375rem auto;background-size:2.09375rem auto;-webkit-animation:lock 3s infinite 1.5s linear;animation:lock 3s infinite 1.5s linear;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+        @-webkit-keyframes lock{0%{-webkit-transform:rotate(90deg)}
+            20%{-webkit-transform:rotate(0);}
+            80%{-webkit-transform:rotate(0);}
+            100%{-webkit-transform:rotate(90deg)}
+        }
+        @keyframes lock{0%{transform:rotate(90deg)}
+            20%{transform:rotate(0);}
+            80%{transform:rotate(0);}
+            100%{transform:rotate(90deg)}
+        }
+        @media screen and (orientation:portrait){
+            .lock{display:none!important}
+        }
+        .lock-txt{margin-top:20px}
+/*本次css*/
+body,html{
+	height: 100%;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	overflow: hidden;
+}
+.ahs_content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.ahs_content .btnbox{
+	position: absolute;
+	z-index: 990;
+}
+.end_nickname{
+	font-size: 0.768rem;
+	color: #dc002b;
+	font-family: "微软雅黑";
+	font-weight: bolder;
+	width: 4.5rem;
+	height: 1.28rem;
+	text-align: center;
+	line-height: 1.28rem;
+	/*background: white;*/
+}
+.ahs_content li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	display: none;
+}
+/*杜蕾斯*/
+.ahs_content .type_01{
+	background: url(../../images/end/dls.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_01 .end_nickname{
+	margin-left: 33%;
+	margin-top: 4%;	
+}
+/*二锅头*/
+.ahs_content .type_02{
+	background: url(../../images/end/egt.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_02 .end_nickname{
+	margin-left: 33%;
+	margin-top: 5%;	
+}
+/*妇炎洁*/
+.ahs_content .type_03{
+	background: url(../../images/end/fyj.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_03 .end_nickname{
+	margin-left: 33%;
+	margin-top: 4.6%;	
+}
+/*辣条*/
+.ahs_content .type_04{
+	background: url(../../images/end/lt.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_04 .end_nickname{
+	margin-left: 30%;
+	margin-top: 4.7%;	
+}
+/*屁*/
+.ahs_content .type_05{
+	background: url(../../images/end/pi.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_05 .end_nickname{
+	margin-left: 36%;
+	margin-top: 4.7%;	
+}
+/*舒肤佳*/
+.ahs_content .type_06{
+	background: url(../../images/end/sfj.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_06 .end_nickname{
+	margin-left: 30%;
+	margin-top: 4.6%;	
+}
+/*卫生巾*/
+.ahs_content .type_07{
+	background: url(../../images/end/wsj.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_07 .end_nickname{
+	margin-left: 33%;
+	margin-top: 4.5%;	
+}
+/*香蕉*/
+.ahs_content .type_08{
+	background: url(../../images/end/xj.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ahs_content .type_08 .end_nickname{
+	margin-left: 33%;
+	margin-top: 4.6%;	
+}
+/*btn*/
+.ahs_content .btnbox{
+	width: 100%;
+	height: 2.133rem;
+	position: absolute;
+	/*top: 84.57%;*/
+	bottom: 8%;
+	text-align: center;
+}
+.ahs_content .btnbox .button1{
+	display: inline-block;
+	width: 6.4rem;
+	height: 2.133rem;
+	background: url(../../images/end/btn_left.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 0.64rem;
+} 
+.ahs_content .btnbox .button2{
+	display: inline-block;
+	width: 6.4rem;
+	height: 2.133rem;
+	background: url(../../images/end/btn_right.png) no-repeat;
+	background-size: 100% 100%;
+} 
+/*button动画*/
+.innerScale{
+	animation: play .4s ease-in infinite alternate;
+	-moz-animation: play .4s ease-in infinite alternate ;
+	-webkit-animation: play .4s ease-in infinite alternate ;
+	-ms-animation: play .4s ease-in infinite alternate ;
+}
+@keyframes play{
+	from{transform: scale(0.95);}
+	to{transform: scale(1.05);}
+}
+@-moz-keyframes play{
+	from{-moz-transform: scale(0.95);}
+	to{-moz-transform: scale(1.05);}
+}
+@-ms-keyframes play{
+	from{-ms-transform: scale(0.95);}
+	to{-ms-transform: scale(1.05);}
+}
+@-webkit-keyframes play{
+	from{-webkit-transform: scale(0.95);}
+	to{-webkit-transform: scale(1.05);}
+}
+/*弹窗区域*/
+.three_seconds{
+	width: 100%;
+	height: 100%;
+	background: rgba(235,219,63,0.75);
+	font-size: 0.768rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	text-align: center;
+	font-family: "微软雅黑";
+	line-height: 1.3rem;
+	font-weight: bolder;
+	
+}
+.three_seconds p:nth-child(1){
+	margin-top: 37%;
+}
+.three_seconds p:nth-child(4){
+	font-size: 0.64rem;
+	line-height: 2.4rem;
+}
+.three_seconds span{
+	font-size: 1.536rem;
+	color: #dc002b;
+	line-height: 2rem;
+}
+/*三秒显示区域*/
+/**/
+.final_alert{
+	display: none;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	min-height: 100%;
+	/*height: 100%;*/
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.75);
+}
+.final_alert_box{
+	width: 100%;
+	height: 23.26rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -11.63rem;
+}
+.final_alert .final_content{
+	position: relative;
+	width: 14.5rem;
+	height: 20.9rem;
+	/*background: yellow;*/
+	margin: 0 auto;
+	/*margin-top: 2%;*/
+}
+.final_alert .final_content .final_close{
+	position: absolute;
+	width: 1.87rem;
+	height: 1.87rem;
+	background: url(../../images/end/bbtn.png) no-repeat;
+	background-size: 100% 100%;
+	left: 13rem;
+	top: -0.8rem;
+}
+.final_alert .final_content  img{
+	display: block;
+	width: 14.5rem;
+	height: 20.9rem;
+}
+#zytadd{
+	display: block;
+	width: 14.5rem;
+	height: 20.9rem;	
+	position: absolute;
+	top: -20rem;
+	left: -14rem;
+	z-index: 1;
+	border: none;
+	background: none;
+	
+}
+.final_alert .final_content .final_save{
+	position: absolute;
+	bottom: 0;
+	width: 14.5rem;
+	height: 1.87rem;
+	background: url(../../images/end/tan_save.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto ;
+}
+/*下部按钮*/
+ .final_again{
+	width:8.53rem ;
+	height:2.13rem ;
+	background: url(../../images/end/tan_again.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 10px auto;
+}
+.final_alert .final_btn{
+	width: 100%;
+	height:1.87rem;
+	text-align: center;
+	/*margin-top: 1%;*/
+	margin-top: 0.49rem;
+}
+.final_alert .final_btn div{
+	display: inline-block;
+	width: 6.4rem;
+	height: 100%;
+}
+.final_alert .final_btn .left{
+	background: url(../../images/end/tan_again.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 0.8rem;
+}
+.final_alert .final_btn .right{
+	background: url(../../images/end/tan_door.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*画布区域*/
+
+.myCanvas{
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	left: 0;
+	top: 0;
+}
+
+
+
+

@@ -1,0 +1,265 @@
+@charset "utf-8";
+html,body,div,p,ul,li{
+	margin:0;
+	padding:0;
+	/*overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;*/
+	box-sizing:border-box ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg_02.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.header{
+	width: 9.43rem;
+	height: 1.71rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -5rem;
+	top: 12.8%;
+}
+/*海景房*/
+.seaHouse{
+	display: none;
+	width: 13.866rem;
+	height: 12.458rem;
+	background: url(../images/seahouse.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.2rem;
+	top: 25%;
+}
+.seaHouse .leixing{
+	width:3.008rem ;
+	height: 0.981rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 6.2rem;
+	top: 0.8rem;
+}
+.seaHouse .dabai{
+	position: absolute;
+	height: 0.875rem;
+	width: 1.8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	left: 10.3rem;
+	top: 2.1rem;
+}
+/*玫瑰*/
+.rose{
+	display: none;
+	width: 13.866rem;
+	height: 12.458rem;
+	background: url(../images/rose.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.2rem;
+	top: 25%;
+}
+.rose .leixing{
+	width:3.008rem ;
+	height: 0.981rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 6.8rem;
+	top: 0.8rem;
+}
+.rose .dabai{
+	position: absolute;
+	left: 9.8rem;
+	top: 2.1rem;
+	height: 0.875rem;
+	width: 1.8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+/*一坨屎*/
+.yituo{
+	display: none;
+	width: 13.866rem;
+	height: 12.458rem;
+	background: url(../images/yituoshi.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.2rem;
+	top: 25%;
+}
+.yituo .leixing{
+	width:3.008rem ;
+	height: 0.981rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 3.2rem;
+	top: 0.8rem;
+}
+/*南京路*/
+.road{
+	display: none;
+	width: 13.866rem;
+	height: 12.458rem;
+	background: url(../images/nanjingRoad.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.2rem;
+	top: 25%;
+}
+.road .leixing{
+	width:3.008rem ;
+	height: 0.981rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 6.4rem;
+	top: 0.8rem;
+}
+.road .dabai{
+	position: absolute;
+	left: 10.3rem;
+	top: 2.1rem;
+	height: 0.875rem;
+	width: 1.8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+/*法拉利*/
+.falali{
+	display: none;
+	width: 13.866rem;
+	height: 12.458rem;
+	background: url(../images/falali.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -7.2rem;
+	top: 25%;
+}
+.falali .leixing{
+	width:3.008rem ;
+	height: 0.981rem;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 6.4rem;
+	top: 0.8rem;
+}
+.falali .dabai{
+	position: absolute;
+	left: 10.4rem;
+	top: 2.1rem;
+	height: 0.875rem;
+	width: 1.8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+/*打败*/
+.bg img{
+	display: inline-block;
+	height: 0.875rem;
+}
+/*btn*/
+.shareFriends{
+	width: 6.592rem;
+	height: 3.413rem;
+	background: url(../images/icons_03.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 1rem;
+	top: 75%;
+}
+.goIndex{
+	width: 6.592rem;
+	height: 3.413rem;
+	background: url(../images/icons_05.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 1rem;
+	top: 75%;
+}
+.fenxiang{
+	width: 16rem;
+	height: 10.475rem;
+	background: url(../images/yindao.png) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	z-index: 201;
+	top: 0; 
+}
+.blackZhe{
+	display: none;
+	width: 100% ;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;
+	
+}
+.goBack{
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/fanhui.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	left: 3px;
+	top: 2px;
+	z-index: 10000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

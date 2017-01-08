@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>三星Galaxy Note7体验团</title>
+    <link rel="stylesheet" type="text/css" href="css/confirm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/second.css"/>
+    <link rel="stylesheet" type="text/css" href="css/add.css"/>
+    <script src="js/Adaptive.js"></script>
+ 		<!-- Piwik -->
+		<script type="text/javascript">
+			  var _paq = _paq || [];
+			  _paq.push(["setDomains", ["*.m.mk.aihuishou.com"]]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="//tk.aihuishou.com/";
+			    _paq.push(['setTrackerUrl', u+'piwik.php']);
+			    _paq.push(['setSiteId', 5]);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			  })();
+		</script>
+		<noscript><p><img src="//tk.aihuishou.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+</head>
+<body>
+	<div class="move_backtwo" onclick="history.go(-1)"></div>
+	<div class="headerNew">请填写收款信息</div>
+	<div class="twoTop">
+		<div class="note7">购买Note 7即可享受旧机高价回收</div>
+		<div class="twoAllto">0</div>
+		<div class="detailAlls">
+			回收款￥<span class="priceFirst">0</span>+购机补贴￥<span>1000</span>&nbsp;&nbsp;<p class="newPrice">重新询价</p>
+    		</div>
+    		    <div class="daysSeven">
+   	 			<img src="images/tixing.png"/>
+    				购机补贴将在旧机回收订单完成7天后发放
+    				<div>回收款将在旧机回收订单成交72小时内发放</div>
+   		 </div>
+	</div>
+
+    <div class="downMess">
+    		<div class="noticeName">( 邮寄人/银行卡开户人 )</div>
+    		<div class="noticePhone">( 邮寄人手机号 )</div>
+    	    <div class="bankNotice">请选择开户银行</div>
+    	    <input type="text"  placeholder="请填写银行卡号" class="cOne" onkeyup="formatBankNo(this)" onkeydown="formatBankNo(this)"  style="color: #333333;"/>
+    		<input type="text"  class="cTwo" value="" disabled="disabled" style="color: #333333;"/><!-- placeholder="请填写开户姓名"-->
+    		<!--<input type="text"  placeholder="请填写身份证号码" class="cardNum" maxlength="18"/>-->
+    		<input type="text" id="tel"  class="cThr" disabled="disabled"  style="color: #333333;"/> <!--placeholder="请填手机号码"-->
+ 			
+    </div>
+
+    <!--<div class="whiteCon">12321</div>-->
+  <div class="bankList">
+    		<div class="bankParent">请选择开户银行</div>
+	    <ul class="allBank">		
+			<li data-value="中国银行">中国银行</li>
+			<li data-value="中国农业银行">中国农业银行</li>
+			<li data-value="中国建设银行">中国建设银行</li>
+			<li data-value="招商银行">招商银行</li>
+			<li data-value="中国工商银行">中国工商银行</li>
+			<li data-value="上海浦东发展银行">上海浦东发展银行</li>
+			<li data-value="中国邮政储蓄银行">中国邮政储蓄银行</li>
+			<li data-value="中信银行">中信银行</li>
+			<li data-value="中国光大银行">中国光大银行</li>
+			<li data-value="华夏银行">华夏银行</li>
+			<li data-value="兴业银行">兴业银行</li>
+	   </ul>
+   </div>
+   <div class="blackMeng"></div>
+   <div class="sendTic" id="login" onclick="_paq.push(['trackEvent', 'samsung', '三星', '提交订单']);">提交订单</div>
+   
+<script src="js/jquery-1.9.1.min.js"></script>
+<!--<script src="js/initSecond.js"></script>-->
+<script src="js/m-mk-analytics.js"></script>
+<script src="js/loginCommon.js"></script>
+<script src="js/second.js"></script>
+</body>
+</html>

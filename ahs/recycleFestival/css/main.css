@@ -1,0 +1,125 @@
+@charset "utf-8";
+html,body,div,img,input,ul,ol,li,p,a,span,dl,dd,dt,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+body{
+	color:#333;
+	font-size:12px;
+	font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB W3", "Helvetica", "Heiti SC", "Droid Sans", "Droidsansfallback", "sans-serif";
+	background:#000000;
+	/*background: #fdd503;*/
+	width:100%;
+}
+img{
+	display: block;
+	border:none;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	cursor: pointer;
+}
+h1,h2,h3,h4{
+	font-weight: normal;
+}
+ul ,li{
+	list-style-type: none;
+}
+.clearfix{
+	clear:both;
+}
+.page{
+	position: relative;
+	display: block;
+	/*background:#fdd503;*/
+	background: url(../images/page-bg.png) no-repeat center;
+	background-size: 100% 100%;
+	width:1200px;
+	margin:28px auto 20px;
+	padding-bottom:50px;
+}
+.page i.arrow{
+	width:30px;
+	height:30px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.page .top{
+	width:100%;
+	padding-top:20px;
+	margin-top: -20px;
+}
+.page .top .img1,.page .top .img2{
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.page .acode{
+	height:120px;
+	text-align: center;
+}
+.page .acode span{
+	display: inline-block;
+	height:88px;
+	width:199px;
+}
+.page .acode span.threety{
+	margin:0 25px;
+}
+.page .redirect{
+	width:912px;
+	/*width: 1060px;*/
+	margin:0 auto;
+}
+.page .redirect .lt,.page .redirect .rt{
+	float:left
+}
+.page .redirect .lt{
+	margin-right:35px;
+}
+.page .redirect .lt li{
+	list-style: none;
+	margin-bottom:18px;
+	position: relative;
+}
+.page .redirect .lt li a{
+	position: absolute;
+	width:136px;
+	height:136px;
+	top:75px;
+	right:3px;
+	z-index: 200;
+	cursor: pointer;
+}
+.page .master .bot_top{
+	margin-bottom:25px;
+	margin-top:40px;
+	text-align: center;
+}
+.page .master .bottom{
+	width:100%;
+	text-align: center;
+}
+.page .master .bot_top img,.page .master .bottom div{
+	display: inline-block;
+}
+.page .master .bottom div.rt_img,.page .acode span img{
+	cursor: pointer;
+}
+
+.closeArrow{
+	display: block;
+	position: absolute;
+	top:2px;
+	right:2px;
+	width:40px;
+	height:40px;
+	background:url(../images/close.png) no-repeat;
+	background-size:80px 40px ;
+	cursor: pointer;
+}
+.closeArrow:hover{
+	background:url(../images/close.png) no-repeat -40px;
+	background-size:80px 40px ;
+}
